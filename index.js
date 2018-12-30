@@ -1,5 +1,7 @@
 'use strict';
 
+const words = require('./words.json').words;
+
 function frenchToSms(input) {
     let output = input;
 
@@ -8,12 +10,9 @@ function frenchToSms(input) {
     output = standardizeApostrophes(output);
     output = addSpaceBeforePunctuation(output);
     output = removeAccents(output);
-
     output = replaceNumbers(output);
     output = addSpaceBeforeHyphens(output);
-
     output = replaceWords(output);
-
     output = putPunctuationBackInPlace(output);
     output = removeSpacesLeftAndRight(output);
 
@@ -55,8 +54,12 @@ function replaceNumbers(output) {
 }
 
 function replaceWords(output) {
-    output = output.replace(new RegExp(' coucou ', 'g'), ' cc ');
-    output = output.replace(new RegExp(' bonjour ', 'g'), ' bjr ');
+    words.forEach(word => {
+        for (let wordInput in word) {
+            const wordOutput = word[wordInput];
+            output = output.replace(new RegExp(` ${wordInput} `, 'g'), ` ${wordOutput} `);
+        }
+    });
 
     return output;
 }
