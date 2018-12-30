@@ -13,7 +13,7 @@ function frenchToSms(input) {
     output = replaceNumbers(output);
     output = addSpaceBeforeHyphens(output);
     output = replaceWords(output);
-    output = putPunctuationBackInPlace(output);
+    output = putPunctuationAndHyphenBackInPlace(output);
     output = removeSpacesLeftAndRight(output);
 
     return output;
@@ -57,7 +57,7 @@ function replaceWords(output) {
     words.forEach(word => {
         for (let wordInput in word) {
             const wordOutput = word[wordInput];
-            output = output.replace(new RegExp(` ${wordInput} `, 'g'), ` ${wordOutput} `);
+            output = output.replace(new RegExp(wordInput, 'g'), wordOutput);
         }
     });
 
@@ -68,7 +68,8 @@ function removeSpacesLeftAndRight(output) {
     return output.trim();
 }
 
-function putPunctuationBackInPlace(output) {
+function putPunctuationAndHyphenBackInPlace(output) {
+    output = output.replace(/ \-/g, '-');
     output = output.replace(/ \./g, '.');
     output = output.replace(/ \,/g, ',');
     output = output.replace(/ \?/g, '?');
@@ -85,6 +86,7 @@ function removeAccents(output) {
     output = output.replace(new RegExp('î', 'g'), 'i');
     output = output.replace(new RegExp('ô', 'g'), 'o');
     output = output.replace(new RegExp('à', 'g'), 'a');
+    output = output.replace(new RegExp('â', 'g'), 'a');
     output = output.replace(new RegExp('É', 'g'), 'é');
     output = output.replace(new RegExp('Î', 'g'), 'i');
 
