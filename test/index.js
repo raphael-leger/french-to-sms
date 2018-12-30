@@ -15,7 +15,6 @@ test('caseInsensitivity', t => {
     t.end()
 });
 
-
 test('punctuationInsensitive', t => {
     t.equal(frenchToSms('bonjour'), 'bjr', 'bonjour');
     t.equal(frenchToSms('bonjour !'), 'bjr !', 'bonjour !');
@@ -24,12 +23,19 @@ test('punctuationInsensitive', t => {
     t.end()
 });
 
+test('numbersEffectiveness', t => {
+    t.equal(frenchToSms('un'), '1', 'un');
+    t.equal(frenchToSms('deux'), '2', 'deux');
+    t.equal(frenchToSms('dix-sept'), '17', 'dix-sept');
+    t.equal(frenchToSms('quarante'), '40', 'quarante');
+
+    t.end()
+});
 
 test('accentsInsensitive', t => {
 
     t.end()
 });
-
 
 test('fixtures', t => {
     for (let input in fixtures) {
