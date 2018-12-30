@@ -1,6 +1,6 @@
 'use strict';
 
-const words = require('./words.json').words;
+const frenchLanguageData = require('./language-data/FR_fr.json');
 
 function frenchToSms(input) {
     let output = input;
@@ -12,7 +12,7 @@ function frenchToSms(input) {
     output = removeAccents(output);
     output = replaceNumbers(output);
     output = addSpaceBeforeHyphens(output);
-    output = replaceWords(output);
+    output = replaceExactWords(output);
     output = putPunctuationAndHyphenBackInPlace(output);
     output = removeSpacesLeftAndRight(output);
 
@@ -20,41 +20,18 @@ function frenchToSms(input) {
 }
 
 function replaceNumbers(output) {
-    output = output.replace(new RegExp(' dix-sept ', 'g'), ' 17 ');
-    output = output.replace(new RegExp(' dix-huit ', 'g'), ' 18 ');
-    output = output.replace(new RegExp(' dix-neuf ', 'g'), ' 19 ');
-    output = output.replace(new RegExp(' soixante-dix ', 'g'), ' 70 ');
-    output = output.replace(new RegExp(' quatre-vingt ', 'g'), ' 80 ');
-    output = output.replace(new RegExp(' quatre-vingt-dix ', 'g'), ' 90 ');
-
-    output = output.replace(new RegExp(' zéro ', 'g'), ' 0 ');
-    output = output.replace(new RegExp(' un ', 'g'), ' 1 ');
-    output = output.replace(new RegExp(' deux ', 'g'), ' 2 ');
-    output = output.replace(new RegExp(' trois ', 'g'), ' 3 ');
-    output = output.replace(new RegExp(' quatre ', 'g'), ' 4 ');
-    output = output.replace(new RegExp(' cinq ', 'g'), ' 5 ');
-    output = output.replace(new RegExp(' six ', 'g'), ' 6 ');
-    output = output.replace(new RegExp(' sept ', 'g'), ' 7 ');
-    output = output.replace(new RegExp(' huit ', 'g'), ' 8 ');
-    output = output.replace(new RegExp(' neuf ', 'g'), ' 9 ');
-    output = output.replace(new RegExp(' dix ', 'g'), ' 10 ');
-    output = output.replace(new RegExp(' onze ', 'g'), ' 11 ');
-    output = output.replace(new RegExp(' douze ', 'g'), ' 12 ');
-    output = output.replace(new RegExp(' treize ', 'g'), ' 13 ');
-    output = output.replace(new RegExp(' quatorze ', 'g'), ' 14 ');
-    output = output.replace(new RegExp(' quinze ', 'g'), ' 15 ');
-    output = output.replace(new RegExp(' seize ', 'g'), ' 16 ');
-    output = output.replace(new RegExp(' vingt ', 'g'), ' 20 ');
-    output = output.replace(new RegExp(' trente ', 'g'), ' 30 ');
-    output = output.replace(new RegExp(' quarante ', 'g'), ' 40 ');
-    output = output.replace(new RegExp(' cinquante ', 'g'), ' 50 ');
-    output = output.replace(new RegExp(' soixante ', 'g'), ' 60 ');
+    frenchLanguageData.numbers.forEach(word => {
+        for (let wordInput in word) {
+            const wordOutput = word[wordInput];
+            output = output.replace(new RegExp(` ${wordInput} `, 'g'), ` ${wordOutput} `);
+        }
+    });
 
     return output;
 }
 
-function replaceWords(output) {
-    words.forEach(word => {
+function replaceExactWords(output) {
+    frenchLanguageData.exactWords.forEach(word => {
         for (let wordInput in word) {
             const wordOutput = word[wordInput];
             output = output.replace(new RegExp(wordInput, 'g'), wordOutput);
