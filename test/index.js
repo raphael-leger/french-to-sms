@@ -6,33 +6,26 @@ const frenchToSms = require('..');
 
 
 test('caseInsensitivity', t => {
-    const expectedBonjourOutput = 'bjr';
-
-    t.equal(frenchToSms('bonjour'), expectedBonjourOutput, 'bonjour');
-    t.equal(frenchToSms('Bonjour'), expectedBonjourOutput, 'Bonjour');
-    t.equal(frenchToSms('BonJOur'), expectedBonjourOutput, 'BonJOur');
+    t.equal(frenchToSms('bonjour'), 'bjr', 'bonjour => bjr');
+    t.equal(frenchToSms('Bonjour'), 'bjr', 'Bonjour => bjr');
+    t.equal(frenchToSms('BonJOur'), 'bjr', 'BonJOur => bjr');
 
     t.end();
 });
 
 test('punctuationInsensitive', t => {
-    t.equal(frenchToSms('bonjour'), 'bjr', 'bonjour');
-    t.equal(frenchToSms('bonjour !'), 'bjr !', 'bonjour !');
-    t.equal(frenchToSms('bonjour!'), 'bjr!', 'bonjour!');
+    t.equal(frenchToSms('bonjour'), 'bjr', 'bonjour => bjr');
+    t.equal(frenchToSms('bonjour !'), 'bjr !', 'bonjour ! => bjr !');
+    t.equal(frenchToSms('bonjour!'), 'bjr!', 'bonjour! => bjr!');
 
     t.end();
 });
 
 test('numbersEffectiveness', t => {
-    t.equal(frenchToSms('un'), '1', 'un');
-    t.equal(frenchToSms('deux'), '2', 'deux');
-    t.equal(frenchToSms('dix-sept'), '17', 'dix-sept');
-    t.equal(frenchToSms('quarante'), '40', 'quarante');
-
-    t.end();
-});
-
-test('accentsInsensitive', t => {
+    t.equal(frenchToSms('un'), '1', 'un => 1');
+    t.equal(frenchToSms('deux'), '2', 'deux => 2');
+    t.equal(frenchToSms('dix-sept'), '17', 'dix-sept => 17');
+    t.equal(frenchToSms('quarante'), '40', 'quarante => 40');
 
     t.end();
 });
