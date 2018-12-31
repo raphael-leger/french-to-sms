@@ -45,29 +45,28 @@ test('fixtures', t => {
 
     t.end();
 });
-/*
+
 test('completeSentences', t => {
     t.equal(
         frenchToSms(
             `La carotte représente après la pomme de terre le principal légume-racine cultivé dans le monde2. C'est une racine riche en carotène.`
         ),
-        'la carote reprézent apré la pom 2 ter lprincipal légum-racine cultivé ds lmnde2. cé une racine rich en carotN.'
+        'la carote reprézent apré la pome 2 tere lprincipal légume-racine cultiV ds lmonde2. cé une racine rich en carotène.'
     );
 
     t.equal(
         frenchToSms(
             `Le tofu ou fromage de soja est un aliment d'origine chinoise, issu du caillage du lait de soja. C'est une pâte blanche, molle, peu odorante et au goût plutôt neutre, constituant une base importante de l'alimentation asiatique, et aussi consommé par des végétariens et végétaliens occidentaux.`
         ),
-        'ltofu ou fromaj 2 soja é 1 alimen dorigine chinoiz, issu du caillaj du lè 2 soja. cé une pate blanch, moll, pE odorante é o goût +to neutr, konstituan une baz importante 2 lalimentation asiatik, é o6 konsomé par D véGtari1 é véGtali1 occidento.'
+        'ltofu ou fromaj 2 soja é 1 alimen dorigine chinoiz, issu du caillaj du lè 2 soja. cé une pate blanch, moll, pE odorante é o goût +to nutre, constituan une baz importante 2 lalimentation asiatik, é o6 consomé par D VGtari1 é VGtali1 occidento.'
     );
 
     t.equal(
         frenchToSms(
             `L’aubergine est une espèce de plantes de la famille des Solanaceae, originaire d'Asie. Ce sont des plantes herbacées annuelles, largement cultivées pour leurs fruits comestibles comme plantes potagères ou maraîchères. L'espèce a été domestiquée en Asie depuis l'époque préhistorique. Le terme désigne également le fruit.`
         ),
-        'lobergine é une spece 2 plante dla famil D solanacea, originR dasi. sson D plante erbacé anuL, largemen cultivé pr leurs frui comestib kom plante potagRs ou marèchRs. lespèce a été domestiqué en asi dpui lépok préhistorik. lterm Dsign égalmen lfrui.'
+        'lobergine é une spece 2 plante dla fami D solanaceae, originR dasi. s st D plante erbacé anuLs, largemen cultiV pr leurs frui comestibs kom plante potagRs ou maraichRs. lépèce a été domestiqué en asi dpui lépok préhistorik. lterme Dsigne égalemen lfrui.'
     );
 
     t.end();
 });
-*/

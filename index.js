@@ -16,8 +16,20 @@ function frenchToSms(input) {
     output = replaceWordsContaining(output);
     output = replaceWordsStartingWith(output);
     output = replaceWordsEndingWith(output);
+    output = replaceWordsBeforeApostrophe(output);
     output = putPunctuationAndHyphenBackInPlace(output);
     output = removeSpacesLeftAndRight(output);
+
+    return output;
+}
+
+function replaceWordsBeforeApostrophe(output) {
+    frenchLanguageData.wordsBeforeApostrophe.forEach(word => {
+        for (let wordInput in word) {
+            const wordOutput = word[wordInput];
+            output = output.replace(new RegExp(`${wordInput} `, 'g'), wordOutput);
+        }
+    });
 
     return output;
 }
