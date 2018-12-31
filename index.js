@@ -13,6 +13,9 @@ function frenchToSms(input) {
     output = replaceNumbers(output);
     output = addSpaceBeforeHyphens(output);
     output = replaceExactWords(output);
+    output = replaceWordsContaining(output);
+    output = replaceWordsStartingWith(output);
+    output = replaceWordsEndingWith(output);
     output = putPunctuationAndHyphenBackInPlace(output);
     output = removeSpacesLeftAndRight(output);
 
@@ -34,7 +37,40 @@ function replaceExactWords(output) {
     frenchLanguageData.exactWords.forEach(word => {
         for (let wordInput in word) {
             const wordOutput = word[wordInput];
+            output = output.replace(new RegExp(` ${wordInput} `, 'g'), ` ${wordOutput} `);
+        }
+    });
+
+    return output;
+}
+
+function replaceWordsStartingWith(output) {
+    frenchLanguageData.wordsStartingWith.forEach(word => {
+        for (let wordInput in word) {
+            const wordOutput = word[wordInput];
+            output = output.replace(new RegExp(` ${wordInput}`, 'g'), ` ${wordOutput}`);
+        }
+    });
+
+    return output;
+}
+
+function replaceWordsContaining(output) {
+    frenchLanguageData.wordsContaining.forEach(word => {
+        for (let wordInput in word) {
+            const wordOutput = word[wordInput];
             output = output.replace(new RegExp(wordInput, 'g'), wordOutput);
+        }
+    });
+
+    return output;
+}
+
+function replaceWordsEndingWith(output) {
+    frenchLanguageData.wordsEndingWith.forEach(word => {
+        for (let wordInput in word) {
+            const wordOutput = word[wordInput];
+            output = output.replace(new RegExp(`${wordInput} `, 'g'), `${wordOutput} `);
         }
     });
 
