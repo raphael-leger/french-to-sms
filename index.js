@@ -1,6 +1,9 @@
 'use strict';
 
-const frenchLanguageData = require('./language-data/FR_fr.json');
+
+const language = 'FR_fr';
+const languageData = require(`./language-data/${language}.json`);
+
 
 function frenchToSms(input) {
     let output = input;
@@ -22,7 +25,7 @@ function frenchToSms(input) {
 }
 
 function replaceExactWords(output) {
-    frenchLanguageData.exactWords.forEach(word => {
+    languageData.exactWords.forEach(word => {
         for (let wordInput in word) {
             const wordOutput = word[wordInput];
             output = output.replace(new RegExp(`( |-)${wordInput}( |-)`, 'g'), ` ${wordOutput} `);
@@ -33,7 +36,7 @@ function replaceExactWords(output) {
 }
 
 function replaceWordsWithATrailingLetter(output) {
-    frenchLanguageData.wordsWithATrailingLetter.forEach(word => {
+    languageData.wordsWithATrailingLetter.forEach(word => {
         for (let wordInput in word) {
             const wordOutput = word[wordInput];
             output = output.replace(new RegExp(`${wordInput}( |-)`, 'g'), wordOutput);
@@ -44,7 +47,7 @@ function replaceWordsWithATrailingLetter(output) {
 }
 
 function replaceWordsStartingWith(output) {
-    frenchLanguageData.wordsStartingWith.forEach(word => {
+    languageData.wordsStartingWith.forEach(word => {
         for (let wordInput in word) {
             const wordOutput = word[wordInput];
             output = output.replace(new RegExp(`( |-)${wordInput}`, 'g'), ` ${wordOutput}`);
@@ -55,7 +58,7 @@ function replaceWordsStartingWith(output) {
 }
 
 function replaceWordsContaining(output) {
-    frenchLanguageData.wordsContaining.forEach(word => {
+    languageData.wordsContaining.forEach(word => {
         for (let wordInput in word) {
             const wordOutput = word[wordInput];
             output = output.replace(new RegExp(wordInput, 'g'), wordOutput);
@@ -66,7 +69,7 @@ function replaceWordsContaining(output) {
 }
 
 function replaceWordsEndingWith(output) {
-    frenchLanguageData.wordsEndingWith.forEach(word => {
+    languageData.wordsEndingWith.forEach(word => {
         for (let wordInput in word) {
             const wordOutput = word[wordInput];
             output = output.replace(new RegExp(`${wordInput}( |-)`, 'g'), `${wordOutput} `);
