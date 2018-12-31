@@ -65,7 +65,7 @@ test('completeSentences', t => {
         frenchToSms(
             `L’aubergine est une espèce de plantes de la famille des Solanaceae, originaire d'Asie. Ce sont des plantes herbacées annuelles, largement cultivées pour leurs fruits comestibles comme plantes potagères ou maraîchères. L'espèce a été domestiquée en Asie depuis l'époque préhistorique. Le terme désigne également le fruit.`
         ),
-        'lobergine é une spece 2 plante dla fami D solanacea, originR dasi. s st D plante erbacé anuLs, largemen cultiVs pr leurs frui comestibs kom plante potagRs ou marèchRs. lépèce a été domestiqué en asi dpui lépok préhistorik. lterm Dsign égalmen lfrui.'
+        'lobergine é une spece 2 plante dla fami D solanacea, originR dasi. s st D plante erbacé anuLs, largemen cultiVs pr leurs frui comestib kom plante potagRs ou marèchRs. lépèce a été domestiqué en asi dpui lépok préhistorik. lterm Dsign égalmen lfrui.'
     );
 
     t.end();
