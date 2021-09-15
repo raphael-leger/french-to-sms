@@ -184,7 +184,7 @@ function standardizeApostrophes(output) {
 
 function getPreventionString(modificationsPrevented) {
     const preventionNumber = modificationsPrevented.length + 1;
-    return `REPLACEMENT_${preventionNumber}`;
+    return `!!!!!!FRENCH!TO!SMS!REPLACEMENT!${preventionNumber}`;
 }
 
 module.exports = frenchToSms;
