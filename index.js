@@ -1,6 +1,6 @@
 const glossary = require(`./glossary.json`);
 
-function frenchToSms(input) {
+const frenchToSms = (input) => {
     let output = input;
 
     output = toLowerCase(output);
@@ -17,17 +17,17 @@ function frenchToSms(input) {
     output = removeSpacesLeftAndRight(output);
 
     return output;
-}
+};
 
-function replaceExactWords(output) {
+const replaceExactWords = (output) => {
     glossary.exactWords.forEach(word => {
         output = output.replace(new RegExp(`( |-)${word.input}( |-)`, 'g'), ` ${word.output} `);
     });
 
     return output;
-}
+};
 
-function replaceWordsWithATrailingLetter(output) {
+const replaceWordsWithATrailingLetter = (output) => {
     const modificationsPrevented = [];
 
     glossary.wordsWithATrailingLetter.forEach(action => {
@@ -51,9 +51,9 @@ function replaceWordsWithATrailingLetter(output) {
     });
 
     return output;
-}
+};
 
-function replaceWordsStartingWith(output) {
+const replaceWordsStartingWith = (output) => {
     const modificationsPrevented = [];
 
     glossary.wordsStartingWith.forEach(action => {
@@ -77,9 +77,9 @@ function replaceWordsStartingWith(output) {
     });
 
     return output;
-}
+};
 
-function replaceWordsContaining(output) {
+const replaceWordsContaining = (output) => {
     const modificationsPrevented = [];
 
     glossary.wordsContaining.forEach(action => {
@@ -103,9 +103,9 @@ function replaceWordsContaining(output) {
     });
 
     return output;
-}
+};
 
-function replaceWordsEndingWith(output) {
+const replaceWordsEndingWith = (output) => {
     const modificationsPrevented = [];
 
     glossary.wordsEndingWith.forEach(action => {
@@ -129,13 +129,13 @@ function replaceWordsEndingWith(output) {
     });
 
     return output;
-}
+};
 
-function removeSpacesLeftAndRight(output) {
+const removeSpacesLeftAndRight = (output) => {
     return output.trim();
-}
+};
 
-function putPunctuationBackInPlace(output) {
+const putPunctuationBackInPlace = (output) => {
     output = output.replace(/ \./g, '.');
     output = output.replace(/ \,/g, ',');
     output = output.replace(/ \?/g, '?');
@@ -146,9 +146,9 @@ function putPunctuationBackInPlace(output) {
     output = output.replace(/\( /g, '(');
 
     return output;
-}
+};
 
-function removeAccents(output) {
+const removeAccents = (output) => {
     output = output.replace(new RegExp('î', 'g'), 'i');
     output = output.replace(new RegExp('ô', 'g'), 'o');
     output = output.replace(new RegExp('à', 'g'), 'a');
@@ -157,9 +157,9 @@ function removeAccents(output) {
     output = output.replace(new RegExp('Î', 'g'), 'i');
 
     return output;
-}
+};
 
-function addSpaceBeforePunctuation(output) {
+const addSpaceBeforePunctuation = (output) => {
     output = output.replace(/\./g, ' .');
     output = output.replace(/\,/g, ' ,');
     output = output.replace(/\?/g, ' ?');
@@ -168,23 +168,23 @@ function addSpaceBeforePunctuation(output) {
     output = output.replace(/\(/g, '( ');
 
     return output;
-}
+};
 
-function addSpacesLeftAndRight(output) {
+const addSpacesLeftAndRight = (output) => {
     return `  ${output}  `;
-}
+};
 
-function toLowerCase(output) {
+const toLowerCase = (output) => {
     return output.toLowerCase();
-}
+};
 
-function standardizeApostrophes(output) {
+const standardizeApostrophes = (output) => {
     return output.replace(new RegExp('’', 'g'), '\'');
-}
+};
 
-function getPreventionString(modificationsPrevented) {
+const getPreventionString = (modificationsPrevented) => {
     const preventionNumber = modificationsPrevented.length + 1;
     return `!!!!!!FRENCH!TO!SMS!REPLACEMENT!${preventionNumber}`;
-}
+};
 
 module.exports = frenchToSms;
