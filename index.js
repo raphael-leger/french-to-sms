@@ -19,7 +19,7 @@ const frenchToSms = (input) => {
   output = removeAccents(output);
 
   // Perform replacements based on the glossary
-  output = replaceExactWords(output);
+  output = replaceWholeWords(output);
   output = replaceWordsContaining(output);
   output = replaceWordsStartingWith(output);
   output = replaceWordsEndingWith(output);
@@ -39,7 +39,7 @@ const frenchToSms = (input) => {
 const startOfWord = (characters) => new RegExp(`${characters}( |-)`, 'g');
 const anywhere    = (characters) => new RegExp(characters, 'g');
 const endOfWord   = (characters) => new RegExp(`( |-)${characters}`, 'g');
-const exactWord   = (characters) => new RegExp(`( |-)${characters}( |-)`, 'g');
+const wholeWord   = (characters) => new RegExp(`( |-)${characters}( |-)`, 'g');
 
 
 
@@ -76,7 +76,7 @@ const ACTION_TYPE = {
 
 
 /* REPLACEMENT FUNCTIONS */
-const performExactWordReplacement = (output, action) => output.replace(exactWord(action.input), ` ${action.output} `);
+const performWholeWordReplacement = (output, action) => output.replace(wholeWord(action.input), ` ${action.output} `);
 
 const performWordStartingWithReplacement = (output, action) => {
     switch (action.type) {
@@ -158,7 +158,7 @@ const performWordEndingWithReplacement = (output, action) => {
     }
 };
 
-const replaceExactWords = (output) => glossary.exactWords.reduce(performExactWordReplacement, output);
+const replaceWholeWords = (output) => glossary.wholeWords.reduce(performWholeWordReplacement, output);
 const replaceWordsWithATrailingLetter = (output) => glossary.wordsWithATrailingLetter.reduce(performWordWithTrailingLetterReplacement, output);
 const replaceWordsStartingWith = (output) => glossary.wordsStartingWith.reduce(performWordStartingWithReplacement, output);
 const replaceWordsContaining = (output) => glossary.wordsContaining.reduce(performWordContainingReplacement, output);
