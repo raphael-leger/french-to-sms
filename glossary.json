@@ -1850,6 +1850,19 @@
       "type": "replace_now",
       "input": "cti",
       "output": "xi"
+    },
+    {
+      "type": "prevent_modification",
+      "input": " cc "
+    },
+    {
+      "type": "replace_now",
+      "input": "cc",
+      "output": "x"
+    },
+    {
+      "type": "enable_modification",
+      "input": " cc "
     }
   ],
   "wordsStartingWith": [
@@ -2501,6 +2514,11 @@
       "type": "replace_now",
       "input": "uit",
       "output": "ui"
+    },
+    {
+      "type": "replace_now",
+      "input": "ès",
+      "output": "è"
     }
   ],
   "wordsWithATrailingLetter": [
