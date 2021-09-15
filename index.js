@@ -6,7 +6,7 @@ const glossary = require(`./glossary.json`);
 /* MAIN FUNCTION */
 const frenchToSms = (input) => {
   if (!input) {
-    throw Error("[frenchToSms] Please provide an input text: frenchToSms('bonjour')");
+    throw Error("Please provide an input text: frenchToSms('bonjour')");
   }
 
   let output = input;
@@ -44,21 +44,21 @@ const wholeWord   = (characters) => new RegExp(`( |-)${characters}( |-)`, 'g');
 
 
 /* MODIFICATIONS PREVENTION SYSTEM */
-const modificationsPrevented = [];
+const modificationsCurrentlyPrevented = [];
 
-const addToModificationsPrevented = (modificationsPrevented, preventionString, input) => {
-    modificationsPrevented.push({
+const disableModification = (preventionHash, input) => {
+    modificationsCurrentlyPrevented.push({
         input,
-        preventionString
+        preventionHash
     });
 };
 
-const removeFromModificationsPrevented = (preventionIndex) => {
-    modificationsPrevented.splice(preventionIndex, 1);
+const enableModification = (preventionIndex) => {
+    modificationsCurrentlyPrevented.splice(preventionIndex, 1);
 };
 
-const getNextPreventionString = (modificationsPrevented) => {
-    const preventionNumber = modificationsPrevented.length + 1;
+const getNextPreventionHash = () => {
+    const preventionNumber = modificationsCurrentlyPrevented.length + 1;
     return `!!!!!!FRENCH!TO!SMS!REPLACEMENT!${preventionNumber}`;
 };
 
@@ -67,8 +67,8 @@ const getNextPreventionString = (modificationsPrevented) => {
 
 /* ACTIONS */
 const ACTION_TYPE = {
-    REPLACE_NOW: 'replace_now',
-    PREVENT_MODIFICATION: 'prevent_modification',
+    REPLACE: 'replace',
+    DISABLE_MODIFICATION: 'disable_modification',
     ENABLE_MODIFICATION: 'enable_modification',
 };
 
@@ -81,18 +81,18 @@ const performWholeWordReplacement = (output, action) => output.replace(wholeWord
 const performStartOfWordsReplacement = (output, action) => {
     switch (action.type) {
         default:
-        case ACTION_TYPE.REPLACE_NOW:
+        case ACTION_TYPE.REPLACE:
             return output.replace(endOfWord(action.input), ` ${action.output}`);
-        case ACTION_TYPE.PREVENT_MODIFICATION:
-            const preventionString = getNextPreventionString(modificationsPrevented);
-            addToModificationsPrevented(modificationsPrevented, preventionString, action.input);
-            return output.replace(endOfWord(action.input), ` ${preventionString}`);
+        case ACTION_TYPE.DISABLE_MODIFICATION:
+            const preventionHash = getNextPreventionHash();
+            disableModification(preventionHash, action.input);
+            return output.replace(endOfWord(action.input), ` ${preventionHash}`);
         case ACTION_TYPE.ENABLE_MODIFICATION:
-            const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
+            const preventionIndex = modificationsCurrentlyPrevented.findIndex(prevention => prevention.input === action.input);
             if (preventionIndex > -1) {
-                const preventionString = modificationsPrevented[preventionIndex].preventionString;
-                removeFromModificationsPrevented(preventionIndex);
-                return output.replace(endOfWord(preventionString), ` ${action.input}`);
+                const preventionHash = modificationsCurrentlyPrevented[preventionIndex].preventionHash;
+                enableModification(preventionIndex);
+                return output.replace(endOfWord(preventionHash), ` ${action.input}`);
             };
             return output;
     }
@@ -101,18 +101,18 @@ const performStartOfWordsReplacement = (output, action) => {
 const performAnywhereReplacement = (output, action) => {
     switch (action.type) {
         default:
-        case ACTION_TYPE.REPLACE_NOW:
+        case ACTION_TYPE.REPLACE:
             return output.replace(anywhere(action.input), action.output);
-        case ACTION_TYPE.PREVENT_MODIFICATION:
-            const preventionString = getNextPreventionString(modificationsPrevented);
-            addToModificationsPrevented(modificationsPrevented, preventionString, action.input);
-            return output.replace(anywhere(action.input), preventionString);
+        case ACTION_TYPE.DISABLE_MODIFICATION:
+            const preventionHash = getNextPreventionHash();
+            disableModification(preventionHash, action.input);
+            return output.replace(anywhere(action.input), preventionHash);
         case ACTION_TYPE.ENABLE_MODIFICATION:
-            const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
+            const preventionIndex = modificationsCurrentlyPrevented.findIndex(prevention => prevention.input === action.input);
             if (preventionIndex > -1) {
-                const preventionString = modificationsPrevented[preventionIndex].preventionString;
-                removeFromModificationsPrevented(preventionIndex);
-                return output.replace(anywhere(preventionString), action.input);
+                const preventionHash = modificationsCurrentlyPrevented[preventionIndex].preventionHash;
+                enableModification(preventionIndex);
+                return output.replace(anywhere(preventionHash), action.input);
             };
             return output;
     }
@@ -121,18 +121,18 @@ const performAnywhereReplacement = (output, action) => {
 const performEndOfWordsFollowedByASpaceReplacement = (output, action) => {
     switch (action.type) {
         default:
-        case ACTION_TYPE.REPLACE_NOW:
+        case ACTION_TYPE.REPLACE:
             return output.replace(startOfWord(action.input), action.output);
-        case ACTION_TYPE.PREVENT_MODIFICATION:
-            const preventionString = getNextPreventionString(modificationsPrevented);
-            addToModificationsPrevented(modificationsPrevented, preventionString, `${action.input} `);
-            return output.replace(startOfWord(action.input), `${preventionString} `);
+        case ACTION_TYPE.DISABLE_MODIFICATION:
+            const preventionHash = getNextPreventionHash();
+            disableModification(preventionHash, `${action.input} `);
+            return output.replace(startOfWord(action.input), `${preventionHash} `);
         case ACTION_TYPE.ENABLE_MODIFICATION:
-            const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === `${action.input} `);
+            const preventionIndex = modificationsCurrentlyPrevented.findIndex(prevention => prevention.input === `${action.input} `);
             if (preventionIndex > -1) {
-                const preventionString = modificationsPrevented[preventionIndex].preventionString;
-                removeFromModificationsPrevented(preventionIndex);
-                return output.replace(startOfWord(preventionString), `${action.input} `);
+                const preventionHash = modificationsCurrentlyPrevented[preventionIndex].preventionHash;
+                enableModification(preventionIndex);
+                return output.replace(startOfWord(preventionHash), `${action.input} `);
             };
             return output;
     }
@@ -141,18 +141,18 @@ const performEndOfWordsFollowedByASpaceReplacement = (output, action) => {
 const performEndOfWordsReplacement = (output, action) => {
     switch (action.type) {
         default:
-        case ACTION_TYPE.REPLACE_NOW:
+        case ACTION_TYPE.REPLACE:
             return output.replace(startOfWord(action.input), `${action.output} `);
-        case ACTION_TYPE.PREVENT_MODIFICATION:
-            const preventionString = getNextPreventionString(modificationsPrevented);
-            addToModificationsPrevented(modificationsPrevented, preventionString, action.input);
-            return output.replace(startOfWord(action.input), `${preventionString} `);
+        case ACTION_TYPE.DISABLE_MODIFICATION:
+            const preventionHash = getNextPreventionHash();
+            disableModification(preventionHash, action.input);
+            return output.replace(startOfWord(action.input), `${preventionHash} `);
         case ACTION_TYPE.ENABLE_MODIFICATION:
-            const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
+            const preventionIndex = modificationsCurrentlyPrevented.findIndex(prevention => prevention.input === action.input);
             if (preventionIndex > -1) {
-                const preventionString = modificationsPrevented[preventionIndex].preventionString;
-                removeFromModificationsPrevented(preventionIndex);
-                return output.replace(anywhere(preventionString), `${action.input} `);
+                const preventionHash = modificationsCurrentlyPrevented[preventionIndex].preventionHash;
+                enableModification(preventionIndex);
+                return output.replace(anywhere(preventionHash), `${action.input} `);
             };
             return output;
     }

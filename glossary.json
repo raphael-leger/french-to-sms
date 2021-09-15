@@ -1,1663 +1,1663 @@
 {
   "wholeWords": [
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "dix-sept",
       "output": "17"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "dix-huit",
       "output": "18"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "dix-neuf",
       "output": "19"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "soixante-dix",
       "output": "70"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "quatre-vingt",
       "output": "80"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "quatre-vingt-dix",
       "output": "90"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "zéro",
       "output": "0"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "un",
       "output": "1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "deux",
       "output": "2"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "trois",
       "output": "3"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "quatre",
       "output": "4"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "cinq",
       "output": "5"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "six",
       "output": "6"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "sept",
       "output": "7"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "huit",
       "output": "8"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "neuf",
       "output": "9"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "dix",
       "output": "10"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "onze",
       "output": "11"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "douze",
       "output": "12"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "treize",
       "output": "13"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "quatorze",
       "output": "14"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "quinze",
       "output": "15"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "seize",
       "output": "16"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "vingt",
       "output": "20"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "trente",
       "output": "30"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "quarante",
       "output": "40"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "cinquante",
       "output": "50"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "soixante",
       "output": "60"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "quelqu'un",
       "output": "qq"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "mois",
       "output": "mwa"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "devoir surveillé",
       "output": "DS"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "s'il te plait",
       "output": "stp"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "s'il vous plait",
       "output": "svp"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "devoir sur table",
       "output": "DST"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "aussi",
       "output": "o6"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "plein",
       "output": "pl1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "pourquoi",
       "output": "pk"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "belle gosse",
       "output": "bg"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "de la",
       "output": "dla"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "cas",
       "output": "K"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "aime",
       "output": "M"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "succession",
       "output": "suxéssion"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "définition",
       "output": "def"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "vertical",
       "output": "vertikal"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "doit",
       "output": "doi"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "selon",
       "output": "slon"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "images",
       "output": "img"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "linkedin",
       "output": "linkdin"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "image",
       "output": "img"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ce que",
       "output": "ske"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "langues",
       "output": "langu"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "environ",
       "output": "±"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "à peu près",
       "output": "±"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "lors",
       "output": "lor"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "comment allez-vous",
       "output": "cv"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "beau gosse",
       "output": "bg"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "d'accord",
       "output": "ok"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "world of warcraft",
       "output": "WoW"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "j'étais",
       "output": "GT"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "à un de ces quatre",
       "output": "A12C4"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "même",
       "output": "mm"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "sinon",
       "output": "sinn"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "avoir",
       "output": "avr"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "appris",
       "output": "apri"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "hier",
       "output": "IR"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "gratuit",
       "output": "gratos"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "gateau",
       "output": "gato"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "besoin",
       "output": "bzoin"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "mort",
       "output": "mor"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "gentil",
       "output": "janti"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "depuis",
       "output": "dpui"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "chiant",
       "output": "chian"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "musique",
       "output": "musik"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "numéro",
       "output": "num"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "j'aurais",
       "output": "joré"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "personnellement",
       "output": "perso"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "t'appelles",
       "output": "tapel"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "tu vas",
       "output": "tva"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "rejoins",
       "output": "rejo1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "les",
       "output": "lé"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "tu fais",
       "output": "tfai"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ton",
       "output": "tn"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "mon",
       "output": "mn"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "quel",
       "output": "kel"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "que veux-tu",
       "output": "kestuveu"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "instagram",
       "output": "insta"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "facebook",
       "output": "FB"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "twitter",
       "output": "twitèr"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "rien à faire",
       "output": "RAF"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "rien à signaler",
       "output": "RAS"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "veux",
       "output": "vE"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "folles",
       "output": "ouf"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "fous",
       "output": "ouf"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "fou",
       "output": "ouf"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "veut",
       "output": "vE"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "modérateur",
       "output": "modo"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "imposture",
       "output": "fake"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "truand",
       "output": "truan"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "grand",
       "output": "gran"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "game boy advance",
       "output": "gba"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "gamecube",
       "output": "ngc"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "playstation 4",
       "output": "ps4"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "playstation 3",
       "output": "ps3"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "playstation 2",
       "output": "ps2"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "playstation",
       "output": "ps"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ouais",
       "output": "oé"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "au fait",
       "output": "ofét"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "désolé",
       "output": "dsl"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "déteste",
       "output": "Dtest"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "toi même tu sais",
       "output": "tmtc"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "j'sais pas",
       "output": "ché po"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "toujours",
       "output": "tjrs"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "comme",
       "output": "kom"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "peut",
       "output": "pE"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "peu",
       "output": "pE"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "mort de rire",
       "output": "mdr"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "pain",
       "output": "p1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "comment ça va ?",
       "output": "cv ?"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "t'es",
       "output": "t"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "j'ai",
       "output": "g"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "message",
       "output": "msg"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "deux",
       "output": "2"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "caractères",
       "output": "caractèr"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "cette",
       "output": "7"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "cet",
       "output": "7"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "langage",
       "output": "langaj"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "proprement",
       "output": "propremen"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "tant",
       "output": "tan"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "temps",
       "output": "tps"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "plusieurs",
       "output": "pluzieur"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "différentes",
       "output": "diférente"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "langues",
       "output": "langu"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "répondre",
       "output": "rep"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "haute",
       "output": "Ote"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "haut",
       "output": "O"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "science",
       "output": "siance"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "vient",
       "output": "vi1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "viens",
       "output": "vi1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "chaîne",
       "output": "chène"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "celle-ci",
       "output": "sell ci"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "a plus",
       "output": "a+"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "tout",
       "output": "tt"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "meilleur ami",
       "output": "bestah"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "trouve",
       "output": "trv"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "temps",
       "output": "tps"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "raison",
       "output": "rézon"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "hors sujet",
       "output": "HS"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "rendez vous",
       "output": "rdv"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "vous",
       "output": "vs"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "nous",
       "output": "ns"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "je voulais",
       "output": "jvoulé"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "fort",
       "output": "for"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "peut-être",
       "output": "pE etr"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "parce que",
       "output": "psk"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "puisque",
       "output": "psk"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "tu as",
       "output": "ta"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "aller",
       "output": "alé"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "puis",
       "output": "pi"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "m'appelle",
       "output": "mapel"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "contre",
       "output": "VS"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "avec",
       "output": "ac"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "prout",
       "output": "pet"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "petite",
       "output": "tit"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "petit",
       "output": "pti"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "longtemps",
       "output": "lgtps"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "bourgeois",
       "output": "bourjoi"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "monsieur",
       "output": "mr"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "mademoiselle",
       "output": "mlle"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "madame",
       "output": "mme"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "stylo",
       "output": "stilo"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "excuse-moi",
       "output": "dsl"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "introduction",
       "output": "1tro"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "de quoi",
       "output": "dkwa"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "merci",
       "output": "marci"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "programme",
       "output": "prog"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "retard",
       "output": "rtar"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "devoir",
       "output": "dvoir"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "apprend",
       "output": "apren"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "soeur",
       "output": "seur"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "d'habitude",
       "output": "dab"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "tiens",
       "output": "ti1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "je viens",
       "output": "jvi1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "je dors",
       "output": "jdor"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "soit",
       "output": "soi"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "sont",
       "output": "st"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "aimé",
       "output": "émé"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "perdu",
       "output": "pRdu"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "saison",
       "output": "cson"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "meilleure amie",
       "output": "bestah"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "c'est",
       "output": "cé"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "je vais",
       "output": "jvé"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "trop",
       "output": "tro"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "non",
       "output": "nn"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ça va",
       "output": "sava"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "mec",
       "output": "mek"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "demain",
       "output": "2m1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "copain",
       "output": "cop1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "à l'aide",
       "output": "àlèd"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "j'y vais",
       "output": "JV"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ordinateur",
       "output": "pc"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "télévision",
       "output": "tv"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "pépère",
       "output": "ppr"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "cassé",
       "output": "kc"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "t'es",
       "output": "T"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "chien",
       "output": "chi1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "j'aime",
       "output": "jM"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "t'aimes",
       "output": "tM"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "con",
       "output": "kon"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "mathématiques",
       "output": "math"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "de rien",
       "output": "2ri1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "cadeaux",
       "output": "kdo"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "cadeau",
       "output": "kdo"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "n'importe quoi",
       "output": "nptk"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "coucou",
       "output": "cc"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "acheté",
       "output": "HT"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "vais",
       "output": "go"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "aucun",
       "output": "ok1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "aussi vite que possible",
       "output": "asap"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "dès que possible",
       "output": "asap"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "avant",
       "output": "avt"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "appetit",
       "output": "nap"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "pas grave",
       "output": "pg"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "coeur",
       "output": "keur"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "idée",
       "output": "ID"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "je suis",
       "output": "chui"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "problème",
       "output": "pb"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "quand",
       "output": "qd"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "rien à signaler",
       "output": "RAS"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "je vais bien",
       "output": "jvébi1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "webcam",
       "output": "cam"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "travail",
       "output": "taff"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "week-end",
       "output": "WE"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "tout à l'heure",
       "output": "taleur"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "bébé",
       "output": "BB"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "toi même tu sais",
       "output": "tmtc"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "bisoux",
       "output": "bsx"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "fille",
       "output": "meuf"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "viens",
       "output": "vi1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "on s'en fiche",
       "output": "OSEF"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "bon",
       "output": "bn"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "compris",
       "output": "kompri"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "pas",
       "output": "pa"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "espèce",
       "output": "spece"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "gros",
       "output": "gro"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "bonsoir",
       "output": "bsr"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "rentre",
       "output": "rentr"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "soir",
       "output": "soar"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "sérieux",
       "output": "serieu"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "interrogation",
       "output": "1tero"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "aimé",
       "output": "kiffé"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "étant",
       "output": "étan"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "anneaux",
       "output": "ano"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "anneau",
       "output": "ano"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "téléphone",
       "output": "tel"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "des",
       "output": "D"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "et",
       "output": "é"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "est",
       "output": "é"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "tous",
       "output": "ts"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "qui",
       "output": "ki"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "de nouveau",
       "output": "2 9"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "nouveau",
       "output": "new"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "comment",
       "output": "cmt"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "je t'adore",
       "output": "jtdr"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ce qu'ils",
       "output": "ski"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ce qu'il",
       "output": "ski"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "quoi",
       "output": "koi"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "pendant",
       "output": "pdt"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "un",
       "output": "1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "je t'aime",
       "output": "jtm"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "objet",
       "output": "objé"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "document",
       "output": "doc"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "réponds",
       "output": "rep"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "répond",
       "output": "rep"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "interrogation",
       "output": "intero"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "football",
       "output": "foot"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "chaud",
       "output": "cho"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "je sais",
       "output": "jsé"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "salut",
       "output": "lu"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "j'espère",
       "output": "jspr"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "bonjour",
       "output": "bjr"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ca va",
       "output": "cv"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "bonne chance",
       "output": "gl"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "bien joué",
       "output": "gg"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "bien",
       "output": "b1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "rien",
       "output": "ri1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "neuf",
       "output": "9"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "main",
       "output": "m1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "dans",
       "output": "ds"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "cul",
       "output": "Q"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "vois",
       "output": "voi"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "voit",
       "output": "voi"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "chat",
       "output": "cha"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "chats",
       "output": "cha"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "eu",
       "output": "u"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "de",
       "output": "2"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "pour",
       "output": "pr"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "fus",
       "output": "fu"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "fut",
       "output": "fu"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ses",
       "output": "sé"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ces",
       "output": "sé"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "lors",
       "output": "lor"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ah",
       "output": "a"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "oké",
       "output": "ok"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "okay",
       "output": "ok"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "es",
       "output": "é"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "qu'est ce que",
       "output": "keske"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "qu'est ce",
       "output": "kes"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "après",
       "output": "apré"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "lait",
       "output": "lè"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "est-à-dire",
       "output": "ad"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "aujourd",
       "output": "oj"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "elles",
       "output": "L"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "jets",
       "output": "jè"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "association",
       "output": "asso"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "information",
       "output": "info"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "oeufs",
       "output": "zeu"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "oeuf",
       "output": "euf"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "eux",
       "output": "E"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "vas y",
       "output": "azy"
     }
   ],
   "anywhere": [
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "'",
       "output": ""
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ph",
       "output": "f"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ère",
       "output": "R"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "aire",
       "output": "R"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "air",
       "output": "èr"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "cl",
       "output": "kl"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "caca",
       "output": "kk"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "vemen",
       "output": "vmen"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "tech",
       "output": "tek"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "lement",
       "output": "lmen"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "ail"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ain",
       "output": "1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ai",
       "output": "è"
     },
@@ -1666,96 +1666,96 @@
       "input": "ail"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ssées",
       "output": "C"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ssés",
       "output": "C"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ssé",
       "output": "C"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ée",
       "output": "é"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ées",
       "output": "é"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ques",
       "output": "kes"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "aine",
       "output": "N"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ène",
       "output": "N"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ènne",
       "output": "N"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "sserie",
       "output": "ssri"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "eaux",
       "output": "o"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "eau",
       "output": "o"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "aux",
       "output": "o"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "au",
       "output": "o"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "je",
       "output": "j"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "vé",
       "output": "V"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "gé",
       "output": "G"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": " nn "
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "nn",
       "output": "n"
     },
@@ -1764,21 +1764,21 @@
       "input": " nn "
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "elle",
       "output": "L"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "présente",
       "output": "prézent"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": " tt "
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "tt",
       "output": "t"
     },
@@ -1787,76 +1787,76 @@
       "input": " tt "
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "pp",
       "output": "p"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "mm",
       "output": "m"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "rr",
       "output": "r"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ff",
       "output": "f"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "dées",
       "output": "D"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "dée",
       "output": "D"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "dé",
       "output": "D"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "dé",
       "output": "D"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "quun",
       "output": "k1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "iens",
       "output": "i1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ien",
       "output": "i1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ç",
       "output": "ss"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "cti",
       "output": "xi"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": " cc "
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "cc",
       "output": "x"
     },
@@ -1867,90 +1867,90 @@
   ],
   "startOfWords": [
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ce",
       "output": "s"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "h",
       "output": ""
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "cvs",
       "output": "cv"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "fera",
       "output": "fra"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "plus",
       "output": "+"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "moins",
       "output": "-"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "toi",
       "output": "twa"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "moi",
       "output": "mwa"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "clair",
       "output": "kler"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "dis-moi",
       "output": "di mwa"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "occupé",
       "output": "OQP"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "tu es",
       "output": "T"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "les",
       "output": "lé"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ça va",
       "output": "sava"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "sin"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "cin"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "si",
       "output": "6"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ci",
       "output": "6"
     },
@@ -1963,180 +1963,180 @@
       "input": "cin"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "parl",
       "output": "cauz"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "travaill",
       "output": "taff"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "oui",
       "output": "wi"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ne",
       "output": "n"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "a1",
       "output": "1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "se",
       "output": "s"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "h",
       "output": ""
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "premi",
       "output": "1"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "illi",
       "output": "ili"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "lh",
       "output": "l"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "dh",
       "output": "d"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "nh",
       "output": "d"
     }
   ],
   "endOfWords": [
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "nds",
       "output": "n"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "che",
       "output": "ch"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "hui",
       "output": "d"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "néma",
       "output": "né"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ible",
       "output": "ib"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "met",
       "output": "mé"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "mets",
       "output": "mé"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ort",
       "output": "or"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ées",
       "output": "é"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ez",
       "output": "é"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ger",
       "output": "G"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "gée",
       "output": "G"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "gées",
       "output": "G"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "gés",
       "output": "G"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "gé",
       "output": "G"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ie",
       "output": "i"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ors",
       "output": "or"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ble",
       "output": "b"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "sse"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "sses"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "rse"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "se",
       "output": "z"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "sses"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ses",
       "output": "z"
     },
@@ -2149,66 +2149,66 @@
       "input": "sses"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ble",
       "output": "b"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "très",
       "output": "tré"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "bah",
       "output": "ba"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "bles",
       "output": "b"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "aient",
       "output": "è"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "lte",
       "output": "lt"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "nard",
       "output": "nar"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "amer"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "1er"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "super"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "fer"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "mer"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "master"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "er",
       "output": "é"
     },
@@ -2237,247 +2237,247 @@
       "input": "1er"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "res",
       "output": "re"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ons",
       "output": "on"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "jet",
       "output": "jè"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ont",
       "output": "on"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ant",
       "output": "an"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "vos",
       "output": "vo"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "nts",
       "output": "nt"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ste",
       "output": "st"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ches",
       "output": "che"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "page",
       "output": "paj"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "gles",
       "output": "gl"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "vert",
       "output": "ver"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "vers",
       "output": "ver"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "and",
       "output": "an"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "vint",
       "output": "vin"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ais",
       "output": "è"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ait",
       "output": "è"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "merde",
       "output": "merd"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "sse",
       "output": "ss"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ment",
       "output": "men"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ère",
       "output": "èr"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "part",
       "output": "par"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "pars",
       "output": "par"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ées",
       "output": "é"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "és",
       "output": "é"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ée",
       "output": "é"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "dès",
       "output": "dè"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "Dès",
       "output": "Dè"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "rent",
       "output": "ren"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "grace",
       "output": "grass"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "plutot",
       "output": "+to"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "fruit",
       "output": "frui"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "plus tot",
       "output": "+ to"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "nille",
       "output": "niy"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "rille",
       "output": "riy"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ard",
       "output": "ar"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "fois",
       "output": "foi"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "foit",
       "output": "foi"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "vre",
       "output": "v"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "que",
       "output": "ke"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ge",
       "output": "j"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "mille",
       "output": "mi"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ville",
       "output": "vil"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ient",
       "output": "ien"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "iens",
       "output": "ien"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "Lnt",
       "output": "L"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "sest",
       "output": "sè"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "kes",
       "output": "k"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ke",
       "output": "k"
     },
@@ -2486,73 +2486,73 @@
       "input": "rse"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "cours",
       "output": "kour"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "illion",
       "output": "ilion"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ois",
       "output": "oi"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ts",
       "output": ""
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "gens",
       "output": "jan"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "uit",
       "output": "ui"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "ès",
       "output": "è"
     }
   ],
   "endOfWordsFollowedByASpace": [
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "le",
       "output": "l"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "ke"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "ce"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "ine"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "une"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "te"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "pe"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "e",
       "output": " "
     },
@@ -2581,31 +2581,31 @@
       "input": "ke"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "kes"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "ces"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "ines"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "unes"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "tes"
     },
     {
-      "type": "prevent_modification",
+      "type": "disable_modification",
       "input": "pes"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "es",
       "output": " "
     },
@@ -2618,7 +2618,7 @@
       "input": "tes"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "es",
       "output": "e "
     },
@@ -2639,12 +2639,12 @@
       "input": "kes"
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": "j vs",
       "output": "jvou "
     },
     {
-      "type": "replace_now",
+      "type": "replace",
       "input": " j",
       "output": " j"
     }

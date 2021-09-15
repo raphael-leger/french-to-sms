@@ -36,14 +36,13 @@ You can test the algorithm out on this [demo page](https://raphael-leger.github.
 
 The algorithm behind this project is based upon a custom-made glossary. It performs several replacements of characters in a given order. Some specific replacements are made at the end of words, others at the start of words, other in the middle of them, and some specific words are also completely replaced.
 
-### Replacements prevention
+### Disable/enable replacements
 By default, the whole text input is subject to replacements. Though, some characters can be protected from replacements for a given time.
 
 For instance, we may want to replace every occurence of "si" by "6" as it is a good sms equivalent ("sinon" would become "6non", "aussi" would become "au6").
 
 But some sounds like "sin" often sound like `zin` so replacing "si" by "6" would be wrongly interpreted ("usine" would become "u6ne").
-So we may want to prevent replacements on "sin" while we perform a replacements on "si", then later-on re-enable the replacements on "sin".
-This is why there is a replacement prevention system in the algorithm.
+So we may want to disable replacements on "sin" while we perform a replacements on "si", then later-on re-enable the replacements on "sin".
 
 
 ## Glossary
@@ -52,8 +51,8 @@ The glossary should enable a good quantity of french words and sentences to be s
 It was built from scratch by kind of "reverse engineering" the French language and the way it can be shortened up based on phonetics.
 
 Ths glossary contains actions and there are 3 types of actions:
-- `replace_now`: to replace some characters by some other characters
-- `prevent_modification`: to prevent some characters from being replaced
+- `replace`: to replace some characters by some other characters
+- `disable_modification`: to prevent some characters from being replaced
 - `enable_modification`: to re-allow some characters to be replaced
 
 
