@@ -49,6 +49,13 @@ test('completeSentences', t => {
 
     t.equal(
         frenchToSms(
+            `Bonjour tout le monde ! J'espère que vous allez bien ! Moi la patate !`
+        ),
+        'bjr tt lmond ! jspr k vs allé b1 ! mwa la patate !'
+    );
+
+    t.equal(
+        frenchToSms(
             `Le tofu ou fromage de soja est un aliment d'origine chinoise, issu du caillage du lait de soja. C'est une pâte blanche, molle, peu odorante et au goût plutôt neutre, constituant une base importante de l'alimentation asiatique, et aussi consommé par des végétariens et végétaliens occidentaux.`
         ),
         'ltofu ou fromaj 2 soja é 1 alimen dorigine chinoiz, issu du caillaj du lè 2 soja. cé une pate blanch, moll, pE odorante é o goût +to nutr, constituan une baz importante 2 lalimentation asiatik, é o6 consomé par D VGtari1 é VGtali1 occidento.'

@@ -1721,9 +1721,17 @@
       "output": "prézent"
     },
     {
+      "type": "prevent_modification",
+      "input": " tt "
+    },
+    {
       "type": "replace_now",
       "input": "tt",
       "output": "t"
+    },
+    {
+      "type": "enable_modification",
+      "input": " tt "
     },
     {
       "type": "replace_now",
