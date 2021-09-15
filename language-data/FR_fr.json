@@ -1,530 +1,2084 @@
 {
-    "exactWords": [
-        { "dix-sept": "17" },
-        { "dix-huit": "18" },
-        { "dix-neuf": "19" },
-        { "soixante-dix": "70" },
-        { "quatre-vingt": "80" },
-        { "quatre-vingt-dix": "90" },
-        { "zéro": "0" },
-        { "un": "1" },
-        { "deux": "2" },
-        { "trois": "3" },
-        { "quatre": "4" },
-        { "cinq": "5" },
-        { "six": "6" },
-        { "sept": "7" },
-        { "huit": "8" },
-        { "neuf": "9" },
-        { "dix": "10" },
-        { "onze": "11" },
-        { "douze": "12" },
-        { "treize": "13" },
-        { "quatorze": "14" },
-        { "quinze": "15" },
-        { "seize": "16" },
-        { "vingt": "20" },
-        { "trente": "30" },
-        { "quarante": "40" },
-        { "cinquante": "50" },
-        { "soixante": "60" },
-        { "quelqu'un": "qq" },
-        { "mois": "mwa" },
-        { "devoir surveillé": "DS" },
-        { "devoir sur table": "DST" },
-        { "aussi": "o6" },
-        { "plein": "pl1" },
-        { "pourquoi": "pk" },
-        { "belle gosse": "bg" },
-        { "de la": "dla" },
-        { "cas": "K" },
-        { "aime": "M" },
-        { "succession": "suxéssion" },
-        { "définition": "def" },
-        { "vertical": "vertikal" },
-        { "doit": "doi" },
-        { "selon": "slon" },
-        { "images": "img" },
-        { "image": "img" },
-        { "ce que": "ske" },
-        { "langues": "langu" },
-        { "environ": "±" },
-        { "à peu près": "±" },
-        { "lors": "lor" },
-        { "comment allez-vous": "cv" },
-        { "beau gosse": "bg" },
-        { "d'accord": "ok" },
-        { "world of warcraft": "WoW" },
-        { "j'étais": "GT" },
-        { "à un de ces quatre": "A12C4" },
-        { "même": "mm" },
-        { "sinon": "sinn" },
-        { "avoir": "avr" },
-        { "appris": "apri" },
-        { "hier": "IR" },
-        { "gratuit": "gratos" },
-        { "gateau": "gato" },
-        { "besoin": "bzoin" },
-        { "mort": "mor" },
-        { "gentil": "janti" },
-        { "depuis": "dpui" },
-        { "chiant": "chian" },
-        { "musique": "musik" },
-        { "numéro": "num" },
-        { "j'aurais": "joré" },
-        { "personnellement": "perso" },
-        { "t'appelles": "tapel" },
-        { "tu vas": "tva" },
-        { "rejoins": "rejo1" },
-        { "les": "lé" },
-        { "tu fais": "tfai" },
-        { "ton": "tn" },
-        { "mon": "mn" },
-        { "quel": "kel" },
-        { "que veux-tu": "kestuveu" },
-        { "rien à faire": "RAF" },
-        { "rien à signaler": "RAS" },
-        { "veux": "vE" },
-        { "veut": "vE" },
-        { "modérateur": "modo" },
-        { "imposture": "fake" },
-        { "truand": "truan" },
-        { "grand": "gran" },
-        { "game boy advance": "gba" },
-        { "gamecube": "ngc" },
-        { "playstation 4": "ps4" },
-        { "playstation 3": "ps3" },
-        { "playstation 2": "ps2" },
-        { "playstation": "ps" },
-        { "ouais": "oé" },
-        { "au fait": "ofét" },
-        { "désolé": "dsl" },
-        { "déteste": "Dtest" },
-        { "toi même tu sais": "tmtc" },
-        { "j'sais pas": "ché po" },
-        { "toujours": "tjrs" },
-        { "comme": "kom" },
-        { "peut": "pE" },
-        { "peu": "pE" },
-        { "mort de rire": "mdr" },
-        { "pain": "p1" },
-        { "comment ça va ?": "cv ?" },
-        { "t'es": "t" },
-        { "j'ai": "g" },
-        { "message": "msg" },
-        { "deux": "2" },
-        { "caractères": "caractèr" },
-        { "cette": "7" },
-        { "cet": "7" },
-        { "langage": "langaj" },
-        { "proprement": "propremen" },
-        { "tant": "tan" },
-        { "temps": "tps" },
-        { "plusieurs": "pluzieur" },
-        { "différentes": "diférente" },
-        { "langues": "langu" },
-        { "répondre": "rep" },
-        { "haute": "Ote" },
-        { "haut": "O" },
-        { "science": "siance" },
-        { "vient": "vi1" },
-        { "viens": "vi1" },
-        { "chaîne": "chène" },
-        { "celle-ci": "sell ci" },
-        { "a plus": "a+" },
-        { "tout": "tt" },
-        { "meilleur ami": "bestah" },
-        { "trouve": "trv" },
-        { "temps": "tps" },
-        { "raison": "rézon" },
-        { "hors sujet": "HS" },
-        { "rendez vous": "rdv" },
-        { "vous": "vs" },
-        { "nous": "ns" },
-        { "je voulais": "jvoulé" },
-        { "fort": "for" },
-        { "peut-être": "pE etr" },
-        { "parce que": "psk" },
-        { "puisque": "psk" },
-        { "tu as": "ta" },
-        { "aller": "alé" },
-        { "puis": "pi" },
-        { "m'appelle": "mapel" },
-        { "contre": "VS" },
-        { "avec": "ac" },
-        { "prout": "pet" },
-        { "petite": "tit" },
-        { "petit": "pti" },
-        { "longtemps": "lgtps" },
-        { "bourgeois": "bourjoi" },
-        { "monsieur": "Mr" },
-        { "mademoiselle": "Mlle" },
-        { "madame": "Mme" },
-        { "stylo": "stilo" },
-        { "excuse-moi": "dsl" },
-        { "introduction": "1tro" },
-        { "de quoi": "dkwa" },
-        { "merci": "marci" },
-        { "programme": "prog" },
-        { "retard": "rtar" },
-        { "devoir": "dvoir" },
-        { "apprend": "apren" },
-        { "soeur": "seur" },
-        { "d'habitude": "dab" },
-        { "tiens": "ti1" },
-        { "je viens": "jvi1" },
-        { "je dors": "jdor" },
-        { "soit": "soi" },
-        { "sont": "st" },
-        { "aimé": "émé" },
-        { "perdu": "pRdu" },
-        { "saison": "cson" },
-        { "meilleure amie": "bestah" },
-        { "c'est": "cé" },
-        { "je vais": "jvé" },
-        { "trop": "tro" },
-        { "non": "nn" },
-        { "ça va": "sava" },
-        { "mec": "mek" },
-        { "demain": "2m1" },
-        { "copain": "cop1" },
-        { "à l'aide": "àlèd" },
-        { "j'y vais": "JV" },
-        { "ordinateur": "pc" },
-        { "télévision": "tv" },
-        { "pépère": "ppr" },
-        { "cassé": "kc" },
-        { "t'es": "T" },
-        { "chien": "chi1" },
-        { "j'aime": "jM" },
-        { "t'aimes": "tM" },
-        { "con": "kon" },
-        { "mathématiques": "math" },
-        { "de rien": "2ri1" },
-        { "cadeaux": "kdo" },
-        { "cadeau": "kdo" },
-        { "n'importe quoi": "nptk" },
-        { "coucou": "cc" },
-        { "acheté": "HT" },
-        { "vais": "go" },
-        { "aucun": "ok1" },
-        { "aussi vite que possible": "asap" },
-        { "dès que possible": "asap" },
-        { "avant": "avt" },
-        { "appetit": "nap" },
-        { "pas grave": "pg" },
-        { "coeur": "keur" },
-        { "idée": "ID" },
-        { "je suis": "chui" },
-        { "problème": "pb" },
-        { "quand": "qd" },
-        { "rien à signaler": "RAS" },
-        { "je vais bien": "jvébi1" },
-        { "webcam": "cam" },
-        { "travail": "taff" },
-        { "week-end": "WE" },
-        { "tout à l'heure": "taleur" },
-        { "bébé": "BB" },
-        { "toi même tu sais": "tmtc" },
-        { "bisoux": "bsx" },
-        { "fille": "meuf" },
-        { "viens": "vi1" },
-        { "on s'en fiche": "OSEF" },
-        { "bon": "bn" },
-        { "compris": "kompri" },
-        { "pas": "pa" },
-        { "espèce": "spece" },
-        { "gros": "gro" },
-        { "bonsoir": "bsr" },
-        { "rentre": "rentr" },
-        { "soir": "soar" },
-        { "sérieux": "serieu" },
-        { "interrogation": "1tero" },
-        { "aimé": "kiffé" },
-        { "étant": "étan" },
-        { "anneaux": "ano" },
-        { "anneau": "ano" },
-        { "téléphone": "tel" },
-        { "des": "D" },
-        { "et": "é" },
-        { "est": "é" },
-        { "tous": "ts" },
-        { "qui": "ki" },
-        { "de nouveau": "2 9" },
-        { "nouveau": "new" },
-        { "comment": "cmt" },
-        { "je t'adore": "jtdr" },
-        { "ce qu'ils": "ski" },
-        { "ce qu'il": "ski" },
-        { "quoi": "koi" },
-        { "pendant": "pdt" },
-        { "un": "1" },
-        { "je t'aime": "jtm" },
-        { "objet": "objé" },
-        { "document": "doc" },
-        { "réponds": "rep" },
-        { "répond": "rep" },
-        { "interrogation": "intero" },
-        { "football": "foot" },
-        { "chaud": "cho" },
-        { "je sais": "jsé" },
-        { "salut": "lu" },
-        { "j'espère": "jspr" },
-        { "bonjour": "bjr" },
-        { "ca va": "cv" },
-        { "bonne chance": "gl" },
-        { "bien joué": "gg" },
-        { "bien": "b1" },
-        { "rien": "ri1" },
-        { "neuf": "9" },
-        { "main": "m1" },
-        { "dans": "ds" },
-        { "cul": "Q" },
-        { "vois": "voi" },
-        { "voit": "voi" },
-        { "chat": "cha" },
-        { "chats": "cha" },
-        { "eu": "u" },
-        { "de": "2" },
-        { "pour": "pr" },
-        { "fus": "fu" },
-        { "fut": "fu" },
-        { "ses": "sé" },
-        { "ces": "sé" },
-        { "lors": "lor" },
-        { "ah": "a" },
-        { "oké": "ok" },
-        { "okay": "ok" },
-        { "es": "é" },
-        { "qu'est ce que": "keske" },
-        { "qu'est ce": "kes" },
-        { "après": "apré" },
-        { "lait": "lè" },
-        { "est-à-dire": "ad" },
-        { "aujourd": "oj" },
-        { "elles": "L" },
-        { "jets": "jè" },
-        { "association": "asso" },
-        { "information": "info" },
-        { "oeufs": "zeu" },
-        { "oeuf": "euf" },
-        { "eux": "E" },
-        { "vas y": "azy" }
-    ],
-    "wordsContaining": [
-        { "'": "" },
-        { "ph": "f" },
-        { "ère": "R" },
-        { "aire": "R" },
-        { "air": "èr" },
-        { "cl": "kl" },
-        { "caca": "kk" },
-        { "vemen": "vmen" },
-        { "tech": "tek" },
-        { "lement": "lmen" },
-        { "ail": "REPLACEMENT_22" },
-        { "ain": "1" },
-        { "ai": "è" },
-        { "REPLACEMENT_22": "ail" },
-        { "ssées": "C" },
-        { "ssés": "C" },
-        { "ssé": "C" },
-        { "ée": "é" },
-        { "ées": "é" },
-        { "ques": "kes" },
-        { "aine": "N" },
-        { "ène": "N" },
-        { "ènne": "N" },
-        { "sserie": "ssri" },
-        { "eaux": "o" },
-        { "eau": "o" },
-        { "aux": "o" },
-        { "au": "o" },
-        { "je": "j" },
-        { "vé": "V" },
-        { "gé": "G" },
-        { "nn": "n" },
-        { "elle": "L" },
-        { "présente": "prézent" },
-        { "tt": "t" },
-        { "pp": "p" },
-        { "mm": "m" },
-        { "rr": "r" },
-        { "ff": "f" },
-        { "dées": "D" },
-        { "dée": "D" },
-        { "dé": "D" },
-        { "dé": "D" },
-        { "quun": "k1" },
-        { "iens": "i1" },
-        { "ien": "i1" },
-        { "ç": "ss" }
-    ],
-    "wordsStartingWith": [
-        { "ce": "s" },
-        { "h": "" },
-        { "cvs": "cv" },
-        { "fera": "fra" },
-        { "plus": "+" },
-        { "moins": "-" },
-        { "toi": "twa" },
-        { "moi": "mwa" },
-        { "clair": "kler" },
-        { "dis-moi": "di mwa" },
-        { "occupé": "OQP" },
-        { "tu es": "T" },
-        { "les": "lé" },
-        { "ça va": "sava" },
-        { "sin": "REPLACEMENT_1" },
-        { "cin": "REPLACEMENT_2" },
-        { "si": "6" },
-        { "ci": "6" },
-        { "REPLACEMENT_1": "sin" },
-        { "REPLACEMENT_2": "cin" },
-        { "parl": "cauz" },
-        { "travaill": "taff" },
-        { "oui": "wi" },
-        { "ne": "n" },
-        { "a1": "1" },
-        { "se": "s" },
-        { "h": "" },
-        { "premi": "1" },
-        { "illi": "ili" },
-        { "lh": "l" },
-        { "dh": "d" },
-        { "nh": "d" }
-    ],
-    "wordsEndingWith": [
-        { "nds": "n" },
-        { "che": "ch" },
-        { "hui": "d" },
-        { "néma": "né" },
-        { "ible": "ib" },
-        { "met": "mé" },
-        { "mets": "mé" },
-        { "ort": "or" },
-        { "ées": "é" },
-        { "ez": "é" },
-        { "ger": "G" },
-        { "gée": "G" },
-        { "gées": "G" },
-        { "gés": "G" },
-        { "gé": "G" },
-        { "ie": "i" },
-        { "ors": "or" },
-        { "ble": "b" },
-        { "sse": "REPLACEMENT_5" },
-        { "sses": "REPLACEMENT_6" },
-        { "rse": "REPLACEMENT_7" },
-        { "se": "z" },
-        { "sses": "REPLACEMENT_8" },
-        { "ses": "z" },
-        { "REPLACEMENT_8": "sses" },
-        { "REPLACEMENT_5": "sse" },
-        { "REPLACEMENT_6": "sses" },
-        { "ble": "b" },
-        { "très": "tré" },
-        { "bah": "ba" },
-        { "bles": "b" },
-        { "aient": "è" },
-        { "lte": "lt" },
-        { "nard": "nar" },
-        { "amer": "REPLACEMENT_11" },
-        { "1er": "REPLACEMENT_12" },
-        { "super": "REPLACEMENT_13" },
-        { "fer": "REPLACEMENT_14" },
-        { "mer": "REPLACEMENT_15" },
-        { "master": "REPLACEMENT_16" },
-        { "er": "é" },
-        { "REPLACEMENT_14": "fer" },
-        { "REPLACEMENT_15": "mer" },
-        { "REPLACEMENT_16": "master" },
-        { "REPLACEMENT_13": "super" },
-        { "REPLACEMENT_11": "amer" },
-        { "REPLACEMENT_12": "1er" },
-        { "res": "re" },
-        { "ons": "on" },
-        { "jet": "jè" },
-        { "ont": "on" },
-        { "ant": "an" },
-        { "vos": "vo" },
-        { "nts": "nt" },
-        { "ste": "st" },
-        { "ches": "che" },
-        { "page": "paj" },
-        { "gles": "gl" },
-        { "vert": "ver" },
-        { "vers": "ver" },
-        { "and": "an" },
-        { "vint": "vin" },
-        { "ais": "è" },
-        { "ait": "è" },
-        { "merde": "merd" },
-        { "sse": "ss" },
-        { "ment": "men" },
-        { "ère": "èr" },
-        { "part": "par" },
-        { "pars": "par" },
-        { "ées": "é" },
-        { "és": "é" },
-        { "ée": "é" },
-        { "dès": "dè" },
-        { "Dès": "Dè" },
-        { "rent": "ren" },
-        { "grace": "grass" },
-        { "plutot": "+to" },
-        { "fruit": "frui" },
-        { "plus tot": "+ to" },
-        { "nille": "niy" },
-        { "rille": "riy" },
-        { "ard": "ar" },
-        { "fois": "foi" },
-        { "foit": "foi" },
-        { "vre": "v" },
-        { "que": "ke" },
-        { "ge": "j" },
-        { "mille": "mi" },
-        { "ville": "vil" },
-        { "ient": "ien" },
-        { "iens": "ien" },
-        { "Lnt": "L" },
-        { "sest": "sè" },
-        { "kes": "k" },
-        { "ke": "k" },
-        { "REPLACEMENT_7": "rse" },
-        { "cours": "kour" },
-        { "illion": "ilion" },
-        { "ois": "oi" },
-        { "ts": "" },
-        { "gens": "jan" }
-    ],
-    "wordsWithATrailingLetter": [
-        { "le": "l" },
-        { "ke": "REPLACEMENT_24 " },
-        { "ce": "REPLACEMENT_25 " },
-        { "ine": "REPLACEMENT_26 " },
-        { "une": "REPLACEMENT_27 " },
-        { "te": "REPLACEMENT_28 " },
-        { "pe": "REPLACEMENT_29 " },
-        { "e": " " },
-        { "REPLACEMENT_29": "pe " },
-        { "REPLACEMENT_28": "te " },
-        { "REPLACEMENT_27": "une " },
-        { "REPLACEMENT_26": "ine " },
-        { "REPLACEMENT_25": "ce " },
-        { "REPLACEMENT_24": "ke " },
-        { "kes": "REPLACEMENT_24 " },
-        { "ces": "REPLACEMENT_25 " },
-        { "ines": "REPLACEMENT_26 " },
-        { "unes": "REPLACEMENT_27 " },
-        { "tes": "REPLACEMENT_28 " },
-        { "pes": "REPLACEMENT_29 " },
-        { "es": " " },
-        { "REPLACEMENT_29": "pe " },
-        { "REPLACEMENT_28": "te " },
-        { "REPLACEMENT_27": "une " },
-        { "REPLACEMENT_26": "ine " },
-        { "REPLACEMENT_25": "ces " },
-        { "REPLACEMENT_24": "kes " }
-    ]
+  "exactWords": [
+    {
+      "input": "dix-sept",
+      "output": "17"
+    },
+    {
+      "input": "dix-huit",
+      "output": "18"
+    },
+    {
+      "input": "dix-neuf",
+      "output": "19"
+    },
+    {
+      "input": "soixante-dix",
+      "output": "70"
+    },
+    {
+      "input": "quatre-vingt",
+      "output": "80"
+    },
+    {
+      "input": "quatre-vingt-dix",
+      "output": "90"
+    },
+    {
+      "input": "zéro",
+      "output": "0"
+    },
+    {
+      "input": "un",
+      "output": "1"
+    },
+    {
+      "input": "deux",
+      "output": "2"
+    },
+    {
+      "input": "trois",
+      "output": "3"
+    },
+    {
+      "input": "quatre",
+      "output": "4"
+    },
+    {
+      "input": "cinq",
+      "output": "5"
+    },
+    {
+      "input": "six",
+      "output": "6"
+    },
+    {
+      "input": "sept",
+      "output": "7"
+    },
+    {
+      "input": "huit",
+      "output": "8"
+    },
+    {
+      "input": "neuf",
+      "output": "9"
+    },
+    {
+      "input": "dix",
+      "output": "10"
+    },
+    {
+      "input": "onze",
+      "output": "11"
+    },
+    {
+      "input": "douze",
+      "output": "12"
+    },
+    {
+      "input": "treize",
+      "output": "13"
+    },
+    {
+      "input": "quatorze",
+      "output": "14"
+    },
+    {
+      "input": "quinze",
+      "output": "15"
+    },
+    {
+      "input": "seize",
+      "output": "16"
+    },
+    {
+      "input": "vingt",
+      "output": "20"
+    },
+    {
+      "input": "trente",
+      "output": "30"
+    },
+    {
+      "input": "quarante",
+      "output": "40"
+    },
+    {
+      "input": "cinquante",
+      "output": "50"
+    },
+    {
+      "input": "soixante",
+      "output": "60"
+    },
+    {
+      "input": "quelqu'un",
+      "output": "qq"
+    },
+    {
+      "input": "mois",
+      "output": "mwa"
+    },
+    {
+      "input": "devoir surveillé",
+      "output": "DS"
+    },
+    {
+      "input": "devoir sur table",
+      "output": "DST"
+    },
+    {
+      "input": "aussi",
+      "output": "o6"
+    },
+    {
+      "input": "plein",
+      "output": "pl1"
+    },
+    {
+      "input": "pourquoi",
+      "output": "pk"
+    },
+    {
+      "input": "belle gosse",
+      "output": "bg"
+    },
+    {
+      "input": "de la",
+      "output": "dla"
+    },
+    {
+      "input": "cas",
+      "output": "K"
+    },
+    {
+      "input": "aime",
+      "output": "M"
+    },
+    {
+      "input": "succession",
+      "output": "suxéssion"
+    },
+    {
+      "input": "définition",
+      "output": "def"
+    },
+    {
+      "input": "vertical",
+      "output": "vertikal"
+    },
+    {
+      "input": "doit",
+      "output": "doi"
+    },
+    {
+      "input": "selon",
+      "output": "slon"
+    },
+    {
+      "input": "images",
+      "output": "img"
+    },
+    {
+      "input": "image",
+      "output": "img"
+    },
+    {
+      "input": "ce que",
+      "output": "ske"
+    },
+    {
+      "input": "langues",
+      "output": "langu"
+    },
+    {
+      "input": "environ",
+      "output": "±"
+    },
+    {
+      "input": "à peu près",
+      "output": "±"
+    },
+    {
+      "input": "lors",
+      "output": "lor"
+    },
+    {
+      "input": "comment allez-vous",
+      "output": "cv"
+    },
+    {
+      "input": "beau gosse",
+      "output": "bg"
+    },
+    {
+      "input": "d'accord",
+      "output": "ok"
+    },
+    {
+      "input": "world of warcraft",
+      "output": "WoW"
+    },
+    {
+      "input": "j'étais",
+      "output": "GT"
+    },
+    {
+      "input": "à un de ces quatre",
+      "output": "A12C4"
+    },
+    {
+      "input": "même",
+      "output": "mm"
+    },
+    {
+      "input": "sinon",
+      "output": "sinn"
+    },
+    {
+      "input": "avoir",
+      "output": "avr"
+    },
+    {
+      "input": "appris",
+      "output": "apri"
+    },
+    {
+      "input": "hier",
+      "output": "IR"
+    },
+    {
+      "input": "gratuit",
+      "output": "gratos"
+    },
+    {
+      "input": "gateau",
+      "output": "gato"
+    },
+    {
+      "input": "besoin",
+      "output": "bzoin"
+    },
+    {
+      "input": "mort",
+      "output": "mor"
+    },
+    {
+      "input": "gentil",
+      "output": "janti"
+    },
+    {
+      "input": "depuis",
+      "output": "dpui"
+    },
+    {
+      "input": "chiant",
+      "output": "chian"
+    },
+    {
+      "input": "musique",
+      "output": "musik"
+    },
+    {
+      "input": "numéro",
+      "output": "num"
+    },
+    {
+      "input": "j'aurais",
+      "output": "joré"
+    },
+    {
+      "input": "personnellement",
+      "output": "perso"
+    },
+    {
+      "input": "t'appelles",
+      "output": "tapel"
+    },
+    {
+      "input": "tu vas",
+      "output": "tva"
+    },
+    {
+      "input": "rejoins",
+      "output": "rejo1"
+    },
+    {
+      "input": "les",
+      "output": "lé"
+    },
+    {
+      "input": "tu fais",
+      "output": "tfai"
+    },
+    {
+      "input": "ton",
+      "output": "tn"
+    },
+    {
+      "input": "mon",
+      "output": "mn"
+    },
+    {
+      "input": "quel",
+      "output": "kel"
+    },
+    {
+      "input": "que veux-tu",
+      "output": "kestuveu"
+    },
+    {
+      "input": "rien à faire",
+      "output": "RAF"
+    },
+    {
+      "input": "rien à signaler",
+      "output": "RAS"
+    },
+    {
+      "input": "veux",
+      "output": "vE"
+    },
+    {
+      "input": "veut",
+      "output": "vE"
+    },
+    {
+      "input": "modérateur",
+      "output": "modo"
+    },
+    {
+      "input": "imposture",
+      "output": "fake"
+    },
+    {
+      "input": "truand",
+      "output": "truan"
+    },
+    {
+      "input": "grand",
+      "output": "gran"
+    },
+    {
+      "input": "game boy advance",
+      "output": "gba"
+    },
+    {
+      "input": "gamecube",
+      "output": "ngc"
+    },
+    {
+      "input": "playstation 4",
+      "output": "ps4"
+    },
+    {
+      "input": "playstation 3",
+      "output": "ps3"
+    },
+    {
+      "input": "playstation 2",
+      "output": "ps2"
+    },
+    {
+      "input": "playstation",
+      "output": "ps"
+    },
+    {
+      "input": "ouais",
+      "output": "oé"
+    },
+    {
+      "input": "au fait",
+      "output": "ofét"
+    },
+    {
+      "input": "désolé",
+      "output": "dsl"
+    },
+    {
+      "input": "déteste",
+      "output": "Dtest"
+    },
+    {
+      "input": "toi même tu sais",
+      "output": "tmtc"
+    },
+    {
+      "input": "j'sais pas",
+      "output": "ché po"
+    },
+    {
+      "input": "toujours",
+      "output": "tjrs"
+    },
+    {
+      "input": "comme",
+      "output": "kom"
+    },
+    {
+      "input": "peut",
+      "output": "pE"
+    },
+    {
+      "input": "peu",
+      "output": "pE"
+    },
+    {
+      "input": "mort de rire",
+      "output": "mdr"
+    },
+    {
+      "input": "pain",
+      "output": "p1"
+    },
+    {
+      "input": "comment ça va ?",
+      "output": "cv ?"
+    },
+    {
+      "input": "t'es",
+      "output": "t"
+    },
+    {
+      "input": "j'ai",
+      "output": "g"
+    },
+    {
+      "input": "message",
+      "output": "msg"
+    },
+    {
+      "input": "deux",
+      "output": "2"
+    },
+    {
+      "input": "caractères",
+      "output": "caractèr"
+    },
+    {
+      "input": "cette",
+      "output": "7"
+    },
+    {
+      "input": "cet",
+      "output": "7"
+    },
+    {
+      "input": "langage",
+      "output": "langaj"
+    },
+    {
+      "input": "proprement",
+      "output": "propremen"
+    },
+    {
+      "input": "tant",
+      "output": "tan"
+    },
+    {
+      "input": "temps",
+      "output": "tps"
+    },
+    {
+      "input": "plusieurs",
+      "output": "pluzieur"
+    },
+    {
+      "input": "différentes",
+      "output": "diférente"
+    },
+    {
+      "input": "langues",
+      "output": "langu"
+    },
+    {
+      "input": "répondre",
+      "output": "rep"
+    },
+    {
+      "input": "haute",
+      "output": "Ote"
+    },
+    {
+      "input": "haut",
+      "output": "O"
+    },
+    {
+      "input": "science",
+      "output": "siance"
+    },
+    {
+      "input": "vient",
+      "output": "vi1"
+    },
+    {
+      "input": "viens",
+      "output": "vi1"
+    },
+    {
+      "input": "chaîne",
+      "output": "chène"
+    },
+    {
+      "input": "celle-ci",
+      "output": "sell ci"
+    },
+    {
+      "input": "a plus",
+      "output": "a+"
+    },
+    {
+      "input": "tout",
+      "output": "tt"
+    },
+    {
+      "input": "meilleur ami",
+      "output": "bestah"
+    },
+    {
+      "input": "trouve",
+      "output": "trv"
+    },
+    {
+      "input": "temps",
+      "output": "tps"
+    },
+    {
+      "input": "raison",
+      "output": "rézon"
+    },
+    {
+      "input": "hors sujet",
+      "output": "HS"
+    },
+    {
+      "input": "rendez vous",
+      "output": "rdv"
+    },
+    {
+      "input": "vous",
+      "output": "vs"
+    },
+    {
+      "input": "nous",
+      "output": "ns"
+    },
+    {
+      "input": "je voulais",
+      "output": "jvoulé"
+    },
+    {
+      "input": "fort",
+      "output": "for"
+    },
+    {
+      "input": "peut-être",
+      "output": "pE etr"
+    },
+    {
+      "input": "parce que",
+      "output": "psk"
+    },
+    {
+      "input": "puisque",
+      "output": "psk"
+    },
+    {
+      "input": "tu as",
+      "output": "ta"
+    },
+    {
+      "input": "aller",
+      "output": "alé"
+    },
+    {
+      "input": "puis",
+      "output": "pi"
+    },
+    {
+      "input": "m'appelle",
+      "output": "mapel"
+    },
+    {
+      "input": "contre",
+      "output": "VS"
+    },
+    {
+      "input": "avec",
+      "output": "ac"
+    },
+    {
+      "input": "prout",
+      "output": "pet"
+    },
+    {
+      "input": "petite",
+      "output": "tit"
+    },
+    {
+      "input": "petit",
+      "output": "pti"
+    },
+    {
+      "input": "longtemps",
+      "output": "lgtps"
+    },
+    {
+      "input": "bourgeois",
+      "output": "bourjoi"
+    },
+    {
+      "input": "monsieur",
+      "output": "Mr"
+    },
+    {
+      "input": "mademoiselle",
+      "output": "Mlle"
+    },
+    {
+      "input": "madame",
+      "output": "Mme"
+    },
+    {
+      "input": "stylo",
+      "output": "stilo"
+    },
+    {
+      "input": "excuse-moi",
+      "output": "dsl"
+    },
+    {
+      "input": "introduction",
+      "output": "1tro"
+    },
+    {
+      "input": "de quoi",
+      "output": "dkwa"
+    },
+    {
+      "input": "merci",
+      "output": "marci"
+    },
+    {
+      "input": "programme",
+      "output": "prog"
+    },
+    {
+      "input": "retard",
+      "output": "rtar"
+    },
+    {
+      "input": "devoir",
+      "output": "dvoir"
+    },
+    {
+      "input": "apprend",
+      "output": "apren"
+    },
+    {
+      "input": "soeur",
+      "output": "seur"
+    },
+    {
+      "input": "d'habitude",
+      "output": "dab"
+    },
+    {
+      "input": "tiens",
+      "output": "ti1"
+    },
+    {
+      "input": "je viens",
+      "output": "jvi1"
+    },
+    {
+      "input": "je dors",
+      "output": "jdor"
+    },
+    {
+      "input": "soit",
+      "output": "soi"
+    },
+    {
+      "input": "sont",
+      "output": "st"
+    },
+    {
+      "input": "aimé",
+      "output": "émé"
+    },
+    {
+      "input": "perdu",
+      "output": "pRdu"
+    },
+    {
+      "input": "saison",
+      "output": "cson"
+    },
+    {
+      "input": "meilleure amie",
+      "output": "bestah"
+    },
+    {
+      "input": "c'est",
+      "output": "cé"
+    },
+    {
+      "input": "je vais",
+      "output": "jvé"
+    },
+    {
+      "input": "trop",
+      "output": "tro"
+    },
+    {
+      "input": "non",
+      "output": "nn"
+    },
+    {
+      "input": "ça va",
+      "output": "sava"
+    },
+    {
+      "input": "mec",
+      "output": "mek"
+    },
+    {
+      "input": "demain",
+      "output": "2m1"
+    },
+    {
+      "input": "copain",
+      "output": "cop1"
+    },
+    {
+      "input": "à l'aide",
+      "output": "àlèd"
+    },
+    {
+      "input": "j'y vais",
+      "output": "JV"
+    },
+    {
+      "input": "ordinateur",
+      "output": "pc"
+    },
+    {
+      "input": "télévision",
+      "output": "tv"
+    },
+    {
+      "input": "pépère",
+      "output": "ppr"
+    },
+    {
+      "input": "cassé",
+      "output": "kc"
+    },
+    {
+      "input": "t'es",
+      "output": "T"
+    },
+    {
+      "input": "chien",
+      "output": "chi1"
+    },
+    {
+      "input": "j'aime",
+      "output": "jM"
+    },
+    {
+      "input": "t'aimes",
+      "output": "tM"
+    },
+    {
+      "input": "con",
+      "output": "kon"
+    },
+    {
+      "input": "mathématiques",
+      "output": "math"
+    },
+    {
+      "input": "de rien",
+      "output": "2ri1"
+    },
+    {
+      "input": "cadeaux",
+      "output": "kdo"
+    },
+    {
+      "input": "cadeau",
+      "output": "kdo"
+    },
+    {
+      "input": "n'importe quoi",
+      "output": "nptk"
+    },
+    {
+      "input": "coucou",
+      "output": "cc"
+    },
+    {
+      "input": "acheté",
+      "output": "HT"
+    },
+    {
+      "input": "vais",
+      "output": "go"
+    },
+    {
+      "input": "aucun",
+      "output": "ok1"
+    },
+    {
+      "input": "aussi vite que possible",
+      "output": "asap"
+    },
+    {
+      "input": "dès que possible",
+      "output": "asap"
+    },
+    {
+      "input": "avant",
+      "output": "avt"
+    },
+    {
+      "input": "appetit",
+      "output": "nap"
+    },
+    {
+      "input": "pas grave",
+      "output": "pg"
+    },
+    {
+      "input": "coeur",
+      "output": "keur"
+    },
+    {
+      "input": "idée",
+      "output": "ID"
+    },
+    {
+      "input": "je suis",
+      "output": "chui"
+    },
+    {
+      "input": "problème",
+      "output": "pb"
+    },
+    {
+      "input": "quand",
+      "output": "qd"
+    },
+    {
+      "input": "rien à signaler",
+      "output": "RAS"
+    },
+    {
+      "input": "je vais bien",
+      "output": "jvébi1"
+    },
+    {
+      "input": "webcam",
+      "output": "cam"
+    },
+    {
+      "input": "travail",
+      "output": "taff"
+    },
+    {
+      "input": "week-end",
+      "output": "WE"
+    },
+    {
+      "input": "tout à l'heure",
+      "output": "taleur"
+    },
+    {
+      "input": "bébé",
+      "output": "BB"
+    },
+    {
+      "input": "toi même tu sais",
+      "output": "tmtc"
+    },
+    {
+      "input": "bisoux",
+      "output": "bsx"
+    },
+    {
+      "input": "fille",
+      "output": "meuf"
+    },
+    {
+      "input": "viens",
+      "output": "vi1"
+    },
+    {
+      "input": "on s'en fiche",
+      "output": "OSEF"
+    },
+    {
+      "input": "bon",
+      "output": "bn"
+    },
+    {
+      "input": "compris",
+      "output": "kompri"
+    },
+    {
+      "input": "pas",
+      "output": "pa"
+    },
+    {
+      "input": "espèce",
+      "output": "spece"
+    },
+    {
+      "input": "gros",
+      "output": "gro"
+    },
+    {
+      "input": "bonsoir",
+      "output": "bsr"
+    },
+    {
+      "input": "rentre",
+      "output": "rentr"
+    },
+    {
+      "input": "soir",
+      "output": "soar"
+    },
+    {
+      "input": "sérieux",
+      "output": "serieu"
+    },
+    {
+      "input": "interrogation",
+      "output": "1tero"
+    },
+    {
+      "input": "aimé",
+      "output": "kiffé"
+    },
+    {
+      "input": "étant",
+      "output": "étan"
+    },
+    {
+      "input": "anneaux",
+      "output": "ano"
+    },
+    {
+      "input": "anneau",
+      "output": "ano"
+    },
+    {
+      "input": "téléphone",
+      "output": "tel"
+    },
+    {
+      "input": "des",
+      "output": "D"
+    },
+    {
+      "input": "et",
+      "output": "é"
+    },
+    {
+      "input": "est",
+      "output": "é"
+    },
+    {
+      "input": "tous",
+      "output": "ts"
+    },
+    {
+      "input": "qui",
+      "output": "ki"
+    },
+    {
+      "input": "de nouveau",
+      "output": "2 9"
+    },
+    {
+      "input": "nouveau",
+      "output": "new"
+    },
+    {
+      "input": "comment",
+      "output": "cmt"
+    },
+    {
+      "input": "je t'adore",
+      "output": "jtdr"
+    },
+    {
+      "input": "ce qu'ils",
+      "output": "ski"
+    },
+    {
+      "input": "ce qu'il",
+      "output": "ski"
+    },
+    {
+      "input": "quoi",
+      "output": "koi"
+    },
+    {
+      "input": "pendant",
+      "output": "pdt"
+    },
+    {
+      "input": "un",
+      "output": "1"
+    },
+    {
+      "input": "je t'aime",
+      "output": "jtm"
+    },
+    {
+      "input": "objet",
+      "output": "objé"
+    },
+    {
+      "input": "document",
+      "output": "doc"
+    },
+    {
+      "input": "réponds",
+      "output": "rep"
+    },
+    {
+      "input": "répond",
+      "output": "rep"
+    },
+    {
+      "input": "interrogation",
+      "output": "intero"
+    },
+    {
+      "input": "football",
+      "output": "foot"
+    },
+    {
+      "input": "chaud",
+      "output": "cho"
+    },
+    {
+      "input": "je sais",
+      "output": "jsé"
+    },
+    {
+      "input": "salut",
+      "output": "lu"
+    },
+    {
+      "input": "j'espère",
+      "output": "jspr"
+    },
+    {
+      "input": "bonjour",
+      "output": "bjr"
+    },
+    {
+      "input": "ca va",
+      "output": "cv"
+    },
+    {
+      "input": "bonne chance",
+      "output": "gl"
+    },
+    {
+      "input": "bien joué",
+      "output": "gg"
+    },
+    {
+      "input": "bien",
+      "output": "b1"
+    },
+    {
+      "input": "rien",
+      "output": "ri1"
+    },
+    {
+      "input": "neuf",
+      "output": "9"
+    },
+    {
+      "input": "main",
+      "output": "m1"
+    },
+    {
+      "input": "dans",
+      "output": "ds"
+    },
+    {
+      "input": "cul",
+      "output": "Q"
+    },
+    {
+      "input": "vois",
+      "output": "voi"
+    },
+    {
+      "input": "voit",
+      "output": "voi"
+    },
+    {
+      "input": "chat",
+      "output": "cha"
+    },
+    {
+      "input": "chats",
+      "output": "cha"
+    },
+    {
+      "input": "eu",
+      "output": "u"
+    },
+    {
+      "input": "de",
+      "output": "2"
+    },
+    {
+      "input": "pour",
+      "output": "pr"
+    },
+    {
+      "input": "fus",
+      "output": "fu"
+    },
+    {
+      "input": "fut",
+      "output": "fu"
+    },
+    {
+      "input": "ses",
+      "output": "sé"
+    },
+    {
+      "input": "ces",
+      "output": "sé"
+    },
+    {
+      "input": "lors",
+      "output": "lor"
+    },
+    {
+      "input": "ah",
+      "output": "a"
+    },
+    {
+      "input": "oké",
+      "output": "ok"
+    },
+    {
+      "input": "okay",
+      "output": "ok"
+    },
+    {
+      "input": "es",
+      "output": "é"
+    },
+    {
+      "input": "qu'est ce que",
+      "output": "keske"
+    },
+    {
+      "input": "qu'est ce",
+      "output": "kes"
+    },
+    {
+      "input": "après",
+      "output": "apré"
+    },
+    {
+      "input": "lait",
+      "output": "lè"
+    },
+    {
+      "input": "est-à-dire",
+      "output": "ad"
+    },
+    {
+      "input": "aujourd",
+      "output": "oj"
+    },
+    {
+      "input": "elles",
+      "output": "L"
+    },
+    {
+      "input": "jets",
+      "output": "jè"
+    },
+    {
+      "input": "association",
+      "output": "asso"
+    },
+    {
+      "input": "information",
+      "output": "info"
+    },
+    {
+      "input": "oeufs",
+      "output": "zeu"
+    },
+    {
+      "input": "oeuf",
+      "output": "euf"
+    },
+    {
+      "input": "eux",
+      "output": "E"
+    },
+    {
+      "input": "vas y",
+      "output": "azy"
+    }
+  ],
+  "wordsContaining": [
+    {
+      "input": "'",
+      "output": ""
+    },
+    {
+      "input": "ph",
+      "output": "f"
+    },
+    {
+      "input": "ère",
+      "output": "R"
+    },
+    {
+      "input": "aire",
+      "output": "R"
+    },
+    {
+      "input": "air",
+      "output": "èr"
+    },
+    {
+      "input": "cl",
+      "output": "kl"
+    },
+    {
+      "input": "caca",
+      "output": "kk"
+    },
+    {
+      "input": "vemen",
+      "output": "vmen"
+    },
+    {
+      "input": "tech",
+      "output": "tek"
+    },
+    {
+      "input": "lement",
+      "output": "lmen"
+    },
+    {
+      "input": "ail",
+      "output": "REPLACEMENT_22"
+    },
+    {
+      "input": "ain",
+      "output": "1"
+    },
+    {
+      "input": "ai",
+      "output": "è"
+    },
+    {
+      "input": "REPLACEMENT_22",
+      "output": "ail"
+    },
+    {
+      "input": "ssées",
+      "output": "C"
+    },
+    {
+      "input": "ssés",
+      "output": "C"
+    },
+    {
+      "input": "ssé",
+      "output": "C"
+    },
+    {
+      "input": "ée",
+      "output": "é"
+    },
+    {
+      "input": "ées",
+      "output": "é"
+    },
+    {
+      "input": "ques",
+      "output": "kes"
+    },
+    {
+      "input": "aine",
+      "output": "N"
+    },
+    {
+      "input": "ène",
+      "output": "N"
+    },
+    {
+      "input": "ènne",
+      "output": "N"
+    },
+    {
+      "input": "sserie",
+      "output": "ssri"
+    },
+    {
+      "input": "eaux",
+      "output": "o"
+    },
+    {
+      "input": "eau",
+      "output": "o"
+    },
+    {
+      "input": "aux",
+      "output": "o"
+    },
+    {
+      "input": "au",
+      "output": "o"
+    },
+    {
+      "input": "je",
+      "output": "j"
+    },
+    {
+      "input": "vé",
+      "output": "V"
+    },
+    {
+      "input": "gé",
+      "output": "G"
+    },
+    {
+      "input": "nn",
+      "output": "n"
+    },
+    {
+      "input": "elle",
+      "output": "L"
+    },
+    {
+      "input": "présente",
+      "output": "prézent"
+    },
+    {
+      "input": "tt",
+      "output": "t"
+    },
+    {
+      "input": "pp",
+      "output": "p"
+    },
+    {
+      "input": "mm",
+      "output": "m"
+    },
+    {
+      "input": "rr",
+      "output": "r"
+    },
+    {
+      "input": "ff",
+      "output": "f"
+    },
+    {
+      "input": "dées",
+      "output": "D"
+    },
+    {
+      "input": "dée",
+      "output": "D"
+    },
+    {
+      "input": "dé",
+      "output": "D"
+    },
+    {
+      "input": "dé",
+      "output": "D"
+    },
+    {
+      "input": "quun",
+      "output": "k1"
+    },
+    {
+      "input": "iens",
+      "output": "i1"
+    },
+    {
+      "input": "ien",
+      "output": "i1"
+    },
+    {
+      "input": "ç",
+      "output": "ss"
+    }
+  ],
+  "wordsStartingWith": [
+    {
+      "input": "ce",
+      "output": "s"
+    },
+    {
+      "input": "h",
+      "output": ""
+    },
+    {
+      "input": "cvs",
+      "output": "cv"
+    },
+    {
+      "input": "fera",
+      "output": "fra"
+    },
+    {
+      "input": "plus",
+      "output": "+"
+    },
+    {
+      "input": "moins",
+      "output": "-"
+    },
+    {
+      "input": "toi",
+      "output": "twa"
+    },
+    {
+      "input": "moi",
+      "output": "mwa"
+    },
+    {
+      "input": "clair",
+      "output": "kler"
+    },
+    {
+      "input": "dis-moi",
+      "output": "di mwa"
+    },
+    {
+      "input": "occupé",
+      "output": "OQP"
+    },
+    {
+      "input": "tu es",
+      "output": "T"
+    },
+    {
+      "input": "les",
+      "output": "lé"
+    },
+    {
+      "input": "ça va",
+      "output": "sava"
+    },
+    {
+      "input": "sin",
+      "output": "REPLACEMENT_1"
+    },
+    {
+      "input": "cin",
+      "output": "REPLACEMENT_2"
+    },
+    {
+      "input": "si",
+      "output": "6"
+    },
+    {
+      "input": "ci",
+      "output": "6"
+    },
+    {
+      "input": "REPLACEMENT_1",
+      "output": "sin"
+    },
+    {
+      "input": "REPLACEMENT_2",
+      "output": "cin"
+    },
+    {
+      "input": "parl",
+      "output": "cauz"
+    },
+    {
+      "input": "travaill",
+      "output": "taff"
+    },
+    {
+      "input": "oui",
+      "output": "wi"
+    },
+    {
+      "input": "ne",
+      "output": "n"
+    },
+    {
+      "input": "a1",
+      "output": "1"
+    },
+    {
+      "input": "se",
+      "output": "s"
+    },
+    {
+      "input": "h",
+      "output": ""
+    },
+    {
+      "input": "premi",
+      "output": "1"
+    },
+    {
+      "input": "illi",
+      "output": "ili"
+    },
+    {
+      "input": "lh",
+      "output": "l"
+    },
+    {
+      "input": "dh",
+      "output": "d"
+    },
+    {
+      "input": "nh",
+      "output": "d"
+    }
+  ],
+  "wordsEndingWith": [
+    {
+      "input": "nds",
+      "output": "n"
+    },
+    {
+      "input": "che",
+      "output": "ch"
+    },
+    {
+      "input": "hui",
+      "output": "d"
+    },
+    {
+      "input": "néma",
+      "output": "né"
+    },
+    {
+      "input": "ible",
+      "output": "ib"
+    },
+    {
+      "input": "met",
+      "output": "mé"
+    },
+    {
+      "input": "mets",
+      "output": "mé"
+    },
+    {
+      "input": "ort",
+      "output": "or"
+    },
+    {
+      "input": "ées",
+      "output": "é"
+    },
+    {
+      "input": "ez",
+      "output": "é"
+    },
+    {
+      "input": "ger",
+      "output": "G"
+    },
+    {
+      "input": "gée",
+      "output": "G"
+    },
+    {
+      "input": "gées",
+      "output": "G"
+    },
+    {
+      "input": "gés",
+      "output": "G"
+    },
+    {
+      "input": "gé",
+      "output": "G"
+    },
+    {
+      "input": "ie",
+      "output": "i"
+    },
+    {
+      "input": "ors",
+      "output": "or"
+    },
+    {
+      "input": "ble",
+      "output": "b"
+    },
+    {
+      "input": "sse",
+      "output": "REPLACEMENT_5"
+    },
+    {
+      "input": "sses",
+      "output": "REPLACEMENT_6"
+    },
+    {
+      "input": "rse",
+      "output": "REPLACEMENT_7"
+    },
+    {
+      "input": "se",
+      "output": "z"
+    },
+    {
+      "input": "sses",
+      "output": "REPLACEMENT_8"
+    },
+    {
+      "input": "ses",
+      "output": "z"
+    },
+    {
+      "input": "REPLACEMENT_8",
+      "output": "sses"
+    },
+    {
+      "input": "REPLACEMENT_5",
+      "output": "sse"
+    },
+    {
+      "input": "REPLACEMENT_6",
+      "output": "sses"
+    },
+    {
+      "input": "ble",
+      "output": "b"
+    },
+    {
+      "input": "très",
+      "output": "tré"
+    },
+    {
+      "input": "bah",
+      "output": "ba"
+    },
+    {
+      "input": "bles",
+      "output": "b"
+    },
+    {
+      "input": "aient",
+      "output": "è"
+    },
+    {
+      "input": "lte",
+      "output": "lt"
+    },
+    {
+      "input": "nard",
+      "output": "nar"
+    },
+    {
+      "input": "amer",
+      "output": "REPLACEMENT_11"
+    },
+    {
+      "input": "1er",
+      "output": "REPLACEMENT_12"
+    },
+    {
+      "input": "super",
+      "output": "REPLACEMENT_13"
+    },
+    {
+      "input": "fer",
+      "output": "REPLACEMENT_14"
+    },
+    {
+      "input": "mer",
+      "output": "REPLACEMENT_15"
+    },
+    {
+      "input": "master",
+      "output": "REPLACEMENT_16"
+    },
+    {
+      "input": "er",
+      "output": "é"
+    },
+    {
+      "input": "REPLACEMENT_14",
+      "output": "fer"
+    },
+    {
+      "input": "REPLACEMENT_15",
+      "output": "mer"
+    },
+    {
+      "input": "REPLACEMENT_16",
+      "output": "master"
+    },
+    {
+      "input": "REPLACEMENT_13",
+      "output": "super"
+    },
+    {
+      "input": "REPLACEMENT_11",
+      "output": "amer"
+    },
+    {
+      "input": "REPLACEMENT_12",
+      "output": "1er"
+    },
+    {
+      "input": "res",
+      "output": "re"
+    },
+    {
+      "input": "ons",
+      "output": "on"
+    },
+    {
+      "input": "jet",
+      "output": "jè"
+    },
+    {
+      "input": "ont",
+      "output": "on"
+    },
+    {
+      "input": "ant",
+      "output": "an"
+    },
+    {
+      "input": "vos",
+      "output": "vo"
+    },
+    {
+      "input": "nts",
+      "output": "nt"
+    },
+    {
+      "input": "ste",
+      "output": "st"
+    },
+    {
+      "input": "ches",
+      "output": "che"
+    },
+    {
+      "input": "page",
+      "output": "paj"
+    },
+    {
+      "input": "gles",
+      "output": "gl"
+    },
+    {
+      "input": "vert",
+      "output": "ver"
+    },
+    {
+      "input": "vers",
+      "output": "ver"
+    },
+    {
+      "input": "and",
+      "output": "an"
+    },
+    {
+      "input": "vint",
+      "output": "vin"
+    },
+    {
+      "input": "ais",
+      "output": "è"
+    },
+    {
+      "input": "ait",
+      "output": "è"
+    },
+    {
+      "input": "merde",
+      "output": "merd"
+    },
+    {
+      "input": "sse",
+      "output": "ss"
+    },
+    {
+      "input": "ment",
+      "output": "men"
+    },
+    {
+      "input": "ère",
+      "output": "èr"
+    },
+    {
+      "input": "part",
+      "output": "par"
+    },
+    {
+      "input": "pars",
+      "output": "par"
+    },
+    {
+      "input": "ées",
+      "output": "é"
+    },
+    {
+      "input": "és",
+      "output": "é"
+    },
+    {
+      "input": "ée",
+      "output": "é"
+    },
+    {
+      "input": "dès",
+      "output": "dè"
+    },
+    {
+      "input": "Dès",
+      "output": "Dè"
+    },
+    {
+      "input": "rent",
+      "output": "ren"
+    },
+    {
+      "input": "grace",
+      "output": "grass"
+    },
+    {
+      "input": "plutot",
+      "output": "+to"
+    },
+    {
+      "input": "fruit",
+      "output": "frui"
+    },
+    {
+      "input": "plus tot",
+      "output": "+ to"
+    },
+    {
+      "input": "nille",
+      "output": "niy"
+    },
+    {
+      "input": "rille",
+      "output": "riy"
+    },
+    {
+      "input": "ard",
+      "output": "ar"
+    },
+    {
+      "input": "fois",
+      "output": "foi"
+    },
+    {
+      "input": "foit",
+      "output": "foi"
+    },
+    {
+      "input": "vre",
+      "output": "v"
+    },
+    {
+      "input": "que",
+      "output": "ke"
+    },
+    {
+      "input": "ge",
+      "output": "j"
+    },
+    {
+      "input": "mille",
+      "output": "mi"
+    },
+    {
+      "input": "ville",
+      "output": "vil"
+    },
+    {
+      "input": "ient",
+      "output": "ien"
+    },
+    {
+      "input": "iens",
+      "output": "ien"
+    },
+    {
+      "input": "Lnt",
+      "output": "L"
+    },
+    {
+      "input": "sest",
+      "output": "sè"
+    },
+    {
+      "input": "kes",
+      "output": "k"
+    },
+    {
+      "input": "ke",
+      "output": "k"
+    },
+    {
+      "input": "REPLACEMENT_7",
+      "output": "rse"
+    },
+    {
+      "input": "cours",
+      "output": "kour"
+    },
+    {
+      "input": "illion",
+      "output": "ilion"
+    },
+    {
+      "input": "ois",
+      "output": "oi"
+    },
+    {
+      "input": "ts",
+      "output": ""
+    },
+    {
+      "input": "gens",
+      "output": "jan"
+    }
+  ],
+  "wordsWithATrailingLetter": [
+    {
+      "input": "le",
+      "output": "l"
+    },
+    {
+      "input": "ke",
+      "output": "REPLACEMENT_24 "
+    },
+    {
+      "input": "ce",
+      "output": "REPLACEMENT_25 "
+    },
+    {
+      "input": "ine",
+      "output": "REPLACEMENT_26 "
+    },
+    {
+      "input": "une",
+      "output": "REPLACEMENT_27 "
+    },
+    {
+      "input": "te",
+      "output": "REPLACEMENT_28 "
+    },
+    {
+      "input": "pe",
+      "output": "REPLACEMENT_29 "
+    },
+    {
+      "input": "e",
+      "output": " "
+    },
+    {
+      "input": "REPLACEMENT_29",
+      "output": "pe "
+    },
+    {
+      "input": "REPLACEMENT_28",
+      "output": "te "
+    },
+    {
+      "input": "REPLACEMENT_27",
+      "output": "une "
+    },
+    {
+      "input": "REPLACEMENT_26",
+      "output": "ine "
+    },
+    {
+      "input": "REPLACEMENT_25",
+      "output": "ce "
+    },
+    {
+      "input": "REPLACEMENT_24",
+      "output": "ke "
+    },
+    {
+      "input": "kes",
+      "output": "REPLACEMENT_24 "
+    },
+    {
+      "input": "ces",
+      "output": "REPLACEMENT_25 "
+    },
+    {
+      "input": "ines",
+      "output": "REPLACEMENT_26 "
+    },
+    {
+      "input": "unes",
+      "output": "REPLACEMENT_27 "
+    },
+    {
+      "input": "tes",
+      "output": "REPLACEMENT_28 "
+    },
+    {
+      "input": "pes",
+      "output": "REPLACEMENT_29 "
+    },
+    {
+      "input": "es",
+      "output": " "
+    },
+    {
+      "input": "REPLACEMENT_29",
+      "output": "pe "
+    },
+    {
+      "input": "REPLACEMENT_28",
+      "output": "te "
+    },
+    {
+      "input": "REPLACEMENT_27",
+      "output": "une "
+    },
+    {
+      "input": "REPLACEMENT_26",
+      "output": "ine "
+    },
+    {
+      "input": "REPLACEMENT_25",
+      "output": "ces "
+    },
+    {
+      "input": "REPLACEMENT_24",
+      "output": "kes "
+    }
+  ]
 }

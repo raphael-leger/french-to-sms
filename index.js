@@ -26,10 +26,7 @@ function frenchToSms(input) {
 
 function replaceExactWords(output) {
     languageData.exactWords.forEach(word => {
-        for (let wordInput in word) {
-            const wordOutput = word[wordInput];
-            output = output.replace(new RegExp(`( |-)${wordInput}( |-)`, 'g'), ` ${wordOutput} `);
-        }
+        output = output.replace(new RegExp(`( |-)${word.input}( |-)`, 'g'), ` ${word.output} `);
     });
 
     return output;
@@ -37,10 +34,7 @@ function replaceExactWords(output) {
 
 function replaceWordsWithATrailingLetter(output) {
     languageData.wordsWithATrailingLetter.forEach(word => {
-        for (let wordInput in word) {
-            const wordOutput = word[wordInput];
-            output = output.replace(new RegExp(`${wordInput}( |-)`, 'g'), wordOutput);
-        }
+        output = output.replace(new RegExp(`${word.input}( |-)`, 'g'), word.output);
     });
 
     return output;
@@ -48,10 +42,7 @@ function replaceWordsWithATrailingLetter(output) {
 
 function replaceWordsStartingWith(output) {
     languageData.wordsStartingWith.forEach(word => {
-        for (let wordInput in word) {
-            const wordOutput = word[wordInput];
-            output = output.replace(new RegExp(`( |-)${wordInput}`, 'g'), ` ${wordOutput}`);
-        }
+        output = output.replace(new RegExp(`( |-)${word.input}`, 'g'), ` ${word.output}`);
     });
 
     return output;
@@ -59,10 +50,7 @@ function replaceWordsStartingWith(output) {
 
 function replaceWordsContaining(output) {
     languageData.wordsContaining.forEach(word => {
-        for (let wordInput in word) {
-            const wordOutput = word[wordInput];
-            output = output.replace(new RegExp(wordInput, 'g'), wordOutput);
-        }
+        output = output.replace(new RegExp(word.input, 'g'), word.output);
     });
 
     return output;
@@ -70,10 +58,7 @@ function replaceWordsContaining(output) {
 
 function replaceWordsEndingWith(output) {
     languageData.wordsEndingWith.forEach(word => {
-        for (let wordInput in word) {
-            const wordOutput = word[wordInput];
-            output = output.replace(new RegExp(`${wordInput}( |-)`, 'g'), `${wordOutput} `);
-        }
+        output = output.replace(new RegExp(`${word.input}( |-)`, 'g'), `${word.output} `);
     });
 
     return output;
