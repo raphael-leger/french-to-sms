@@ -33,32 +33,104 @@ function replaceExactWords(output) {
 }
 
 function replaceWordsWithATrailingLetter(output) {
-    languageData.wordsWithATrailingLetter.forEach(word => {
-        output = output.replace(new RegExp(`${word.input}( |-)`, 'g'), word.output);
+    const modificationsPrevented = [];
+
+    languageData.wordsWithATrailingLetter.forEach(action => {
+        if (action.type === 'replace_now') {
+            output = output.replace(new RegExp(`${action.input}( |-)`, 'g'), action.output);
+        } else if (action.type === 'prevent_modification') {
+            const preventionString = getPreventionString(modificationsPrevented);
+            modificationsPrevented.push({
+                input: `${action.input} `,
+                preventionString
+            });
+            output = output.replace(new RegExp(`${action.input}( |-)`, 'g'), `${preventionString} `);
+        } else if (action.type === 'enable_modification') {
+            const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
+            if (preventionIndex > -1) {
+                const preventionString = modificationsPrevented[preventionIndex].preventionString;
+                modificationsPrevented.splice(preventionIndex, 1);
+                output = output.replace(new RegExp(`${preventionString}( |-)`, 'g'), action.input);
+            };
+        }
     });
 
     return output;
 }
 
 function replaceWordsStartingWith(output) {
-    languageData.wordsStartingWith.forEach(word => {
-        output = output.replace(new RegExp(`( |-)${word.input}`, 'g'), ` ${word.output}`);
+    const modificationsPrevented = [];
+
+    languageData.wordsStartingWith.forEach(action => {
+        if (action.type === 'replace_now') {
+            output = output.replace(new RegExp(`( |-)${action.input}`, 'g'), ` ${action.output}`);
+        } else if (action.type === 'prevent_modification') {
+            const preventionString = getPreventionString(modificationsPrevented);
+            modificationsPrevented.push({
+                input: action.input,
+                preventionString
+            });
+            output = output.replace(new RegExp(`( |-)${action.input}`, 'g'), ` ${preventionString}`);
+        } else if (action.type === 'enable_modification') {
+            const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
+            if (preventionIndex > -1) {
+                const preventionString = modificationsPrevented[preventionIndex].preventionString;
+                modificationsPrevented.splice(preventionIndex, 1);
+                output = output.replace(new RegExp(`( |-)${preventionString}`, 'g'), ` ${action.input}`);
+            };
+        }
     });
 
     return output;
 }
 
 function replaceWordsContaining(output) {
-    languageData.wordsContaining.forEach(word => {
-        output = output.replace(new RegExp(word.input, 'g'), word.output);
+    const modificationsPrevented = [];
+
+    languageData.wordsContaining.forEach(action => {
+        if (action.type === 'replace_now') {
+            output = output.replace(new RegExp(action.input, 'g'), action.output);
+        } else if (action.type === 'prevent_modification') {
+            const preventionString = getPreventionString(modificationsPrevented);
+            modificationsPrevented.push({
+                input: action.input,
+                preventionString
+            });
+            output = output.replace(new RegExp(action.input, 'g'), preventionString);
+        } else if (action.type === 'enable_modification') {
+            const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
+            if (preventionIndex > -1) {
+                const preventionString = modificationsPrevented[preventionIndex].preventionString;
+                modificationsPrevented.splice(preventionIndex, 1);
+                output = output.replace(new RegExp(preventionString, 'g'), action.input);
+            };
+        }
     });
 
     return output;
 }
 
 function replaceWordsEndingWith(output) {
-    languageData.wordsEndingWith.forEach(word => {
-        output = output.replace(new RegExp(`${word.input}( |-)`, 'g'), `${word.output} `);
+    const modificationsPrevented = [];
+
+    languageData.wordsEndingWith.forEach(action => {
+        if (action.type === 'replace_now') {
+            output = output.replace(new RegExp(`${action.input}( |-)`, 'g'), `${action.output} `);
+        } else if (action.type === 'prevent_modification') {
+            const preventionString = getPreventionString(modificationsPrevented);
+            modificationsPrevented.push({
+                input: action.input,
+                preventionString
+            });
+            output = output.replace(new RegExp(`${action.input}( |-)`, 'g'), `${preventionString} `);
+        } else if (action.type === 'enable_modification') {
+            const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
+            if (preventionIndex > -1) {
+                const preventionString = modificationsPrevented[preventionIndex].preventionString;
+                modificationsPrevented.splice(preventionIndex, 1);
+                output = output.replace(new RegExp(preventionString, 'g'), `${action.input} `);
+            };
+        }
     });
 
     return output;
@@ -113,6 +185,11 @@ function toLowerCase(output) {
 
 function standardizeApostrophes(output) {
     return output.replace(new RegExp('’', 'g'), '\'');
+}
+
+function getPreventionString(modificationsPrevented) {
+    const preventionNumber = modificationsPrevented.length + 1;
+    return `REPLACEMENT_${preventionNumber}`;
 }
 
 module.exports = frenchToSms;
