@@ -78,26 +78,6 @@ const ACTION_TYPE = {
 /* REPLACEMENT FUNCTIONS */
 const performExactWordReplacement = (output, action) => output.replace(exactWord(action.input), ` ${action.output} `);
 
-const performWordWithTrailingLetterReplacement = (output, action) => {
-    switch (action.type) {
-        default:
-        case ACTION_TYPE.REPLACE_NOW:
-            return output.replace(startOfWord(action.input), action.output);
-        case ACTION_TYPE.PREVENT_MODIFICATION:
-            const preventionString = getNextPreventionString(modificationsPrevented);
-            addToModificationsPrevented(modificationsPrevented, preventionString, `${action.input} `);
-            return output.replace(startOfWord(action.input), `${preventionString} `);
-        case ACTION_TYPE.ENABLE_MODIFICATION:
-            const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
-            if (preventionIndex > -1) {
-                const preventionString = modificationsPrevented[preventionIndex].preventionString;
-                removeFromModificationsPrevented(preventionIndex);
-                return output.replace(startOfWord(preventionString), action.input);
-            };
-            return output;
-    }
-};
-
 const performWordStartingWithReplacement = (output, action) => {
     switch (action.type) {
         default:
@@ -137,6 +117,27 @@ const performWordContainingReplacement = (output, action) => {
             return output;
     }
 };
+
+const performWordWithTrailingLetterReplacement = (output, action) => {
+    switch (action.type) {
+        default:
+        case ACTION_TYPE.REPLACE_NOW:
+            return output.replace(startOfWord(action.input), action.output);
+        case ACTION_TYPE.PREVENT_MODIFICATION:
+            const preventionString = getNextPreventionString(modificationsPrevented);
+            addToModificationsPrevented(modificationsPrevented, preventionString, `${action.input} `);
+            return output.replace(startOfWord(action.input), `${preventionString} `);
+        case ACTION_TYPE.ENABLE_MODIFICATION:
+            const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
+            if (preventionIndex > -1) {
+                const preventionString = modificationsPrevented[preventionIndex].preventionString;
+                removeFromModificationsPrevented(preventionIndex);
+                return output.replace(startOfWord(preventionString), action.input);
+            };
+            return output;
+    }
+};
+
 const performWordEndingWithReplacement = (output, action) => {
     switch (action.type) {
         default:

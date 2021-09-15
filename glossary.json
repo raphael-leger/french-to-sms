@@ -457,6 +457,21 @@
     },
     {
       "type": "replace_now",
+      "input": "folles",
+      "output": "ouf"
+    },
+    {
+      "type": "replace_now",
+      "input": "fous",
+      "output": "ouf"
+    },
+    {
+      "type": "replace_now",
+      "input": "fou",
+      "output": "ouf"
+    },
+    {
+      "type": "replace_now",
       "input": "veut",
       "output": "vE"
     },
@@ -2603,6 +2618,16 @@
     {
       "type": "enable_modification",
       "input": "kes "
+    },
+    {
+      "type": "replace_now",
+      "input": "j vs",
+      "output": "jvou "
+    },
+    {
+      "type": "replace_now",
+      "input": " j",
+      "output": " j"
     }
   ]
 }
