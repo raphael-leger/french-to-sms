@@ -237,6 +237,11 @@
     },
     {
       "type": "replace_now",
+      "input": "linkedin",
+      "output": "linkdin"
+    },
+    {
+      "type": "replace_now",
       "input": "image",
       "output": "img"
     },
@@ -419,6 +424,21 @@
       "type": "replace_now",
       "input": "que veux-tu",
       "output": "kestuveu"
+    },
+    {
+      "type": "replace_now",
+      "input": "instagram",
+      "output": "insta"
+    },
+    {
+      "type": "replace_now",
+      "input": "facebook",
+      "output": "FB"
+    },
+    {
+      "type": "replace_now",
+      "input": "twitter",
+      "output": "twitèr"
     },
     {
       "type": "replace_now",

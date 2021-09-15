@@ -1,9 +1,4 @@
-'use strict';
-
-
-const language = 'FR_fr';
-const languageData = require(`./language-data/${language}.json`);
-
+const glossary = require(`./glossary.json`);
 
 function frenchToSms(input) {
     let output = input;
@@ -25,7 +20,7 @@ function frenchToSms(input) {
 }
 
 function replaceExactWords(output) {
-    languageData.exactWords.forEach(word => {
+    glossary.exactWords.forEach(word => {
         output = output.replace(new RegExp(`( |-)${word.input}( |-)`, 'g'), ` ${word.output} `);
     });
 
@@ -35,7 +30,7 @@ function replaceExactWords(output) {
 function replaceWordsWithATrailingLetter(output) {
     const modificationsPrevented = [];
 
-    languageData.wordsWithATrailingLetter.forEach(action => {
+    glossary.wordsWithATrailingLetter.forEach(action => {
         if (action.type === 'replace_now') {
             output = output.replace(new RegExp(`${action.input}( |-)`, 'g'), action.output);
         } else if (action.type === 'prevent_modification') {
@@ -61,7 +56,7 @@ function replaceWordsWithATrailingLetter(output) {
 function replaceWordsStartingWith(output) {
     const modificationsPrevented = [];
 
-    languageData.wordsStartingWith.forEach(action => {
+    glossary.wordsStartingWith.forEach(action => {
         if (action.type === 'replace_now') {
             output = output.replace(new RegExp(`( |-)${action.input}`, 'g'), ` ${action.output}`);
         } else if (action.type === 'prevent_modification') {
@@ -87,7 +82,7 @@ function replaceWordsStartingWith(output) {
 function replaceWordsContaining(output) {
     const modificationsPrevented = [];
 
-    languageData.wordsContaining.forEach(action => {
+    glossary.wordsContaining.forEach(action => {
         if (action.type === 'replace_now') {
             output = output.replace(new RegExp(action.input, 'g'), action.output);
         } else if (action.type === 'prevent_modification') {
@@ -113,7 +108,7 @@ function replaceWordsContaining(output) {
 function replaceWordsEndingWith(output) {
     const modificationsPrevented = [];
 
-    languageData.wordsEndingWith.forEach(action => {
+    glossary.wordsEndingWith.forEach(action => {
         if (action.type === 'replace_now') {
             output = output.replace(new RegExp(`${action.input}( |-)`, 'g'), `${action.output} `);
         } else if (action.type === 'prevent_modification') {
