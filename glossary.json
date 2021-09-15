@@ -2535,27 +2535,27 @@
     },
     {
       "type": "enable_modification",
-      "input": "pe "
+      "input": "pe"
     },
     {
       "type": "enable_modification",
-      "input": "te "
+      "input": "te"
     },
     {
       "type": "enable_modification",
-      "input": "une "
+      "input": "une"
     },
     {
       "type": "enable_modification",
-      "input": "ine "
+      "input": "ine"
     },
     {
       "type": "enable_modification",
-      "input": "ce "
+      "input": "ce"
     },
     {
       "type": "enable_modification",
-      "input": "ke "
+      "input": "ke"
     },
     {
       "type": "prevent_modification",
@@ -2588,11 +2588,11 @@
     },
     {
       "type": "enable_modification",
-      "input": "pe "
+      "input": "pe"
     },
     {
       "type": "enable_modification",
-      "input": "tes "
+      "input": "tes"
     },
     {
       "type": "replace_now",
@@ -2601,23 +2601,19 @@
     },
     {
       "type": "enable_modification",
-      "input": "te "
+      "input": "une"
     },
     {
       "type": "enable_modification",
-      "input": "une "
+      "input": "ine"
     },
     {
       "type": "enable_modification",
-      "input": "ine "
+      "input": "ces"
     },
     {
       "type": "enable_modification",
-      "input": "ces "
-    },
-    {
-      "type": "enable_modification",
-      "input": "kes "
+      "input": "kes"
     },
     {
       "type": "replace_now",

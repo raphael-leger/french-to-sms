@@ -128,11 +128,11 @@ const performWordWithTrailingLetterReplacement = (output, action) => {
             addToModificationsPrevented(modificationsPrevented, preventionString, `${action.input} `);
             return output.replace(startOfWord(action.input), `${preventionString} `);
         case ACTION_TYPE.ENABLE_MODIFICATION:
-            const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
+            const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === `${action.input} `);
             if (preventionIndex > -1) {
                 const preventionString = modificationsPrevented[preventionIndex].preventionString;
                 removeFromModificationsPrevented(preventionIndex);
-                return output.replace(startOfWord(preventionString), action.input);
+                return output.replace(startOfWord(preventionString), `${action.input} `);
             };
             return output;
     }
