@@ -1845,6 +1845,11 @@
       "type": "replace_now",
       "input": "ç",
       "output": "ss"
+    },
+    {
+      "type": "replace_now",
+      "input": "cti",
+      "output": "xi"
     }
   ],
   "wordsStartingWith": [
