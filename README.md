@@ -2,6 +2,8 @@
 
 Converts French sentences to French sms style sentences in JavaScript.
 
+It should lead to smaller sentences that are still readable, even though some vocabulary may be known by younger people only 😄.
+
 ## Installation
 
 ```bash
