@@ -1,5 +1,9 @@
 const glossary = require(`./glossary.json`);
 
+
+
+
+/* MAIN FUNCTION */
 const frenchToSms = (input) => {
     let output = input;
 
@@ -19,33 +23,62 @@ const frenchToSms = (input) => {
     return output;
 };
 
+
+
+
+/* REGULAR EXPRESSIONS */
+const startOfWord = (characters) => new RegExp(`${characters}( |-)`, 'g');
+const anywhere    = (characters) => new RegExp(characters, 'g');
+const endOfWord   = (characters) => new RegExp(`( |-)${characters}`, 'g');
+const exactWord   = (characters) => new RegExp(`( |-)${characters}( |-)`, 'g');
+
+
+
+/* MODIFICATIONS PREVENTION SYSTEM */
+const modificationsPrevented = [];
+
+const addToModificationsPrevented = (modificationsPrevented, preventionString, input) => {
+    modificationsPrevented.push({
+        input,
+        preventionString
+    });
+};
+
+const removeFromModificationsPrevented = (preventionIndex) => {
+    modificationsPrevented.splice(preventionIndex, 1);
+};
+
+const getNextPreventionString = (modificationsPrevented) => {
+    const preventionNumber = modificationsPrevented.length + 1;
+    return `!!!!!!FRENCH!TO!SMS!REPLACEMENT!${preventionNumber}`;
+};
+
+
+
+
+/* REPLACEMENT FUNCTIONS */
 const replaceExactWords = (output) => {
     glossary.exactWords.forEach(word => {
-        output = output.replace(new RegExp(`( |-)${word.input}( |-)`, 'g'), ` ${word.output} `);
+        output = output.replace(exactWord(word.input), ` ${word.output} `);
     });
 
     return output;
 };
 
 const replaceWordsWithATrailingLetter = (output) => {
-    const modificationsPrevented = [];
-
     glossary.wordsWithATrailingLetter.forEach(action => {
         if (action.type === 'replace_now') {
-            output = output.replace(new RegExp(`${action.input}( |-)`, 'g'), action.output);
+            output = output.replace(startOfWord(action.input), action.output);
         } else if (action.type === 'prevent_modification') {
-            const preventionString = getPreventionString(modificationsPrevented);
-            modificationsPrevented.push({
-                input: `${action.input} `,
-                preventionString
-            });
-            output = output.replace(new RegExp(`${action.input}( |-)`, 'g'), `${preventionString} `);
+            const preventionString = getNextPreventionString(modificationsPrevented);
+            addToModificationsPrevented(modificationsPrevented, preventionString, `${action.input} `);
+            output = output.replace(startOfWord(action.input), `${preventionString} `);
         } else if (action.type === 'enable_modification') {
             const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
             if (preventionIndex > -1) {
                 const preventionString = modificationsPrevented[preventionIndex].preventionString;
-                modificationsPrevented.splice(preventionIndex, 1);
-                output = output.replace(new RegExp(`${preventionString}( |-)`, 'g'), action.input);
+                removeFromModificationsPrevented(preventionIndex);
+                output = output.replace(startOfWord(preventionString), action.input);
             };
         }
     });
@@ -54,24 +87,19 @@ const replaceWordsWithATrailingLetter = (output) => {
 };
 
 const replaceWordsStartingWith = (output) => {
-    const modificationsPrevented = [];
-
     glossary.wordsStartingWith.forEach(action => {
         if (action.type === 'replace_now') {
-            output = output.replace(new RegExp(`( |-)${action.input}`, 'g'), ` ${action.output}`);
+            output = output.replace(endOfWord(action.input), ` ${action.output}`);
         } else if (action.type === 'prevent_modification') {
-            const preventionString = getPreventionString(modificationsPrevented);
-            modificationsPrevented.push({
-                input: action.input,
-                preventionString
-            });
-            output = output.replace(new RegExp(`( |-)${action.input}`, 'g'), ` ${preventionString}`);
+            const preventionString = getNextPreventionString(modificationsPrevented);
+            addToModificationsPrevented(modificationsPrevented, preventionString, action.input);
+            output = output.replace(endOfWord(action.input), ` ${preventionString}`);
         } else if (action.type === 'enable_modification') {
             const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
             if (preventionIndex > -1) {
                 const preventionString = modificationsPrevented[preventionIndex].preventionString;
-                modificationsPrevented.splice(preventionIndex, 1);
-                output = output.replace(new RegExp(`( |-)${preventionString}`, 'g'), ` ${action.input}`);
+                removeFromModificationsPrevented(preventionIndex);
+                output = output.replace(endOfWord(preventionString), ` ${action.input}`);
             };
         }
     });
@@ -80,24 +108,19 @@ const replaceWordsStartingWith = (output) => {
 };
 
 const replaceWordsContaining = (output) => {
-    const modificationsPrevented = [];
-
     glossary.wordsContaining.forEach(action => {
         if (action.type === 'replace_now') {
-            output = output.replace(new RegExp(action.input, 'g'), action.output);
+            output = output.replace(anywhere(action.input), action.output);
         } else if (action.type === 'prevent_modification') {
-            const preventionString = getPreventionString(modificationsPrevented);
-            modificationsPrevented.push({
-                input: action.input,
-                preventionString
-            });
-            output = output.replace(new RegExp(action.input, 'g'), preventionString);
+            const preventionString = getNextPreventionString(modificationsPrevented);
+            addToModificationsPrevented(modificationsPrevented, preventionString, action.input);
+            output = output.replace(anywhere(action.input), preventionString);
         } else if (action.type === 'enable_modification') {
             const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
             if (preventionIndex > -1) {
                 const preventionString = modificationsPrevented[preventionIndex].preventionString;
-                modificationsPrevented.splice(preventionIndex, 1);
-                output = output.replace(new RegExp(preventionString, 'g'), action.input);
+                removeFromModificationsPrevented(preventionIndex);
+                output = output.replace(anywhere(preventionString), action.input);
             };
         }
     });
@@ -106,24 +129,19 @@ const replaceWordsContaining = (output) => {
 };
 
 const replaceWordsEndingWith = (output) => {
-    const modificationsPrevented = [];
-
     glossary.wordsEndingWith.forEach(action => {
         if (action.type === 'replace_now') {
-            output = output.replace(new RegExp(`${action.input}( |-)`, 'g'), `${action.output} `);
+            output = output.replace(startOfWord(action.input), `${action.output} `);
         } else if (action.type === 'prevent_modification') {
-            const preventionString = getPreventionString(modificationsPrevented);
-            modificationsPrevented.push({
-                input: action.input,
-                preventionString
-            });
-            output = output.replace(new RegExp(`${action.input}( |-)`, 'g'), `${preventionString} `);
+            const preventionString = getNextPreventionString(modificationsPrevented);
+            addToModificationsPrevented(modificationsPrevented, preventionString, action.input);
+            output = output.replace(startOfWord(action.input), `${preventionString} `);
         } else if (action.type === 'enable_modification') {
             const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
             if (preventionIndex > -1) {
                 const preventionString = modificationsPrevented[preventionIndex].preventionString;
-                modificationsPrevented.splice(preventionIndex, 1);
-                output = output.replace(new RegExp(preventionString, 'g'), `${action.input} `);
+                removeFromModificationsPrevented(preventionIndex);
+                output = output.replace(anywhere(preventionString), `${action.input} `);
             };
         }
     });
@@ -131,6 +149,10 @@ const replaceWordsEndingWith = (output) => {
     return output;
 };
 
+
+
+
+/* UTILS FUNCTIONS */
 const removeSpacesLeftAndRight = (output) => {
     return output.trim();
 };
@@ -149,12 +171,12 @@ const putPunctuationBackInPlace = (output) => {
 };
 
 const removeAccents = (output) => {
-    output = output.replace(new RegExp('î', 'g'), 'i');
-    output = output.replace(new RegExp('ô', 'g'), 'o');
-    output = output.replace(new RegExp('à', 'g'), 'a');
-    output = output.replace(new RegExp('â', 'g'), 'a');
-    output = output.replace(new RegExp('É', 'g'), 'é');
-    output = output.replace(new RegExp('Î', 'g'), 'i');
+    output = output.replace(anywhere('î'), 'i');
+    output = output.replace(anywhere('ô'), 'o');
+    output = output.replace(anywhere('à'), 'a');
+    output = output.replace(anywhere('â'), 'a');
+    output = output.replace(anywhere('É'), 'é');
+    output = output.replace(anywhere('Î'), 'i');
 
     return output;
 };
@@ -179,12 +201,7 @@ const toLowerCase = (output) => {
 };
 
 const standardizeApostrophes = (output) => {
-    return output.replace(new RegExp('’', 'g'), '\'');
-};
-
-const getPreventionString = (modificationsPrevented) => {
-    const preventionNumber = modificationsPrevented.length + 1;
-    return `!!!!!!FRENCH!TO!SMS!REPLACEMENT!${preventionNumber}`;
+    return output.replace(anywhere('’'), '\'');
 };
 
 module.exports = frenchToSms;
