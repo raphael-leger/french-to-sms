@@ -1,33 +1,36 @@
 {
-    "name": "french-to-sms",
-    "author": "Raphaël Léger <raphael.leger8@gmail.com>",
-    "version": "1.0.0",
-    "description": "Converts French sentences to shorter readable sms style sentences",
-    "license": "MIT",
-    "keywords": [
-        "french",
-        "sms",
-        "natural",
-        "language"
-    ],
-    "repository": "raphael-leger/french-to-sms",
-    "homepage": "https://raphael-leger.github.io/french-to-sms/",
-    "bugs": "https://github.com/raphael-leger/french-to-sms/issues",
-    "contributors": [
-        "Raphaël Léger <raphael.leger8@gmail.com>"
-    ],
-    "files": [
-        "index.js"
-    ],
-    "devDependencies": {
-        "browserify": "16.0.0",
-        "tape": "4.4.0",
-        "tinyify": "2.4.3"
-    },
-    "scripts": {
-        "build-bundle": "browserify . -s french-to-sms > dist/french-to-sms.js",
-        "build-mangle": "browserify . -s french-to-sms -p tinyify > dist/french-to-sms.min.js",
-        "build": "npm run build-bundle && npm run build-mangle",
-        "test": "node test"
-    }
+  "name": "french-to-sms",
+  "author": "Raphaël Léger <raphael@nodixo.com>",
+  "version": "1.0.0",
+  "description": "Converts French sentences to shorter readable sms style sentences",
+  "license": "MIT",
+  "keywords": [
+    "french",
+    "sms",
+    "natural",
+    "language"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raphael-leger/french-to-sms.git"
+  },
+  "homepage": "https://github.com/raphael-leger/french-to-sms",
+  "bugs": "https://github.com/raphael-leger/french-to-sms/issues",
+  "contributors": [
+    "Raphaël Léger <raphael@nodixo.com>"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "browserify": "16.0.0",
+    "tape": "4.4.0",
+    "tinyify": "2.4.3"
+  },
+  "scripts": {
+    "build-bundle": "browserify . -s french-to-sms > dist/french-to-sms.js",
+    "build-mangle": "browserify . -s french-to-sms -p tinyify > dist/french-to-sms.min.js",
+    "build": "npm run build-bundle && npm run build-mangle",
+    "test": "node test"
+  }
 }
