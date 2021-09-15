@@ -5,27 +5,31 @@ const glossary = require(`./glossary.json`);
 
 /* MAIN FUNCTION */
 const frenchToSms = (input) => {
-    let output = input;
+  if (!input) {
+    throw Error("[frenchToSms] Please provide an input text: frenchToSms('bonjour')");
+  }
 
-    // Clean the input text
-    output = toLowerCase(output);
-    output = addSpacesLeftAndRight(output);
-    output = standardizeApostrophes(output);
-    output = addSpaceBeforePunctuation(output);
-    output = removeAccents(output);
+  let output = input;
 
-    // Perform replacements based on the glossary
-    output = replaceExactWords(output);
-    output = replaceWordsContaining(output);
-    output = replaceWordsStartingWith(output);
-    output = replaceWordsEndingWith(output);
-    output = replaceWordsWithATrailingLetter(output);
+  // Clean the input text
+  output = toLowerCase(output);
+  output = addSpacesLeftAndRight(output);
+  output = standardizeApostrophes(output);
+  output = addSpaceBeforePunctuation(output);
+  output = removeAccents(output);
 
-    // Clean the output text
-    output = putPunctuationBackInPlace(output);
-    output = removeSpacesLeftAndRight(output);
+  // Perform replacements based on the glossary
+  output = replaceExactWords(output);
+  output = replaceWordsContaining(output);
+  output = replaceWordsStartingWith(output);
+  output = replaceWordsEndingWith(output);
+  output = replaceWordsWithATrailingLetter(output);
 
-    return output;
+  // Clean the output text
+  output = putPunctuationBackInPlace(output);
+  output = removeSpacesLeftAndRight(output);
+
+  return output;
 };
 
 

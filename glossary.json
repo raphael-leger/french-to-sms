@@ -818,17 +818,17 @@
     {
       "type": "replace_now",
       "input": "monsieur",
-      "output": "Mr"
+      "output": "mr"
     },
     {
       "type": "replace_now",
       "input": "mademoiselle",
-      "output": "Mlle"
+      "output": "mlle"
     },
     {
       "type": "replace_now",
       "input": "madame",
-      "output": "Mme"
+      "output": "mme"
     },
     {
       "type": "replace_now",
@@ -1736,9 +1736,17 @@
       "output": "G"
     },
     {
+      "type": "prevent_modification",
+      "input": " nn "
+    },
+    {
       "type": "replace_now",
       "input": "nn",
       "output": "n"
+    },
+    {
+      "type": "enable_modification",
+      "input": " nn "
     },
     {
       "type": "replace_now",

@@ -1,7 +1,7 @@
 {
   "name": "french-to-sms",
   "author": "Raphaël Léger <raphael@nodixo.com>",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Converts French sentences to shorter readable sms style sentences",
   "license": "MIT",
   "keywords": [
@@ -31,6 +31,7 @@
     "build-bundle": "browserify . -s french-to-sms > dist/french-to-sms.js",
     "build-mangle": "browserify . -s french-to-sms -p tinyify > dist/french-to-sms.min.js",
     "build": "npm run build-bundle && npm run build-mangle",
+    "publish": "npm publish --access public",
     "test": "node test"
   }
 }
