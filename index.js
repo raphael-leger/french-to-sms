@@ -27,7 +27,7 @@ const frenchToSms = (input) => {
 
   // Clean the output text
   output = putPunctuationBackInPlace(output);
-  output = removeSpacesLeftAndRight(output);
+  output = removeLeftAndRightSpaces(output);
 
   return output;
 };
@@ -44,22 +44,22 @@ const wholeWord   = (characters) => new RegExp(`( |-)${characters}( |-)`, 'g');
 
 
 /* MODIFICATIONS PREVENTION SYSTEM */
-const modificationsCurrentlyPrevented = [];
+const modificationsDisabled = [];
 
-const disableModification = (preventionHash, input) => {
-    modificationsCurrentlyPrevented.push({
+const disableModification = (hash, input) => {
+    modificationsDisabled.push({
         input,
-        preventionHash
+        hash
     });
 };
 
-const enableModification = (preventionIndex) => {
-    modificationsCurrentlyPrevented.splice(preventionIndex, 1);
+const enableModification = (disabledModificationIndex) => {
+    modificationsDisabled.splice(disabledModificationIndex, 1);
 };
 
-const getNextPreventionHash = () => {
-    const preventionNumber = modificationsCurrentlyPrevented.length + 1;
-    return `!!!!!!FRENCH!TO!SMS!REPLACEMENT!${preventionNumber}`;
+const getHash = () => {
+    const modificationNumber = modificationsDisabled.length + 1;
+    return `!!!!!!FRENCH!TO!SMS!REPLACEMENT!${modificationNumber}`;
 };
 
 
@@ -76,147 +76,147 @@ const ACTION_TYPE = {
 
 
 /* REPLACEMENT FUNCTIONS */
-const performWholeWordReplacement = (output, action) => output.replace(wholeWord(action.input), ` ${action.output} `);
+const performWholeWordReplacement = (text, { input, output }) => text.replace(wholeWord(input), ` ${output} `);
 
-const performStartOfWordsReplacement = (output, action) => {
-    switch (action.type) {
+const performStartOfWordsReplacement = (text, { type, input, output }) => {
+    switch (type) {
         default:
         case ACTION_TYPE.REPLACE:
-            return output.replace(endOfWord(action.input), ` ${action.output}`);
+            return text.replace(endOfWord(input), ` ${output}`);
         case ACTION_TYPE.DISABLE_MODIFICATION:
-            const preventionHash = getNextPreventionHash();
-            disableModification(preventionHash, action.input);
-            return output.replace(endOfWord(action.input), ` ${preventionHash}`);
+            const hash = getHash();
+            disableModification(hash, input);
+            return text.replace(endOfWord(input), ` ${hash}`);
         case ACTION_TYPE.ENABLE_MODIFICATION:
-            const preventionIndex = modificationsCurrentlyPrevented.findIndex(prevention => prevention.input === action.input);
-            if (preventionIndex > -1) {
-                const preventionHash = modificationsCurrentlyPrevented[preventionIndex].preventionHash;
-                enableModification(preventionIndex);
-                return output.replace(endOfWord(preventionHash), ` ${action.input}`);
+            const disabledModificationIndex = modificationsDisabled.findIndex(modification => modification.input === input);
+            if (disabledModificationIndex > -1) {
+                const { hash } = modificationsDisabled[disabledModificationIndex];
+                enableModification(disabledModificationIndex);
+                return text.replace(endOfWord(hash), ` ${input}`);
             };
-            return output;
+            return text;
     }
 };
 
-const performAnywhereReplacement = (output, action) => {
-    switch (action.type) {
+const performAnywhereReplacement = (text, { type, input, output }) => {
+    switch (type) {
         default:
         case ACTION_TYPE.REPLACE:
-            return output.replace(anywhere(action.input), action.output);
+            return text.replace(anywhere(input), output);
         case ACTION_TYPE.DISABLE_MODIFICATION:
-            const preventionHash = getNextPreventionHash();
-            disableModification(preventionHash, action.input);
-            return output.replace(anywhere(action.input), preventionHash);
+            const hash = getHash();
+            disableModification(hash, input);
+            return text.replace(anywhere(input), hash);
         case ACTION_TYPE.ENABLE_MODIFICATION:
-            const preventionIndex = modificationsCurrentlyPrevented.findIndex(prevention => prevention.input === action.input);
-            if (preventionIndex > -1) {
-                const preventionHash = modificationsCurrentlyPrevented[preventionIndex].preventionHash;
-                enableModification(preventionIndex);
-                return output.replace(anywhere(preventionHash), action.input);
+            const disabledModificationIndex = modificationsDisabled.findIndex(modification => modification.input === input);
+            if (disabledModificationIndex > -1) {
+                const { hash } = modificationsDisabled[disabledModificationIndex];
+                enableModification(disabledModificationIndex);
+                return text.replace(anywhere(hash), input);
             };
-            return output;
+            return text;
     }
 };
 
-const performEndOfWordsFollowedByASpaceReplacement = (output, action) => {
-    switch (action.type) {
+const performEndOfWordsFollowedByASpaceReplacement = (text, { type, input, output }) => {
+    switch (type) {
         default:
         case ACTION_TYPE.REPLACE:
-            return output.replace(startOfWord(action.input), action.output);
+            return text.replace(startOfWord(input), output);
         case ACTION_TYPE.DISABLE_MODIFICATION:
-            const preventionHash = getNextPreventionHash();
-            disableModification(preventionHash, `${action.input} `);
-            return output.replace(startOfWord(action.input), `${preventionHash} `);
+            const hash = getHash();
+            disableModification(hash, `${input} `);
+            return text.replace(startOfWord(input), `${hash} `);
         case ACTION_TYPE.ENABLE_MODIFICATION:
-            const preventionIndex = modificationsCurrentlyPrevented.findIndex(prevention => prevention.input === `${action.input} `);
-            if (preventionIndex > -1) {
-                const preventionHash = modificationsCurrentlyPrevented[preventionIndex].preventionHash;
-                enableModification(preventionIndex);
-                return output.replace(startOfWord(preventionHash), `${action.input} `);
+            const disabledModificationIndex = modificationsDisabled.findIndex(modification => modification.input === `${input} `);
+            if (disabledModificationIndex > -1) {
+                const { hash } = modificationsDisabled[disabledModificationIndex];
+                enableModification(disabledModificationIndex);
+                return text.replace(startOfWord(hash), `${input} `);
             };
-            return output;
+            return text;
     }
 };
 
-const performEndOfWordsReplacement = (output, action) => {
-    switch (action.type) {
+const performEndOfWordsReplacement = (text, { type, input, output }) => {
+    switch (type) {
         default:
         case ACTION_TYPE.REPLACE:
-            return output.replace(startOfWord(action.input), `${action.output} `);
+            return text.replace(startOfWord(input), `${output} `);
         case ACTION_TYPE.DISABLE_MODIFICATION:
-            const preventionHash = getNextPreventionHash();
-            disableModification(preventionHash, action.input);
-            return output.replace(startOfWord(action.input), `${preventionHash} `);
+            const hash = getHash();
+            disableModification(hash, input);
+            return text.replace(startOfWord(input), `${hash} `);
         case ACTION_TYPE.ENABLE_MODIFICATION:
-            const preventionIndex = modificationsCurrentlyPrevented.findIndex(prevention => prevention.input === action.input);
-            if (preventionIndex > -1) {
-                const preventionHash = modificationsCurrentlyPrevented[preventionIndex].preventionHash;
-                enableModification(preventionIndex);
-                return output.replace(anywhere(preventionHash), `${action.input} `);
+            const disabledModificationIndex = modificationsDisabled.findIndex(modification => modification.input === input);
+            if (disabledModificationIndex > -1) {
+                const { hash } = modificationsDisabled[disabledModificationIndex];
+                enableModification(disabledModificationIndex);
+                return text.replace(anywhere(hash), `${input} `);
             };
-            return output;
+            return text;
     }
 };
 
-const replaceWholeWords   = (output) => glossary.wholeWords.reduce(performWholeWordReplacement, output);
-const replaceAnywhere     = (output) => glossary.anywhere.reduce(performAnywhereReplacement, output);
-const replaceStartOfWords = (output) => glossary.startOfWords.reduce(performStartOfWordsReplacement, output);
-const replaceEndOfWords   = (output) => glossary.endOfWords.reduce(performEndOfWordsReplacement, output);
-const replaceEndOfWordsFollowedByASpace = (output) => glossary.endOfWordsFollowedByASpace.reduce(performEndOfWordsFollowedByASpaceReplacement, output);
+const replaceWholeWords   = (text) => glossary.wholeWords.reduce(performWholeWordReplacement, text);
+const replaceAnywhere     = (text) => glossary.anywhere.reduce(performAnywhereReplacement, text);
+const replaceStartOfWords = (text) => glossary.startOfWords.reduce(performStartOfWordsReplacement, text);
+const replaceEndOfWords   = (text) => glossary.endOfWords.reduce(performEndOfWordsReplacement, text);
+const replaceEndOfWordsFollowedByASpace = (text) => glossary.endOfWordsFollowedByASpace.reduce(performEndOfWordsFollowedByASpaceReplacement, text);
 
 
 
 
 /* UTILS FUNCTIONS */
-const removeSpacesLeftAndRight = (output) => {
-    return output.trim();
+const addSpacesLeftAndRight = (text) => {
+    return `  ${text}  `;
 };
 
-const putPunctuationBackInPlace = (output) => {
-    output = output.replace(/ \./g, '.');
-    output = output.replace(/ \,/g, ',');
-    output = output.replace(/ \?/g, '?');
-    output = output.replace(/ \!/g, '!');
-    output = output.replace(/  \?/g, ' ?');
-    output = output.replace(/  \!/g, ' !');
-    output = output.replace(/ \)/g, ')');
-    output = output.replace(/\( /g, '(');
-
-    return output;
+const removeLeftAndRightSpaces = (text) => {
+    return text.trim();
 };
 
-const removeAccents = (output) => {
-    output = output.replace(anywhere('î'), 'i');
-    output = output.replace(anywhere('ô'), 'o');
-    output = output.replace(anywhere('à'), 'a');
-    output = output.replace(anywhere('â'), 'a');
-    output = output.replace(anywhere('É'), 'é');
-    output = output.replace(anywhere('Î'), 'i');
+const removeAccents = (text) => {
+    text = text.replace(anywhere('î'), 'i');
+    text = text.replace(anywhere('ô'), 'o');
+    text = text.replace(anywhere('à'), 'a');
+    text = text.replace(anywhere('â'), 'a');
+    text = text.replace(anywhere('É'), 'é');
+    text = text.replace(anywhere('Î'), 'i');
 
-    return output;
+    return text;
 };
 
-const addSpaceBeforePunctuation = (output) => {
-    output = output.replace(/\./g, ' .');
-    output = output.replace(/\,/g, ' ,');
-    output = output.replace(/\?/g, ' ?');
-    output = output.replace(/\!/g, ' !');
-    output = output.replace(/\)/g, ' )');
-    output = output.replace(/\(/g, '( ');
+const addSpaceBeforePunctuation = (text) => {
+    text = text.replace(/\./g, ' .');
+    text = text.replace(/\,/g, ' ,');
+    text = text.replace(/\?/g, ' ?');
+    text = text.replace(/\!/g, ' !');
+    text = text.replace(/\)/g, ' )');
+    text = text.replace(/\(/g, '( ');
 
-    return output;
+    return text;
 };
 
-const addSpacesLeftAndRight = (output) => {
-    return `  ${output}  `;
+const putPunctuationBackInPlace = (text) => {
+    text = text.replace(/ \./g, '.');
+    text = text.replace(/ \,/g, ',');
+    text = text.replace(/ \?/g, '?');
+    text = text.replace(/ \!/g, '!');
+    text = text.replace(/  \?/g, ' ?');
+    text = text.replace(/  \!/g, ' !');
+    text = text.replace(/ \)/g, ')');
+    text = text.replace(/\( /g, '(');
+
+    return text;
 };
 
-const toLowerCase = (output) => {
-    return output.toLowerCase();
+const toLowerCase = (text) => {
+    return text.toLowerCase();
 };
 
-const standardizeApostrophes = (output) => {
-    return output.replace(anywhere('’'), '\'');
+const standardizeApostrophes = (text) => {
+    return text.replace(anywhere('’'), '\'');
 };
 
 module.exports = frenchToSms;
