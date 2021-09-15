@@ -7,16 +7,21 @@ const glossary = require(`./glossary.json`);
 const frenchToSms = (input) => {
     let output = input;
 
+    // Clean the input text
     output = toLowerCase(output);
     output = addSpacesLeftAndRight(output);
     output = standardizeApostrophes(output);
     output = addSpaceBeforePunctuation(output);
     output = removeAccents(output);
+
+    // Perform replacements based on the glossary
     output = replaceExactWords(output);
     output = replaceWordsContaining(output);
     output = replaceWordsStartingWith(output);
     output = replaceWordsEndingWith(output);
     output = replaceWordsWithATrailingLetter(output);
+
+    // Clean the output text
     output = putPunctuationBackInPlace(output);
     output = removeSpacesLeftAndRight(output);
 
@@ -67,117 +72,92 @@ const ACTION_TYPE = {
 
 
 /* REPLACEMENT FUNCTIONS */
-const replaceExactWords = (output) => {
-    glossary.exactWords.forEach(word => {
-        output = output.replace(exactWord(word.input), ` ${word.output} `);
-    });
+const performExactWordReplacement = (output, action) => output.replace(exactWord(action.input), ` ${action.output} `);
 
-    return output;
+const performWordWithTrailingLetterReplacement = (output, action) => {
+    switch (action.type) {
+        default:
+        case ACTION_TYPE.REPLACE_NOW:
+            return output.replace(startOfWord(action.input), action.output);
+        case ACTION_TYPE.PREVENT_MODIFICATION:
+            const preventionString = getNextPreventionString(modificationsPrevented);
+            addToModificationsPrevented(modificationsPrevented, preventionString, `${action.input} `);
+            return output.replace(startOfWord(action.input), `${preventionString} `);
+        case ACTION_TYPE.ENABLE_MODIFICATION:
+            const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
+            if (preventionIndex > -1) {
+                const preventionString = modificationsPrevented[preventionIndex].preventionString;
+                removeFromModificationsPrevented(preventionIndex);
+                return output.replace(startOfWord(preventionString), action.input);
+            };
+            return output;
+    }
 };
 
-const replaceWordsWithATrailingLetter = (output) => {
-    glossary.wordsWithATrailingLetter.forEach(action => {
-        switch (action.type) {
-            default:
-            case ACTION_TYPE.REPLACE_NOW:
-                output = output.replace(startOfWord(action.input), action.output);
-                break;
-            case ACTION_TYPE.PREVENT_MODIFICATION:
-                const preventionString = getNextPreventionString(modificationsPrevented);
-                addToModificationsPrevented(modificationsPrevented, preventionString, `${action.input} `);
-                output = output.replace(startOfWord(action.input), `${preventionString} `);
-                break;
-            case ACTION_TYPE.ENABLE_MODIFICATION:
-                const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
-                if (preventionIndex > -1) {
-                    const preventionString = modificationsPrevented[preventionIndex].preventionString;
-                    removeFromModificationsPrevented(preventionIndex);
-                    output = output.replace(startOfWord(preventionString), action.input);
-                };
-                break;
-        }
-    });
-
-    return output;
+const performWordStartingWithReplacement = (output, action) => {
+    switch (action.type) {
+        default:
+        case ACTION_TYPE.REPLACE_NOW:
+            return output.replace(endOfWord(action.input), ` ${action.output}`);
+        case ACTION_TYPE.PREVENT_MODIFICATION:
+            const preventionString = getNextPreventionString(modificationsPrevented);
+            addToModificationsPrevented(modificationsPrevented, preventionString, action.input);
+            return output.replace(endOfWord(action.input), ` ${preventionString}`);
+        case ACTION_TYPE.ENABLE_MODIFICATION:
+            const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
+            if (preventionIndex > -1) {
+                const preventionString = modificationsPrevented[preventionIndex].preventionString;
+                removeFromModificationsPrevented(preventionIndex);
+                return output.replace(endOfWord(preventionString), ` ${action.input}`);
+            };
+            return output;
+    }
 };
 
-const replaceWordsStartingWith = (output) => {
-    glossary.wordsStartingWith.forEach(action => {
-        switch (action.type) {
-            default:
-            case ACTION_TYPE.REPLACE_NOW:
-                output = output.replace(endOfWord(action.input), ` ${action.output}`);
-                break;
-            case ACTION_TYPE.PREVENT_MODIFICATION:
-                const preventionString = getNextPreventionString(modificationsPrevented);
-                addToModificationsPrevented(modificationsPrevented, preventionString, action.input);
-                output = output.replace(endOfWord(action.input), ` ${preventionString}`);
-                break;
-            case ACTION_TYPE.ENABLE_MODIFICATION:
-                const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
-                if (preventionIndex > -1) {
-                    const preventionString = modificationsPrevented[preventionIndex].preventionString;
-                    removeFromModificationsPrevented(preventionIndex);
-                    output = output.replace(endOfWord(preventionString), ` ${action.input}`);
-                };
-                break;
-        }
-    });
-
-    return output;
+const performWordContainingReplacement = (output, action) => {
+    switch (action.type) {
+        default:
+        case ACTION_TYPE.REPLACE_NOW:
+            return output.replace(anywhere(action.input), action.output);
+        case ACTION_TYPE.PREVENT_MODIFICATION:
+            const preventionString = getNextPreventionString(modificationsPrevented);
+            addToModificationsPrevented(modificationsPrevented, preventionString, action.input);
+            return output.replace(anywhere(action.input), preventionString);
+        case ACTION_TYPE.ENABLE_MODIFICATION:
+            const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
+            if (preventionIndex > -1) {
+                const preventionString = modificationsPrevented[preventionIndex].preventionString;
+                removeFromModificationsPrevented(preventionIndex);
+                return output.replace(anywhere(preventionString), action.input);
+            };
+            return output;
+    }
+};
+const performWordEndingWithReplacement = (output, action) => {
+    switch (action.type) {
+        default:
+        case ACTION_TYPE.REPLACE_NOW:
+            return output.replace(startOfWord(action.input), `${action.output} `);
+        case ACTION_TYPE.PREVENT_MODIFICATION:
+            const preventionString = getNextPreventionString(modificationsPrevented);
+            addToModificationsPrevented(modificationsPrevented, preventionString, action.input);
+            return output.replace(startOfWord(action.input), `${preventionString} `);
+        case ACTION_TYPE.ENABLE_MODIFICATION:
+            const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
+            if (preventionIndex > -1) {
+                const preventionString = modificationsPrevented[preventionIndex].preventionString;
+                removeFromModificationsPrevented(preventionIndex);
+                return output.replace(anywhere(preventionString), `${action.input} `);
+            };
+            return output;
+    }
 };
 
-const replaceWordsContaining = (output) => {
-    glossary.wordsContaining.forEach(action => {
-        switch (action.type) {
-            default:
-            case ACTION_TYPE.REPLACE_NOW:
-                output = output.replace(anywhere(action.input), action.output);
-                break;
-            case ACTION_TYPE.PREVENT_MODIFICATION:
-                const preventionString = getNextPreventionString(modificationsPrevented);
-                addToModificationsPrevented(modificationsPrevented, preventionString, action.input);
-                output = output.replace(anywhere(action.input), preventionString);
-                break;
-            case ACTION_TYPE.ENABLE_MODIFICATION:
-                const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
-                if (preventionIndex > -1) {
-                    const preventionString = modificationsPrevented[preventionIndex].preventionString;
-                    removeFromModificationsPrevented(preventionIndex);
-                    output = output.replace(anywhere(preventionString), action.input);
-                };
-                break;
-        }
-    });
-
-    return output;
-};
-
-const replaceWordsEndingWith = (output) => {
-    glossary.wordsEndingWith.forEach(action => {
-        switch (action.type) {
-            default:
-            case ACTION_TYPE.REPLACE_NOW:
-                output = output.replace(startOfWord(action.input), `${action.output} `);
-                break;
-            case ACTION_TYPE.PREVENT_MODIFICATION:
-                const preventionString = getNextPreventionString(modificationsPrevented);
-                addToModificationsPrevented(modificationsPrevented, preventionString, action.input);
-                output = output.replace(startOfWord(action.input), `${preventionString} `);
-                break;
-            case ACTION_TYPE.ENABLE_MODIFICATION:
-                const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
-                if (preventionIndex > -1) {
-                    const preventionString = modificationsPrevented[preventionIndex].preventionString;
-                    removeFromModificationsPrevented(preventionIndex);
-                    output = output.replace(anywhere(preventionString), `${action.input} `);
-                };
-                break;
-        }
-    });
-
-    return output;
-};
+const replaceExactWords = (output) => glossary.exactWords.reduce(performExactWordReplacement, output);
+const replaceWordsWithATrailingLetter = (output) => glossary.wordsWithATrailingLetter.reduce(performWordWithTrailingLetterReplacement, output);
+const replaceWordsStartingWith = (output) => glossary.wordsStartingWith.reduce(performWordStartingWithReplacement, output);
+const replaceWordsContaining = (output) => glossary.wordsContaining.reduce(performWordContainingReplacement, output);
+const replaceWordsEndingWith = (output) => glossary.wordsEndingWith.reduce(performWordEndingWithReplacement, output);
 
 
 
