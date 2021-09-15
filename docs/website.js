@@ -1,5 +1,6 @@
 window.addEventListener('load', function(e) {
   document.querySelector('#output-text').innerHTML = frenchToSms('Bonjour monsieur, comment allez-vous ?');
+  document.querySelector('#input-text').focus();
 });
 
 
