@@ -13,6 +13,12 @@ npm install french-to-sms
 ```javascript
 const frenchToSms = require('french-to-sms');
 
-frenchToSms("coucou"); // cc
-frenchToSms("Bonjour tout le monde ! J'espère que vous allez bien ! Moi la patate !""); // bjr tt lmond ! jspr k vs allé b1 ! mwa la patate !
+frenchToSms("coucou");
+// => "cc"
+
+frenchToSms("Bonjour tout le monde ! J'espère que vous allez bien ! Moi la patate !");
+// => "bjr tt lmond ! jspr k vs allé b1 ! mwa la patate !"
+
+frenchToSms("S'il vous plaît, pouvez-vous faire moins de bruit ? Merci");
+// => "svp, pouvé vs fR - 2 brui ? marci."
 ```

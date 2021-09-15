@@ -157,6 +157,16 @@
     },
     {
       "type": "replace_now",
+      "input": "s'il te plait",
+      "output": "stp"
+    },
+    {
+      "type": "replace_now",
+      "input": "s'il vous plait",
+      "output": "svp"
+    },
+    {
+      "type": "replace_now",
       "input": "devoir sur table",
       "output": "DST"
     },
@@ -2438,6 +2448,11 @@
       "type": "replace_now",
       "input": "gens",
       "output": "jan"
+    },
+    {
+      "type": "replace_now",
+      "input": "uit",
+      "output": "ui"
     }
   ],
   "wordsWithATrailingLetter": [
