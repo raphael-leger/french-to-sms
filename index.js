@@ -56,6 +56,16 @@ const getNextPreventionString = (modificationsPrevented) => {
 
 
 
+/* ACTIONS */
+const ACTION_TYPE = {
+    REPLACE_NOW: 'replace_now',
+    PREVENT_MODIFICATION: 'prevent_modification',
+    ENABLE_MODIFICATION: 'enable_modification',
+};
+
+
+
+
 /* REPLACEMENT FUNCTIONS */
 const replaceExactWords = (output) => {
     glossary.exactWords.forEach(word => {
@@ -67,19 +77,24 @@ const replaceExactWords = (output) => {
 
 const replaceWordsWithATrailingLetter = (output) => {
     glossary.wordsWithATrailingLetter.forEach(action => {
-        if (action.type === 'replace_now') {
-            output = output.replace(startOfWord(action.input), action.output);
-        } else if (action.type === 'prevent_modification') {
-            const preventionString = getNextPreventionString(modificationsPrevented);
-            addToModificationsPrevented(modificationsPrevented, preventionString, `${action.input} `);
-            output = output.replace(startOfWord(action.input), `${preventionString} `);
-        } else if (action.type === 'enable_modification') {
-            const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
-            if (preventionIndex > -1) {
-                const preventionString = modificationsPrevented[preventionIndex].preventionString;
-                removeFromModificationsPrevented(preventionIndex);
-                output = output.replace(startOfWord(preventionString), action.input);
-            };
+        switch (action.type) {
+            default:
+            case ACTION_TYPE.REPLACE_NOW:
+                output = output.replace(startOfWord(action.input), action.output);
+                break;
+            case ACTION_TYPE.PREVENT_MODIFICATION:
+                const preventionString = getNextPreventionString(modificationsPrevented);
+                addToModificationsPrevented(modificationsPrevented, preventionString, `${action.input} `);
+                output = output.replace(startOfWord(action.input), `${preventionString} `);
+                break;
+            case ACTION_TYPE.ENABLE_MODIFICATION:
+                const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
+                if (preventionIndex > -1) {
+                    const preventionString = modificationsPrevented[preventionIndex].preventionString;
+                    removeFromModificationsPrevented(preventionIndex);
+                    output = output.replace(startOfWord(preventionString), action.input);
+                };
+                break;
         }
     });
 
@@ -88,19 +103,24 @@ const replaceWordsWithATrailingLetter = (output) => {
 
 const replaceWordsStartingWith = (output) => {
     glossary.wordsStartingWith.forEach(action => {
-        if (action.type === 'replace_now') {
-            output = output.replace(endOfWord(action.input), ` ${action.output}`);
-        } else if (action.type === 'prevent_modification') {
-            const preventionString = getNextPreventionString(modificationsPrevented);
-            addToModificationsPrevented(modificationsPrevented, preventionString, action.input);
-            output = output.replace(endOfWord(action.input), ` ${preventionString}`);
-        } else if (action.type === 'enable_modification') {
-            const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
-            if (preventionIndex > -1) {
-                const preventionString = modificationsPrevented[preventionIndex].preventionString;
-                removeFromModificationsPrevented(preventionIndex);
-                output = output.replace(endOfWord(preventionString), ` ${action.input}`);
-            };
+        switch (action.type) {
+            default:
+            case ACTION_TYPE.REPLACE_NOW:
+                output = output.replace(endOfWord(action.input), ` ${action.output}`);
+                break;
+            case ACTION_TYPE.PREVENT_MODIFICATION:
+                const preventionString = getNextPreventionString(modificationsPrevented);
+                addToModificationsPrevented(modificationsPrevented, preventionString, action.input);
+                output = output.replace(endOfWord(action.input), ` ${preventionString}`);
+                break;
+            case ACTION_TYPE.ENABLE_MODIFICATION:
+                const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
+                if (preventionIndex > -1) {
+                    const preventionString = modificationsPrevented[preventionIndex].preventionString;
+                    removeFromModificationsPrevented(preventionIndex);
+                    output = output.replace(endOfWord(preventionString), ` ${action.input}`);
+                };
+                break;
         }
     });
 
@@ -109,19 +129,24 @@ const replaceWordsStartingWith = (output) => {
 
 const replaceWordsContaining = (output) => {
     glossary.wordsContaining.forEach(action => {
-        if (action.type === 'replace_now') {
-            output = output.replace(anywhere(action.input), action.output);
-        } else if (action.type === 'prevent_modification') {
-            const preventionString = getNextPreventionString(modificationsPrevented);
-            addToModificationsPrevented(modificationsPrevented, preventionString, action.input);
-            output = output.replace(anywhere(action.input), preventionString);
-        } else if (action.type === 'enable_modification') {
-            const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
-            if (preventionIndex > -1) {
-                const preventionString = modificationsPrevented[preventionIndex].preventionString;
-                removeFromModificationsPrevented(preventionIndex);
-                output = output.replace(anywhere(preventionString), action.input);
-            };
+        switch (action.type) {
+            default:
+            case ACTION_TYPE.REPLACE_NOW:
+                output = output.replace(anywhere(action.input), action.output);
+                break;
+            case ACTION_TYPE.PREVENT_MODIFICATION:
+                const preventionString = getNextPreventionString(modificationsPrevented);
+                addToModificationsPrevented(modificationsPrevented, preventionString, action.input);
+                output = output.replace(anywhere(action.input), preventionString);
+                break;
+            case ACTION_TYPE.ENABLE_MODIFICATION:
+                const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
+                if (preventionIndex > -1) {
+                    const preventionString = modificationsPrevented[preventionIndex].preventionString;
+                    removeFromModificationsPrevented(preventionIndex);
+                    output = output.replace(anywhere(preventionString), action.input);
+                };
+                break;
         }
     });
 
@@ -130,19 +155,24 @@ const replaceWordsContaining = (output) => {
 
 const replaceWordsEndingWith = (output) => {
     glossary.wordsEndingWith.forEach(action => {
-        if (action.type === 'replace_now') {
-            output = output.replace(startOfWord(action.input), `${action.output} `);
-        } else if (action.type === 'prevent_modification') {
-            const preventionString = getNextPreventionString(modificationsPrevented);
-            addToModificationsPrevented(modificationsPrevented, preventionString, action.input);
-            output = output.replace(startOfWord(action.input), `${preventionString} `);
-        } else if (action.type === 'enable_modification') {
-            const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
-            if (preventionIndex > -1) {
-                const preventionString = modificationsPrevented[preventionIndex].preventionString;
-                removeFromModificationsPrevented(preventionIndex);
-                output = output.replace(anywhere(preventionString), `${action.input} `);
-            };
+        switch (action.type) {
+            default:
+            case ACTION_TYPE.REPLACE_NOW:
+                output = output.replace(startOfWord(action.input), `${action.output} `);
+                break;
+            case ACTION_TYPE.PREVENT_MODIFICATION:
+                const preventionString = getNextPreventionString(modificationsPrevented);
+                addToModificationsPrevented(modificationsPrevented, preventionString, action.input);
+                output = output.replace(startOfWord(action.input), `${preventionString} `);
+                break;
+            case ACTION_TYPE.ENABLE_MODIFICATION:
+                const preventionIndex = modificationsPrevented.findIndex(prevention => prevention.input === action.input);
+                if (preventionIndex > -1) {
+                    const preventionString = modificationsPrevented[preventionIndex].preventionString;
+                    removeFromModificationsPrevented(preventionIndex);
+                    output = output.replace(anywhere(preventionString), `${action.input} `);
+                };
+                break;
         }
     });
 
