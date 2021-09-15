@@ -15,7 +15,7 @@ test('caseInsensitivity', t => {
 
 test('punctuationInsensitive', t => {
     t.equal(frenchToSms('bonjour'), 'bjr', 'bonjour => bjr');
-    t.equal(frenchToSms('bonjour !'), 'bjr !', 'bonjour ! => bjr !');
+    t.equal(frenchToSms('bonjour !'), 'bjr!', 'bonjour ! => bjr!');
     t.equal(frenchToSms('bonjour!'), 'bjr!', 'bonjour! => bjr!');
 
     t.end();
@@ -51,14 +51,14 @@ test('completeSentences', t => {
         frenchToSms(
             `Bonjour tout le monde ! J'espère que vous allez bien ! Moi la patate !`
         ),
-        'bjr tt lmond ! jspr k vs allé b1 ! mwa la patate !'
+        'bjr tt lmond! jspr k vs allé b1! mwa la patate!'
     );
 
     t.equal(
         frenchToSms(
             `S'il vous plaît, pouvez-vous faire moins de bruit ? Merci.`
         ),
-        'svp, pouvé vs fR - 2 brui ? marci.'
+        'svp, pouvé vs fR - 2 brui? marci.'
     );
 
     t.equal(

@@ -201,10 +201,10 @@ const addSpaceBeforePunctuation = (text) => {
 const putPunctuationBackInPlace = (text) => {
     text = text.replace(/ \./g, '.');
     text = text.replace(/ \,/g, ',');
+    text = text.replace(/  \?/g, '?');
+    text = text.replace(/  \!/g, '!');
     text = text.replace(/ \?/g, '?');
     text = text.replace(/ \!/g, '!');
-    text = text.replace(/  \?/g, ' ?');
-    text = text.replace(/  \!/g, ' !');
     text = text.replace(/ \)/g, ')');
     text = text.replace(/\( /g, '(');
 
