@@ -21,9 +21,9 @@ const frenchToSms = (input) => {
   // Perform replacements based on the glossary
   output = replaceWholeWords(output);
   output = replaceAnywhere(output);
-  output = replaceWordsStartingWith(output);
-  output = replaceWordsEndingWith(output);
-  output = replaceWordsWithATrailingLetter(output);
+  output = replaceStartOfWords(output);
+  output = replaceEndOfWords(output);
+  output = replaceEndOfWordsFollowedByASpace(output);
 
   // Clean the output text
   output = putPunctuationBackInPlace(output);
@@ -78,7 +78,7 @@ const ACTION_TYPE = {
 /* REPLACEMENT FUNCTIONS */
 const performWholeWordReplacement = (output, action) => output.replace(wholeWord(action.input), ` ${action.output} `);
 
-const performWordStartingWithReplacement = (output, action) => {
+const performStartOfWordsReplacement = (output, action) => {
     switch (action.type) {
         default:
         case ACTION_TYPE.REPLACE_NOW:
@@ -118,7 +118,7 @@ const performAnywhereReplacement = (output, action) => {
     }
 };
 
-const performWordWithTrailingLetterReplacement = (output, action) => {
+const performEndOfWordsFollowedByASpaceReplacement = (output, action) => {
     switch (action.type) {
         default:
         case ACTION_TYPE.REPLACE_NOW:
@@ -138,7 +138,7 @@ const performWordWithTrailingLetterReplacement = (output, action) => {
     }
 };
 
-const performWordEndingWithReplacement = (output, action) => {
+const performEndOfWordsReplacement = (output, action) => {
     switch (action.type) {
         default:
         case ACTION_TYPE.REPLACE_NOW:
@@ -158,11 +158,11 @@ const performWordEndingWithReplacement = (output, action) => {
     }
 };
 
-const replaceWholeWords = (output) => glossary.wholeWords.reduce(performWholeWordReplacement, output);
-const replaceAnywhere = (output) => glossary.anywhere.reduce(performAnywhereReplacement, output);
-const replaceWordsWithATrailingLetter = (output) => glossary.wordsWithATrailingLetter.reduce(performWordWithTrailingLetterReplacement, output);
-const replaceWordsStartingWith = (output) => glossary.wordsStartingWith.reduce(performWordStartingWithReplacement, output);
-const replaceWordsEndingWith = (output) => glossary.wordsEndingWith.reduce(performWordEndingWithReplacement, output);
+const replaceWholeWords   = (output) => glossary.wholeWords.reduce(performWholeWordReplacement, output);
+const replaceAnywhere     = (output) => glossary.anywhere.reduce(performAnywhereReplacement, output);
+const replaceStartOfWords = (output) => glossary.startOfWords.reduce(performStartOfWordsReplacement, output);
+const replaceEndOfWords   = (output) => glossary.endOfWords.reduce(performEndOfWordsReplacement, output);
+const replaceEndOfWordsFollowedByASpace = (output) => glossary.endOfWordsFollowedByASpace.reduce(performEndOfWordsFollowedByASpaceReplacement, output);
 
 
 

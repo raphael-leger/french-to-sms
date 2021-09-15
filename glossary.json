@@ -1865,7 +1865,7 @@
       "input": " cc "
     }
   ],
-  "wordsStartingWith": [
+  "startOfWords": [
     {
       "type": "replace_now",
       "input": "ce",
@@ -2023,7 +2023,7 @@
       "output": "d"
     }
   ],
-  "wordsEndingWith": [
+  "endOfWords": [
     {
       "type": "replace_now",
       "input": "nds",
@@ -2521,7 +2521,7 @@
       "output": "è"
     }
   ],
-  "wordsWithATrailingLetter": [
+  "endOfWordsFollowedByASpace": [
     {
       "type": "replace_now",
       "input": "le",
