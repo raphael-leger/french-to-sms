@@ -27,6 +27,10 @@ frenchToSms("S'il vous plaît, pouvez-vous faire moins de bruit ? Merci.");
 // => "svp, pouvé vs fR - 2 brui ? marci."
 ```
 
+## Demo
+
+You can test the algorithm out on this [demo page](https://raphael-leger.github.io/french-to-sms/).
+
 
 ## Algorithm
 
