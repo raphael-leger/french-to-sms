@@ -1,5 +1,7 @@
 # french-to-sms
 
+[![Tests](https://github.com/raphael-leger/french-to-sms/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/raphael-leger/french-to-sms/actions/workflows/test.yml)
+
 Experimental project that converts French sentences to French sms style sentences in JavaScript.
 
 It should lead to smaller sentences that are still readable, even though some vocabulary may be known by younger people only 😄
