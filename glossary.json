@@ -1596,7 +1596,7 @@
       "output": "azy"
     }
   ],
-  "wordsContaining": [
+  "anywhere": [
     {
       "type": "replace_now",
       "input": "'",

@@ -20,7 +20,7 @@ const frenchToSms = (input) => {
 
   // Perform replacements based on the glossary
   output = replaceWholeWords(output);
-  output = replaceWordsContaining(output);
+  output = replaceAnywhere(output);
   output = replaceWordsStartingWith(output);
   output = replaceWordsEndingWith(output);
   output = replaceWordsWithATrailingLetter(output);
@@ -98,7 +98,7 @@ const performWordStartingWithReplacement = (output, action) => {
     }
 };
 
-const performWordContainingReplacement = (output, action) => {
+const performAnywhereReplacement = (output, action) => {
     switch (action.type) {
         default:
         case ACTION_TYPE.REPLACE_NOW:
@@ -159,9 +159,9 @@ const performWordEndingWithReplacement = (output, action) => {
 };
 
 const replaceWholeWords = (output) => glossary.wholeWords.reduce(performWholeWordReplacement, output);
+const replaceAnywhere = (output) => glossary.anywhere.reduce(performAnywhereReplacement, output);
 const replaceWordsWithATrailingLetter = (output) => glossary.wordsWithATrailingLetter.reduce(performWordWithTrailingLetterReplacement, output);
 const replaceWordsStartingWith = (output) => glossary.wordsStartingWith.reduce(performWordStartingWithReplacement, output);
-const replaceWordsContaining = (output) => glossary.wordsContaining.reduce(performWordContainingReplacement, output);
 const replaceWordsEndingWith = (output) => glossary.wordsEndingWith.reduce(performWordEndingWithReplacement, output);
 
 
