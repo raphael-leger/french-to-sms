@@ -1,0 +1,498 @@
+[
+  {
+    "type": "replace",
+    "input": "nds",
+    "output": "n"
+  },
+  {
+    "type": "replace",
+    "input": "che",
+    "output": "ch"
+  },
+  {
+    "type": "replace",
+    "input": "hui",
+    "output": "d"
+  },
+  {
+    "type": "replace",
+    "input": "néma",
+    "output": "né"
+  },
+  {
+    "type": "replace",
+    "input": "ible",
+    "output": "ib"
+  },
+  {
+    "type": "replace",
+    "input": "met",
+    "output": "mé"
+  },
+  {
+    "type": "replace",
+    "input": "mets",
+    "output": "mé"
+  },
+  {
+    "type": "replace",
+    "input": "ort",
+    "output": "or"
+  },
+  {
+    "type": "replace",
+    "input": "ées",
+    "output": "é"
+  },
+  {
+    "type": "replace",
+    "input": "ez",
+    "output": "é"
+  },
+  {
+    "type": "replace",
+    "input": "ger",
+    "output": "G"
+  },
+  {
+    "type": "replace",
+    "input": "gée",
+    "output": "G"
+  },
+  {
+    "type": "replace",
+    "input": "gées",
+    "output": "G"
+  },
+  {
+    "type": "replace",
+    "input": "gés",
+    "output": "G"
+  },
+  {
+    "type": "replace",
+    "input": "gé",
+    "output": "G"
+  },
+  {
+    "type": "replace",
+    "input": "ie",
+    "output": "i"
+  },
+  {
+    "type": "replace",
+    "input": "ors",
+    "output": "or"
+  },
+  {
+    "type": "replace",
+    "input": "ble",
+    "output": "b"
+  },
+  {
+    "type": "disable_modification",
+    "input": "sse"
+  },
+  {
+    "type": "disable_modification",
+    "input": "sses"
+  },
+  {
+    "type": "disable_modification",
+    "input": "rse"
+  },
+  {
+    "type": "replace",
+    "input": "se",
+    "output": "z"
+  },
+  {
+    "type": "disable_modification",
+    "input": "sses"
+  },
+  {
+    "type": "replace",
+    "input": "ses",
+    "output": "z"
+  },
+  {
+    "type": "enable_modification",
+    "input": "sse"
+  },
+  {
+    "type": "enable_modification",
+    "input": "sses"
+  },
+  {
+    "type": "replace",
+    "input": "ble",
+    "output": "b"
+  },
+  {
+    "type": "replace",
+    "input": "très",
+    "output": "tré"
+  },
+  {
+    "type": "replace",
+    "input": "bah",
+    "output": "ba"
+  },
+  {
+    "type": "replace",
+    "input": "bles",
+    "output": "b"
+  },
+  {
+    "type": "replace",
+    "input": "aient",
+    "output": "è"
+  },
+  {
+    "type": "replace",
+    "input": "lte",
+    "output": "lt"
+  },
+  {
+    "type": "replace",
+    "input": "nard",
+    "output": "nar"
+  },
+  {
+    "type": "disable_modification",
+    "input": "amer"
+  },
+  {
+    "type": "disable_modification",
+    "input": "1er"
+  },
+  {
+    "type": "disable_modification",
+    "input": "super"
+  },
+  {
+    "type": "disable_modification",
+    "input": "fer"
+  },
+  {
+    "type": "disable_modification",
+    "input": "mer"
+  },
+  {
+    "type": "disable_modification",
+    "input": "master"
+  },
+  {
+    "type": "replace",
+    "input": "er",
+    "output": "é"
+  },
+  {
+    "type": "enable_modification",
+    "input": "fer"
+  },
+  {
+    "type": "enable_modification",
+    "input": "mer"
+  },
+  {
+    "type": "enable_modification",
+    "input": "master"
+  },
+  {
+    "type": "enable_modification",
+    "input": "super"
+  },
+  {
+    "type": "enable_modification",
+    "input": "amer"
+  },
+  {
+    "type": "enable_modification",
+    "input": "1er"
+  },
+  {
+    "type": "replace",
+    "input": "res",
+    "output": "re"
+  },
+  {
+    "type": "replace",
+    "input": "ons",
+    "output": "on"
+  },
+  {
+    "type": "replace",
+    "input": "jet",
+    "output": "jè"
+  },
+  {
+    "type": "replace",
+    "input": "ont",
+    "output": "on"
+  },
+  {
+    "type": "replace",
+    "input": "ant",
+    "output": "an"
+  },
+  {
+    "type": "replace",
+    "input": "vos",
+    "output": "vo"
+  },
+  {
+    "type": "replace",
+    "input": "nts",
+    "output": "nt"
+  },
+  {
+    "type": "replace",
+    "input": "ste",
+    "output": "st"
+  },
+  {
+    "type": "replace",
+    "input": "ches",
+    "output": "che"
+  },
+  {
+    "type": "replace",
+    "input": "page",
+    "output": "paj"
+  },
+  {
+    "type": "replace",
+    "input": "gles",
+    "output": "gl"
+  },
+  {
+    "type": "replace",
+    "input": "vert",
+    "output": "ver"
+  },
+  {
+    "type": "replace",
+    "input": "vers",
+    "output": "ver"
+  },
+  {
+    "type": "replace",
+    "input": "and",
+    "output": "an"
+  },
+  {
+    "type": "replace",
+    "input": "vint",
+    "output": "vin"
+  },
+  {
+    "type": "replace",
+    "input": "ais",
+    "output": "è"
+  },
+  {
+    "type": "replace",
+    "input": "ait",
+    "output": "è"
+  },
+  {
+    "type": "replace",
+    "input": "merde",
+    "output": "merd"
+  },
+  {
+    "type": "replace",
+    "input": "sse",
+    "output": "ss"
+  },
+  {
+    "type": "replace",
+    "input": "ment",
+    "output": "men"
+  },
+  {
+    "type": "replace",
+    "input": "ère",
+    "output": "èr"
+  },
+  {
+    "type": "replace",
+    "input": "part",
+    "output": "par"
+  },
+  {
+    "type": "replace",
+    "input": "pars",
+    "output": "par"
+  },
+  {
+    "type": "replace",
+    "input": "ées",
+    "output": "é"
+  },
+  {
+    "type": "replace",
+    "input": "és",
+    "output": "é"
+  },
+  {
+    "type": "replace",
+    "input": "ée",
+    "output": "é"
+  },
+  {
+    "type": "replace",
+    "input": "dès",
+    "output": "dè"
+  },
+  {
+    "type": "replace",
+    "input": "Dès",
+    "output": "Dè"
+  },
+  {
+    "type": "replace",
+    "input": "rent",
+    "output": "ren"
+  },
+  {
+    "type": "replace",
+    "input": "grace",
+    "output": "grass"
+  },
+  {
+    "type": "replace",
+    "input": "plutot",
+    "output": "+to"
+  },
+  {
+    "type": "replace",
+    "input": "fruit",
+    "output": "frui"
+  },
+  {
+    "type": "replace",
+    "input": "plus tot",
+    "output": "+ to"
+  },
+  {
+    "type": "replace",
+    "input": "nille",
+    "output": "niy"
+  },
+  {
+    "type": "replace",
+    "input": "rille",
+    "output": "riy"
+  },
+  {
+    "type": "replace",
+    "input": "ard",
+    "output": "ar"
+  },
+  {
+    "type": "replace",
+    "input": "fois",
+    "output": "foi"
+  },
+  {
+    "type": "replace",
+    "input": "foit",
+    "output": "foi"
+  },
+  {
+    "type": "replace",
+    "input": "vre",
+    "output": "v"
+  },
+  {
+    "type": "replace",
+    "input": "que",
+    "output": "ke"
+  },
+  {
+    "type": "replace",
+    "input": "ge",
+    "output": "j"
+  },
+  {
+    "type": "replace",
+    "input": "mille",
+    "output": "mi"
+  },
+  {
+    "type": "replace",
+    "input": "ville",
+    "output": "vil"
+  },
+  {
+    "type": "replace",
+    "input": "ient",
+    "output": "ien"
+  },
+  {
+    "type": "replace",
+    "input": "iens",
+    "output": "ien"
+  },
+  {
+    "type": "replace",
+    "input": "Lnt",
+    "output": "L"
+  },
+  {
+    "type": "replace",
+    "input": "sest",
+    "output": "sè"
+  },
+  {
+    "type": "replace",
+    "input": "kes",
+    "output": "k"
+  },
+  {
+    "type": "replace",
+    "input": "ke",
+    "output": "k"
+  },
+  {
+    "type": "enable_modification",
+    "input": "rse"
+  },
+  {
+    "type": "replace",
+    "input": "cours",
+    "output": "kour"
+  },
+  {
+    "type": "replace",
+    "input": "illion",
+    "output": "ilion"
+  },
+  {
+    "type": "replace",
+    "input": "ois",
+    "output": "oi"
+  },
+  {
+    "type": "replace",
+    "input": "ts",
+    "output": ""
+  },
+  {
+    "type": "replace",
+    "input": "gens",
+    "output": "jan"
+  },
+  {
+    "type": "replace",
+    "input": "uit",
+    "output": "ui"
+  },
+  {
+    "type": "replace",
+    "input": "ès",
+    "output": "è"
+  }
+]

@@ -1,0 +1,269 @@
+[
+  {
+    "type": "replace",
+    "input": "'",
+    "output": ""
+  },
+  {
+    "type": "replace",
+    "input": "ph",
+    "output": "f"
+  },
+  {
+    "type": "replace",
+    "input": "ère",
+    "output": "R"
+  },
+  {
+    "type": "replace",
+    "input": "aire",
+    "output": "R"
+  },
+  {
+    "type": "replace",
+    "input": "air",
+    "output": "èr"
+  },
+  {
+    "type": "replace",
+    "input": "cl",
+    "output": "kl"
+  },
+  {
+    "type": "replace",
+    "input": "caca",
+    "output": "kk"
+  },
+  {
+    "type": "replace",
+    "input": "vemen",
+    "output": "vmen"
+  },
+  {
+    "type": "replace",
+    "input": "tech",
+    "output": "tek"
+  },
+  {
+    "type": "replace",
+    "input": "lement",
+    "output": "lmen"
+  },
+  {
+    "type": "disable_modification",
+    "input": "ail"
+  },
+  {
+    "type": "replace",
+    "input": "ain",
+    "output": "1"
+  },
+  {
+    "type": "replace",
+    "input": "ai",
+    "output": "è"
+  },
+  {
+    "type": "enable_modification",
+    "input": "ail"
+  },
+  {
+    "type": "replace",
+    "input": "ssées",
+    "output": "C"
+  },
+  {
+    "type": "replace",
+    "input": "ssés",
+    "output": "C"
+  },
+  {
+    "type": "replace",
+    "input": "ssé",
+    "output": "C"
+  },
+  {
+    "type": "replace",
+    "input": "ée",
+    "output": "é"
+  },
+  {
+    "type": "replace",
+    "input": "ées",
+    "output": "é"
+  },
+  {
+    "type": "replace",
+    "input": "ques",
+    "output": "kes"
+  },
+  {
+    "type": "replace",
+    "input": "aine",
+    "output": "N"
+  },
+  {
+    "type": "replace",
+    "input": "ène",
+    "output": "N"
+  },
+  {
+    "type": "replace",
+    "input": "ènne",
+    "output": "N"
+  },
+  {
+    "type": "replace",
+    "input": "sserie",
+    "output": "ssri"
+  },
+  {
+    "type": "replace",
+    "input": "eaux",
+    "output": "o"
+  },
+  {
+    "type": "replace",
+    "input": "eau",
+    "output": "o"
+  },
+  {
+    "type": "replace",
+    "input": "aux",
+    "output": "o"
+  },
+  {
+    "type": "replace",
+    "input": "au",
+    "output": "o"
+  },
+  {
+    "type": "replace",
+    "input": "je",
+    "output": "j"
+  },
+  {
+    "type": "replace",
+    "input": "vé",
+    "output": "V"
+  },
+  {
+    "type": "replace",
+    "input": "gé",
+    "output": "G"
+  },
+  {
+    "type": "disable_modification",
+    "input": " nn "
+  },
+  {
+    "type": "replace",
+    "input": "nn",
+    "output": "n"
+  },
+  {
+    "type": "enable_modification",
+    "input": " nn "
+  },
+  {
+    "type": "replace",
+    "input": "elle",
+    "output": "L"
+  },
+  {
+    "type": "replace",
+    "input": "présente",
+    "output": "prézent"
+  },
+  {
+    "type": "disable_modification",
+    "input": " tt "
+  },
+  {
+    "type": "replace",
+    "input": "tt",
+    "output": "t"
+  },
+  {
+    "type": "enable_modification",
+    "input": " tt "
+  },
+  {
+    "type": "replace",
+    "input": "pp",
+    "output": "p"
+  },
+  {
+    "type": "replace",
+    "input": "mm",
+    "output": "m"
+  },
+  {
+    "type": "replace",
+    "input": "rr",
+    "output": "r"
+  },
+  {
+    "type": "replace",
+    "input": "ff",
+    "output": "f"
+  },
+  {
+    "type": "replace",
+    "input": "dées",
+    "output": "D"
+  },
+  {
+    "type": "replace",
+    "input": "dée",
+    "output": "D"
+  },
+  {
+    "type": "replace",
+    "input": "dé",
+    "output": "D"
+  },
+  {
+    "type": "replace",
+    "input": "dé",
+    "output": "D"
+  },
+  {
+    "type": "replace",
+    "input": "quun",
+    "output": "k1"
+  },
+  {
+    "type": "replace",
+    "input": "iens",
+    "output": "i1"
+  },
+  {
+    "type": "replace",
+    "input": "ien",
+    "output": "i1"
+  },
+  {
+    "type": "replace",
+    "input": "ç",
+    "output": "ss"
+  },
+  {
+    "type": "replace",
+    "input": "cti",
+    "output": "xi"
+  },
+  {
+    "type": "disable_modification",
+    "input": " cc "
+  },
+  {
+    "type": "replace",
+    "input": "cc",
+    "output": "x"
+  },
+  {
+    "type": "enable_modification",
+    "input": " cc "
+  }
+]

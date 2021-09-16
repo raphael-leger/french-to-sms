@@ -1,0 +1,128 @@
+[
+  {
+    "type": "replace",
+    "input": "le",
+    "output": "l"
+  },
+  {
+    "type": "disable_modification",
+    "input": "ke"
+  },
+  {
+    "type": "disable_modification",
+    "input": "ce"
+  },
+  {
+    "type": "disable_modification",
+    "input": "ine"
+  },
+  {
+    "type": "disable_modification",
+    "input": "une"
+  },
+  {
+    "type": "disable_modification",
+    "input": "te"
+  },
+  {
+    "type": "disable_modification",
+    "input": "pe"
+  },
+  {
+    "type": "replace",
+    "input": "e",
+    "output": " "
+  },
+  {
+    "type": "enable_modification",
+    "input": "pe"
+  },
+  {
+    "type": "enable_modification",
+    "input": "te"
+  },
+  {
+    "type": "enable_modification",
+    "input": "une"
+  },
+  {
+    "type": "enable_modification",
+    "input": "ine"
+  },
+  {
+    "type": "enable_modification",
+    "input": "ce"
+  },
+  {
+    "type": "enable_modification",
+    "input": "ke"
+  },
+  {
+    "type": "disable_modification",
+    "input": "kes"
+  },
+  {
+    "type": "disable_modification",
+    "input": "ces"
+  },
+  {
+    "type": "disable_modification",
+    "input": "ines"
+  },
+  {
+    "type": "disable_modification",
+    "input": "unes"
+  },
+  {
+    "type": "disable_modification",
+    "input": "tes"
+  },
+  {
+    "type": "disable_modification",
+    "input": "pes"
+  },
+  {
+    "type": "replace",
+    "input": "es",
+    "output": " "
+  },
+  {
+    "type": "enable_modification",
+    "input": "pe"
+  },
+  {
+    "type": "enable_modification",
+    "input": "tes"
+  },
+  {
+    "type": "replace",
+    "input": "es",
+    "output": "e "
+  },
+  {
+    "type": "enable_modification",
+    "input": "une"
+  },
+  {
+    "type": "enable_modification",
+    "input": "ine"
+  },
+  {
+    "type": "enable_modification",
+    "input": "ces"
+  },
+  {
+    "type": "enable_modification",
+    "input": "kes"
+  },
+  {
+    "type": "replace",
+    "input": "j vs",
+    "output": "jvou "
+  },
+  {
+    "type": "replace",
+    "input": " j",
+    "output": " j"
+  }
+]

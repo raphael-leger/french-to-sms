@@ -1,0 +1,1597 @@
+[
+  {
+    "type": "replace",
+    "input": "dix-sept",
+    "output": "17"
+  },
+  {
+    "type": "replace",
+    "input": "dix-huit",
+    "output": "18"
+  },
+  {
+    "type": "replace",
+    "input": "dix-neuf",
+    "output": "19"
+  },
+  {
+    "type": "replace",
+    "input": "soixante-dix",
+    "output": "70"
+  },
+  {
+    "type": "replace",
+    "input": "quatre-vingt",
+    "output": "80"
+  },
+  {
+    "type": "replace",
+    "input": "quatre-vingt-dix",
+    "output": "90"
+  },
+  {
+    "type": "replace",
+    "input": "zéro",
+    "output": "0"
+  },
+  {
+    "type": "replace",
+    "input": "un",
+    "output": "1"
+  },
+  {
+    "type": "replace",
+    "input": "deux",
+    "output": "2"
+  },
+  {
+    "type": "replace",
+    "input": "trois",
+    "output": "3"
+  },
+  {
+    "type": "replace",
+    "input": "quatre",
+    "output": "4"
+  },
+  {
+    "type": "replace",
+    "input": "cinq",
+    "output": "5"
+  },
+  {
+    "type": "replace",
+    "input": "six",
+    "output": "6"
+  },
+  {
+    "type": "replace",
+    "input": "sept",
+    "output": "7"
+  },
+  {
+    "type": "replace",
+    "input": "huit",
+    "output": "8"
+  },
+  {
+    "type": "replace",
+    "input": "neuf",
+    "output": "9"
+  },
+  {
+    "type": "replace",
+    "input": "dix",
+    "output": "10"
+  },
+  {
+    "type": "replace",
+    "input": "onze",
+    "output": "11"
+  },
+  {
+    "type": "replace",
+    "input": "douze",
+    "output": "12"
+  },
+  {
+    "type": "replace",
+    "input": "treize",
+    "output": "13"
+  },
+  {
+    "type": "replace",
+    "input": "quatorze",
+    "output": "14"
+  },
+  {
+    "type": "replace",
+    "input": "quinze",
+    "output": "15"
+  },
+  {
+    "type": "replace",
+    "input": "seize",
+    "output": "16"
+  },
+  {
+    "type": "replace",
+    "input": "vingt",
+    "output": "20"
+  },
+  {
+    "type": "replace",
+    "input": "trente",
+    "output": "30"
+  },
+  {
+    "type": "replace",
+    "input": "quarante",
+    "output": "40"
+  },
+  {
+    "type": "replace",
+    "input": "cinquante",
+    "output": "50"
+  },
+  {
+    "type": "replace",
+    "input": "soixante",
+    "output": "60"
+  },
+  {
+    "type": "replace",
+    "input": "quelqu'un",
+    "output": "qq"
+  },
+  {
+    "type": "replace",
+    "input": "mois",
+    "output": "mwa"
+  },
+  {
+    "type": "replace",
+    "input": "devoir surveillé",
+    "output": "DS"
+  },
+  {
+    "type": "replace",
+    "input": "s'il te plait",
+    "output": "stp"
+  },
+  {
+    "type": "replace",
+    "input": "s'il vous plait",
+    "output": "svp"
+  },
+  {
+    "type": "replace",
+    "input": "devoir sur table",
+    "output": "DST"
+  },
+  {
+    "type": "replace",
+    "input": "aussi",
+    "output": "o6"
+  },
+  {
+    "type": "replace",
+    "input": "plein",
+    "output": "pl1"
+  },
+  {
+    "type": "replace",
+    "input": "pourquoi",
+    "output": "pk"
+  },
+  {
+    "type": "replace",
+    "input": "belle gosse",
+    "output": "bg"
+  },
+  {
+    "type": "replace",
+    "input": "de la",
+    "output": "dla"
+  },
+  {
+    "type": "replace",
+    "input": "cas",
+    "output": "K"
+  },
+  {
+    "type": "replace",
+    "input": "aime",
+    "output": "M"
+  },
+  {
+    "type": "replace",
+    "input": "succession",
+    "output": "suxéssion"
+  },
+  {
+    "type": "replace",
+    "input": "définition",
+    "output": "def"
+  },
+  {
+    "type": "replace",
+    "input": "vertical",
+    "output": "vertikal"
+  },
+  {
+    "type": "replace",
+    "input": "doit",
+    "output": "doi"
+  },
+  {
+    "type": "replace",
+    "input": "selon",
+    "output": "slon"
+  },
+  {
+    "type": "replace",
+    "input": "images",
+    "output": "img"
+  },
+  {
+    "type": "replace",
+    "input": "linkedin",
+    "output": "linkdin"
+  },
+  {
+    "type": "replace",
+    "input": "image",
+    "output": "img"
+  },
+  {
+    "type": "replace",
+    "input": "ce que",
+    "output": "ske"
+  },
+  {
+    "type": "replace",
+    "input": "langues",
+    "output": "langu"
+  },
+  {
+    "type": "replace",
+    "input": "environ",
+    "output": "±"
+  },
+  {
+    "type": "replace",
+    "input": "à peu près",
+    "output": "±"
+  },
+  {
+    "type": "replace",
+    "input": "lors",
+    "output": "lor"
+  },
+  {
+    "type": "replace",
+    "input": "comment allez-vous",
+    "output": "cv"
+  },
+  {
+    "type": "replace",
+    "input": "beau gosse",
+    "output": "bg"
+  },
+  {
+    "type": "replace",
+    "input": "d'accord",
+    "output": "ok"
+  },
+  {
+    "type": "replace",
+    "input": "world of warcraft",
+    "output": "WoW"
+  },
+  {
+    "type": "replace",
+    "input": "j'étais",
+    "output": "GT"
+  },
+  {
+    "type": "replace",
+    "input": "à un de ces quatre",
+    "output": "A12C4"
+  },
+  {
+    "type": "replace",
+    "input": "même",
+    "output": "mm"
+  },
+  {
+    "type": "replace",
+    "input": "sinon",
+    "output": "sinn"
+  },
+  {
+    "type": "replace",
+    "input": "avoir",
+    "output": "avr"
+  },
+  {
+    "type": "replace",
+    "input": "appris",
+    "output": "apri"
+  },
+  {
+    "type": "replace",
+    "input": "hier",
+    "output": "IR"
+  },
+  {
+    "type": "replace",
+    "input": "gratuit",
+    "output": "gratos"
+  },
+  {
+    "type": "replace",
+    "input": "gateau",
+    "output": "gato"
+  },
+  {
+    "type": "replace",
+    "input": "besoin",
+    "output": "bzoin"
+  },
+  {
+    "type": "replace",
+    "input": "mort",
+    "output": "mor"
+  },
+  {
+    "type": "replace",
+    "input": "gentil",
+    "output": "janti"
+  },
+  {
+    "type": "replace",
+    "input": "depuis",
+    "output": "dpui"
+  },
+  {
+    "type": "replace",
+    "input": "chiant",
+    "output": "chian"
+  },
+  {
+    "type": "replace",
+    "input": "musique",
+    "output": "musik"
+  },
+  {
+    "type": "replace",
+    "input": "numéro",
+    "output": "num"
+  },
+  {
+    "type": "replace",
+    "input": "j'aurais",
+    "output": "joré"
+  },
+  {
+    "type": "replace",
+    "input": "personnellement",
+    "output": "perso"
+  },
+  {
+    "type": "replace",
+    "input": "t'appelles",
+    "output": "tapel"
+  },
+  {
+    "type": "replace",
+    "input": "tu vas",
+    "output": "tva"
+  },
+  {
+    "type": "replace",
+    "input": "rejoins",
+    "output": "rejo1"
+  },
+  {
+    "type": "replace",
+    "input": "les",
+    "output": "lé"
+  },
+  {
+    "type": "replace",
+    "input": "tu fais",
+    "output": "tfai"
+  },
+  {
+    "type": "replace",
+    "input": "ton",
+    "output": "tn"
+  },
+  {
+    "type": "replace",
+    "input": "mon",
+    "output": "mn"
+  },
+  {
+    "type": "replace",
+    "input": "quel",
+    "output": "kel"
+  },
+  {
+    "type": "replace",
+    "input": "que veux-tu",
+    "output": "kestuveu"
+  },
+  {
+    "type": "replace",
+    "input": "instagram",
+    "output": "insta"
+  },
+  {
+    "type": "replace",
+    "input": "facebook",
+    "output": "FB"
+  },
+  {
+    "type": "replace",
+    "input": "twitter",
+    "output": "twitèr"
+  },
+  {
+    "type": "replace",
+    "input": "rien à faire",
+    "output": "RAF"
+  },
+  {
+    "type": "replace",
+    "input": "rien à signaler",
+    "output": "RAS"
+  },
+  {
+    "type": "replace",
+    "input": "veux",
+    "output": "vE"
+  },
+  {
+    "type": "replace",
+    "input": "folles",
+    "output": "ouf"
+  },
+  {
+    "type": "replace",
+    "input": "fous",
+    "output": "ouf"
+  },
+  {
+    "type": "replace",
+    "input": "fou",
+    "output": "ouf"
+  },
+  {
+    "type": "replace",
+    "input": "veut",
+    "output": "vE"
+  },
+  {
+    "type": "replace",
+    "input": "modérateur",
+    "output": "modo"
+  },
+  {
+    "type": "replace",
+    "input": "imposture",
+    "output": "fake"
+  },
+  {
+    "type": "replace",
+    "input": "truand",
+    "output": "truan"
+  },
+  {
+    "type": "replace",
+    "input": "grand",
+    "output": "gran"
+  },
+  {
+    "type": "replace",
+    "input": "game boy advance",
+    "output": "gba"
+  },
+  {
+    "type": "replace",
+    "input": "gamecube",
+    "output": "ngc"
+  },
+  {
+    "type": "replace",
+    "input": "playstation 4",
+    "output": "ps4"
+  },
+  {
+    "type": "replace",
+    "input": "playstation 3",
+    "output": "ps3"
+  },
+  {
+    "type": "replace",
+    "input": "playstation 2",
+    "output": "ps2"
+  },
+  {
+    "type": "replace",
+    "input": "playstation",
+    "output": "ps"
+  },
+  {
+    "type": "replace",
+    "input": "ouais",
+    "output": "oé"
+  },
+  {
+    "type": "replace",
+    "input": "au fait",
+    "output": "ofét"
+  },
+  {
+    "type": "replace",
+    "input": "désolé",
+    "output": "dsl"
+  },
+  {
+    "type": "replace",
+    "input": "déteste",
+    "output": "Dtest"
+  },
+  {
+    "type": "replace",
+    "input": "toi même tu sais",
+    "output": "tmtc"
+  },
+  {
+    "type": "replace",
+    "input": "j'sais pas",
+    "output": "ché po"
+  },
+  {
+    "type": "replace",
+    "input": "toujours",
+    "output": "tjrs"
+  },
+  {
+    "type": "replace",
+    "input": "comme",
+    "output": "kom"
+  },
+  {
+    "type": "replace",
+    "input": "peut",
+    "output": "pE"
+  },
+  {
+    "type": "replace",
+    "input": "peu",
+    "output": "pE"
+  },
+  {
+    "type": "replace",
+    "input": "mort de rire",
+    "output": "mdr"
+  },
+  {
+    "type": "replace",
+    "input": "pain",
+    "output": "p1"
+  },
+  {
+    "type": "replace",
+    "input": "comment ça va ?",
+    "output": "cv ?"
+  },
+  {
+    "type": "replace",
+    "input": "t'es",
+    "output": "t"
+  },
+  {
+    "type": "replace",
+    "input": "j'ai",
+    "output": "g"
+  },
+  {
+    "type": "replace",
+    "input": "message",
+    "output": "msg"
+  },
+  {
+    "type": "replace",
+    "input": "deux",
+    "output": "2"
+  },
+  {
+    "type": "replace",
+    "input": "caractères",
+    "output": "caractèr"
+  },
+  {
+    "type": "replace",
+    "input": "cette",
+    "output": "7"
+  },
+  {
+    "type": "replace",
+    "input": "cet",
+    "output": "7"
+  },
+  {
+    "type": "replace",
+    "input": "langage",
+    "output": "langaj"
+  },
+  {
+    "type": "replace",
+    "input": "proprement",
+    "output": "propremen"
+  },
+  {
+    "type": "replace",
+    "input": "tant",
+    "output": "tan"
+  },
+  {
+    "type": "replace",
+    "input": "temps",
+    "output": "tps"
+  },
+  {
+    "type": "replace",
+    "input": "plusieurs",
+    "output": "pluzieur"
+  },
+  {
+    "type": "replace",
+    "input": "différentes",
+    "output": "diférente"
+  },
+  {
+    "type": "replace",
+    "input": "langues",
+    "output": "langu"
+  },
+  {
+    "type": "replace",
+    "input": "répondre",
+    "output": "rep"
+  },
+  {
+    "type": "replace",
+    "input": "haute",
+    "output": "Ote"
+  },
+  {
+    "type": "replace",
+    "input": "haut",
+    "output": "O"
+  },
+  {
+    "type": "replace",
+    "input": "science",
+    "output": "siance"
+  },
+  {
+    "type": "replace",
+    "input": "vient",
+    "output": "vi1"
+  },
+  {
+    "type": "replace",
+    "input": "viens",
+    "output": "vi1"
+  },
+  {
+    "type": "replace",
+    "input": "chaîne",
+    "output": "chène"
+  },
+  {
+    "type": "replace",
+    "input": "celle-ci",
+    "output": "sell ci"
+  },
+  {
+    "type": "replace",
+    "input": "a plus",
+    "output": "a+"
+  },
+  {
+    "type": "replace",
+    "input": "tout",
+    "output": "tt"
+  },
+  {
+    "type": "replace",
+    "input": "meilleur ami",
+    "output": "bestah"
+  },
+  {
+    "type": "replace",
+    "input": "trouve",
+    "output": "trv"
+  },
+  {
+    "type": "replace",
+    "input": "temps",
+    "output": "tps"
+  },
+  {
+    "type": "replace",
+    "input": "raison",
+    "output": "rézon"
+  },
+  {
+    "type": "replace",
+    "input": "hors sujet",
+    "output": "HS"
+  },
+  {
+    "type": "replace",
+    "input": "rendez vous",
+    "output": "rdv"
+  },
+  {
+    "type": "replace",
+    "input": "vous",
+    "output": "vs"
+  },
+  {
+    "type": "replace",
+    "input": "nous",
+    "output": "ns"
+  },
+  {
+    "type": "replace",
+    "input": "je voulais",
+    "output": "jvoulé"
+  },
+  {
+    "type": "replace",
+    "input": "fort",
+    "output": "for"
+  },
+  {
+    "type": "replace",
+    "input": "peut-être",
+    "output": "pE etr"
+  },
+  {
+    "type": "replace",
+    "input": "parce que",
+    "output": "psk"
+  },
+  {
+    "type": "replace",
+    "input": "puisque",
+    "output": "psk"
+  },
+  {
+    "type": "replace",
+    "input": "tu as",
+    "output": "ta"
+  },
+  {
+    "type": "replace",
+    "input": "aller",
+    "output": "alé"
+  },
+  {
+    "type": "replace",
+    "input": "puis",
+    "output": "pi"
+  },
+  {
+    "type": "replace",
+    "input": "m'appelle",
+    "output": "mapel"
+  },
+  {
+    "type": "replace",
+    "input": "contre",
+    "output": "VS"
+  },
+  {
+    "type": "replace",
+    "input": "avec",
+    "output": "ac"
+  },
+  {
+    "type": "replace",
+    "input": "prout",
+    "output": "pet"
+  },
+  {
+    "type": "replace",
+    "input": "petite",
+    "output": "tit"
+  },
+  {
+    "type": "replace",
+    "input": "petit",
+    "output": "pti"
+  },
+  {
+    "type": "replace",
+    "input": "longtemps",
+    "output": "lgtps"
+  },
+  {
+    "type": "replace",
+    "input": "bourgeois",
+    "output": "bourjoi"
+  },
+  {
+    "type": "replace",
+    "input": "monsieur",
+    "output": "mr"
+  },
+  {
+    "type": "replace",
+    "input": "mademoiselle",
+    "output": "mlle"
+  },
+  {
+    "type": "replace",
+    "input": "madame",
+    "output": "mme"
+  },
+  {
+    "type": "replace",
+    "input": "stylo",
+    "output": "stilo"
+  },
+  {
+    "type": "replace",
+    "input": "excuse-moi",
+    "output": "dsl"
+  },
+  {
+    "type": "replace",
+    "input": "introduction",
+    "output": "1tro"
+  },
+  {
+    "type": "replace",
+    "input": "de quoi",
+    "output": "dkwa"
+  },
+  {
+    "type": "replace",
+    "input": "merci",
+    "output": "marci"
+  },
+  {
+    "type": "replace",
+    "input": "programme",
+    "output": "prog"
+  },
+  {
+    "type": "replace",
+    "input": "retard",
+    "output": "rtar"
+  },
+  {
+    "type": "replace",
+    "input": "devoir",
+    "output": "dvoir"
+  },
+  {
+    "type": "replace",
+    "input": "apprend",
+    "output": "apren"
+  },
+  {
+    "type": "replace",
+    "input": "soeur",
+    "output": "seur"
+  },
+  {
+    "type": "replace",
+    "input": "d'habitude",
+    "output": "dab"
+  },
+  {
+    "type": "replace",
+    "input": "tiens",
+    "output": "ti1"
+  },
+  {
+    "type": "replace",
+    "input": "je viens",
+    "output": "jvi1"
+  },
+  {
+    "type": "replace",
+    "input": "je dors",
+    "output": "jdor"
+  },
+  {
+    "type": "replace",
+    "input": "soit",
+    "output": "soi"
+  },
+  {
+    "type": "replace",
+    "input": "sont",
+    "output": "st"
+  },
+  {
+    "type": "replace",
+    "input": "aimé",
+    "output": "émé"
+  },
+  {
+    "type": "replace",
+    "input": "perdu",
+    "output": "pRdu"
+  },
+  {
+    "type": "replace",
+    "input": "saison",
+    "output": "cson"
+  },
+  {
+    "type": "replace",
+    "input": "meilleure amie",
+    "output": "bestah"
+  },
+  {
+    "type": "replace",
+    "input": "c'est",
+    "output": "cé"
+  },
+  {
+    "type": "replace",
+    "input": "je vais",
+    "output": "jvé"
+  },
+  {
+    "type": "replace",
+    "input": "trop",
+    "output": "tro"
+  },
+  {
+    "type": "replace",
+    "input": "non",
+    "output": "nn"
+  },
+  {
+    "type": "replace",
+    "input": "ça va",
+    "output": "sava"
+  },
+  {
+    "type": "replace",
+    "input": "mec",
+    "output": "mek"
+  },
+  {
+    "type": "replace",
+    "input": "demain",
+    "output": "2m1"
+  },
+  {
+    "type": "replace",
+    "input": "copain",
+    "output": "cop1"
+  },
+  {
+    "type": "replace",
+    "input": "à l'aide",
+    "output": "àlèd"
+  },
+  {
+    "type": "replace",
+    "input": "j'y vais",
+    "output": "JV"
+  },
+  {
+    "type": "replace",
+    "input": "ordinateur",
+    "output": "pc"
+  },
+  {
+    "type": "replace",
+    "input": "télévision",
+    "output": "tv"
+  },
+  {
+    "type": "replace",
+    "input": "pépère",
+    "output": "ppr"
+  },
+  {
+    "type": "replace",
+    "input": "cassé",
+    "output": "kc"
+  },
+  {
+    "type": "replace",
+    "input": "t'es",
+    "output": "T"
+  },
+  {
+    "type": "replace",
+    "input": "chien",
+    "output": "chi1"
+  },
+  {
+    "type": "replace",
+    "input": "j'aime",
+    "output": "jM"
+  },
+  {
+    "type": "replace",
+    "input": "t'aimes",
+    "output": "tM"
+  },
+  {
+    "type": "replace",
+    "input": "con",
+    "output": "kon"
+  },
+  {
+    "type": "replace",
+    "input": "mathématiques",
+    "output": "math"
+  },
+  {
+    "type": "replace",
+    "input": "de rien",
+    "output": "2ri1"
+  },
+  {
+    "type": "replace",
+    "input": "cadeaux",
+    "output": "kdo"
+  },
+  {
+    "type": "replace",
+    "input": "cadeau",
+    "output": "kdo"
+  },
+  {
+    "type": "replace",
+    "input": "n'importe quoi",
+    "output": "nptk"
+  },
+  {
+    "type": "replace",
+    "input": "coucou",
+    "output": "cc"
+  },
+  {
+    "type": "replace",
+    "input": "acheté",
+    "output": "HT"
+  },
+  {
+    "type": "replace",
+    "input": "vais",
+    "output": "go"
+  },
+  {
+    "type": "replace",
+    "input": "aucun",
+    "output": "ok1"
+  },
+  {
+    "type": "replace",
+    "input": "aussi vite que possible",
+    "output": "asap"
+  },
+  {
+    "type": "replace",
+    "input": "dès que possible",
+    "output": "asap"
+  },
+  {
+    "type": "replace",
+    "input": "avant",
+    "output": "avt"
+  },
+  {
+    "type": "replace",
+    "input": "appetit",
+    "output": "nap"
+  },
+  {
+    "type": "replace",
+    "input": "pas grave",
+    "output": "pg"
+  },
+  {
+    "type": "replace",
+    "input": "coeur",
+    "output": "keur"
+  },
+  {
+    "type": "replace",
+    "input": "idée",
+    "output": "ID"
+  },
+  {
+    "type": "replace",
+    "input": "je suis",
+    "output": "chui"
+  },
+  {
+    "type": "replace",
+    "input": "problème",
+    "output": "pb"
+  },
+  {
+    "type": "replace",
+    "input": "quand",
+    "output": "qd"
+  },
+  {
+    "type": "replace",
+    "input": "rien à signaler",
+    "output": "RAS"
+  },
+  {
+    "type": "replace",
+    "input": "je vais bien",
+    "output": "jvébi1"
+  },
+  {
+    "type": "replace",
+    "input": "webcam",
+    "output": "cam"
+  },
+  {
+    "type": "replace",
+    "input": "travail",
+    "output": "taff"
+  },
+  {
+    "type": "replace",
+    "input": "week-end",
+    "output": "WE"
+  },
+  {
+    "type": "replace",
+    "input": "tout à l'heure",
+    "output": "taleur"
+  },
+  {
+    "type": "replace",
+    "input": "bébé",
+    "output": "BB"
+  },
+  {
+    "type": "replace",
+    "input": "toi même tu sais",
+    "output": "tmtc"
+  },
+  {
+    "type": "replace",
+    "input": "bisoux",
+    "output": "bsx"
+  },
+  {
+    "type": "replace",
+    "input": "fille",
+    "output": "meuf"
+  },
+  {
+    "type": "replace",
+    "input": "viens",
+    "output": "vi1"
+  },
+  {
+    "type": "replace",
+    "input": "on s'en fiche",
+    "output": "OSEF"
+  },
+  {
+    "type": "replace",
+    "input": "bon",
+    "output": "bn"
+  },
+  {
+    "type": "replace",
+    "input": "compris",
+    "output": "kompri"
+  },
+  {
+    "type": "replace",
+    "input": "pas",
+    "output": "pa"
+  },
+  {
+    "type": "replace",
+    "input": "espèce",
+    "output": "spece"
+  },
+  {
+    "type": "replace",
+    "input": "gros",
+    "output": "gro"
+  },
+  {
+    "type": "replace",
+    "input": "bonsoir",
+    "output": "bsr"
+  },
+  {
+    "type": "replace",
+    "input": "rentre",
+    "output": "rentr"
+  },
+  {
+    "type": "replace",
+    "input": "soir",
+    "output": "soar"
+  },
+  {
+    "type": "replace",
+    "input": "sérieux",
+    "output": "serieu"
+  },
+  {
+    "type": "replace",
+    "input": "interrogation",
+    "output": "1tero"
+  },
+  {
+    "type": "replace",
+    "input": "aimé",
+    "output": "kiffé"
+  },
+  {
+    "type": "replace",
+    "input": "étant",
+    "output": "étan"
+  },
+  {
+    "type": "replace",
+    "input": "anneaux",
+    "output": "ano"
+  },
+  {
+    "type": "replace",
+    "input": "anneau",
+    "output": "ano"
+  },
+  {
+    "type": "replace",
+    "input": "téléphone",
+    "output": "tel"
+  },
+  {
+    "type": "replace",
+    "input": "des",
+    "output": "D"
+  },
+  {
+    "type": "replace",
+    "input": "et",
+    "output": "é"
+  },
+  {
+    "type": "replace",
+    "input": "est",
+    "output": "é"
+  },
+  {
+    "type": "replace",
+    "input": "tous",
+    "output": "ts"
+  },
+  {
+    "type": "replace",
+    "input": "qui",
+    "output": "ki"
+  },
+  {
+    "type": "replace",
+    "input": "de nouveau",
+    "output": "2 9"
+  },
+  {
+    "type": "replace",
+    "input": "nouveau",
+    "output": "new"
+  },
+  {
+    "type": "replace",
+    "input": "comment",
+    "output": "cmt"
+  },
+  {
+    "type": "replace",
+    "input": "je t'adore",
+    "output": "jtdr"
+  },
+  {
+    "type": "replace",
+    "input": "ce qu'ils",
+    "output": "ski"
+  },
+  {
+    "type": "replace",
+    "input": "ce qu'il",
+    "output": "ski"
+  },
+  {
+    "type": "replace",
+    "input": "quoi",
+    "output": "koi"
+  },
+  {
+    "type": "replace",
+    "input": "pendant",
+    "output": "pdt"
+  },
+  {
+    "type": "replace",
+    "input": "un",
+    "output": "1"
+  },
+  {
+    "type": "replace",
+    "input": "je t'aime",
+    "output": "jtm"
+  },
+  {
+    "type": "replace",
+    "input": "objet",
+    "output": "objé"
+  },
+  {
+    "type": "replace",
+    "input": "document",
+    "output": "doc"
+  },
+  {
+    "type": "replace",
+    "input": "réponds",
+    "output": "rep"
+  },
+  {
+    "type": "replace",
+    "input": "répond",
+    "output": "rep"
+  },
+  {
+    "type": "replace",
+    "input": "interrogation",
+    "output": "intero"
+  },
+  {
+    "type": "replace",
+    "input": "football",
+    "output": "foot"
+  },
+  {
+    "type": "replace",
+    "input": "chaud",
+    "output": "cho"
+  },
+  {
+    "type": "replace",
+    "input": "je sais",
+    "output": "jsé"
+  },
+  {
+    "type": "replace",
+    "input": "salut",
+    "output": "lu"
+  },
+  {
+    "type": "replace",
+    "input": "j'espère",
+    "output": "jspr"
+  },
+  {
+    "type": "replace",
+    "input": "bonjour",
+    "output": "bjr"
+  },
+  {
+    "type": "replace",
+    "input": "ca va",
+    "output": "cv"
+  },
+  {
+    "type": "replace",
+    "input": "bonne chance",
+    "output": "gl"
+  },
+  {
+    "type": "replace",
+    "input": "bien joué",
+    "output": "gg"
+  },
+  {
+    "type": "replace",
+    "input": "bien",
+    "output": "b1"
+  },
+  {
+    "type": "replace",
+    "input": "rien",
+    "output": "ri1"
+  },
+  {
+    "type": "replace",
+    "input": "neuf",
+    "output": "9"
+  },
+  {
+    "type": "replace",
+    "input": "main",
+    "output": "m1"
+  },
+  {
+    "type": "replace",
+    "input": "dans",
+    "output": "ds"
+  },
+  {
+    "type": "replace",
+    "input": "cul",
+    "output": "Q"
+  },
+  {
+    "type": "replace",
+    "input": "vois",
+    "output": "voi"
+  },
+  {
+    "type": "replace",
+    "input": "voit",
+    "output": "voi"
+  },
+  {
+    "type": "replace",
+    "input": "chat",
+    "output": "cha"
+  },
+  {
+    "type": "replace",
+    "input": "chats",
+    "output": "cha"
+  },
+  {
+    "type": "replace",
+    "input": "eu",
+    "output": "u"
+  },
+  {
+    "type": "replace",
+    "input": "de",
+    "output": "2"
+  },
+  {
+    "type": "replace",
+    "input": "pour",
+    "output": "pr"
+  },
+  {
+    "type": "replace",
+    "input": "fus",
+    "output": "fu"
+  },
+  {
+    "type": "replace",
+    "input": "fut",
+    "output": "fu"
+  },
+  {
+    "type": "replace",
+    "input": "ses",
+    "output": "sé"
+  },
+  {
+    "type": "replace",
+    "input": "ces",
+    "output": "sé"
+  },
+  {
+    "type": "replace",
+    "input": "lors",
+    "output": "lor"
+  },
+  {
+    "type": "replace",
+    "input": "ah",
+    "output": "a"
+  },
+  {
+    "type": "replace",
+    "input": "oké",
+    "output": "ok"
+  },
+  {
+    "type": "replace",
+    "input": "okay",
+    "output": "ok"
+  },
+  {
+    "type": "replace",
+    "input": "es",
+    "output": "é"
+  },
+  {
+    "type": "replace",
+    "input": "qu'est ce que",
+    "output": "keske"
+  },
+  {
+    "type": "replace",
+    "input": "qu'est ce",
+    "output": "kes"
+  },
+  {
+    "type": "replace",
+    "input": "après",
+    "output": "apré"
+  },
+  {
+    "type": "replace",
+    "input": "lait",
+    "output": "lè"
+  },
+  {
+    "type": "replace",
+    "input": "est-à-dire",
+    "output": "ad"
+  },
+  {
+    "type": "replace",
+    "input": "aujourd",
+    "output": "oj"
+  },
+  {
+    "type": "replace",
+    "input": "elles",
+    "output": "L"
+  },
+  {
+    "type": "replace",
+    "input": "jets",
+    "output": "jè"
+  },
+  {
+    "type": "replace",
+    "input": "association",
+    "output": "asso"
+  },
+  {
+    "type": "replace",
+    "input": "information",
+    "output": "info"
+  },
+  {
+    "type": "replace",
+    "input": "oeufs",
+    "output": "zeu"
+  },
+  {
+    "type": "replace",
+    "input": "oeuf",
+    "output": "euf"
+  },
+  {
+    "type": "replace",
+    "input": "eux",
+    "output": "E"
+  },
+  {
+    "type": "replace",
+    "input": "vas y",
+    "output": "azy"
+  }
+]

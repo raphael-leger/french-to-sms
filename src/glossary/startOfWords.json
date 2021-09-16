@@ -1,0 +1,158 @@
+[
+  {
+    "type": "replace",
+    "input": "ce",
+    "output": "s"
+  },
+  {
+    "type": "replace",
+    "input": "h",
+    "output": ""
+  },
+  {
+    "type": "replace",
+    "input": "cvs",
+    "output": "cv"
+  },
+  {
+    "type": "replace",
+    "input": "fera",
+    "output": "fra"
+  },
+  {
+    "type": "replace",
+    "input": "plus",
+    "output": "+"
+  },
+  {
+    "type": "replace",
+    "input": "moins",
+    "output": "-"
+  },
+  {
+    "type": "replace",
+    "input": "toi",
+    "output": "twa"
+  },
+  {
+    "type": "replace",
+    "input": "moi",
+    "output": "mwa"
+  },
+  {
+    "type": "replace",
+    "input": "clair",
+    "output": "kler"
+  },
+  {
+    "type": "replace",
+    "input": "dis-moi",
+    "output": "di mwa"
+  },
+  {
+    "type": "replace",
+    "input": "occupé",
+    "output": "OQP"
+  },
+  {
+    "type": "replace",
+    "input": "tu es",
+    "output": "T"
+  },
+  {
+    "type": "replace",
+    "input": "les",
+    "output": "lé"
+  },
+  {
+    "type": "replace",
+    "input": "ça va",
+    "output": "sava"
+  },
+  {
+    "type": "disable_modification",
+    "input": "sin"
+  },
+  {
+    "type": "disable_modification",
+    "input": "cin"
+  },
+  {
+    "type": "replace",
+    "input": "si",
+    "output": "6"
+  },
+  {
+    "type": "replace",
+    "input": "ci",
+    "output": "6"
+  },
+  {
+    "type": "enable_modification",
+    "input": "sin"
+  },
+  {
+    "type": "enable_modification",
+    "input": "cin"
+  },
+  {
+    "type": "replace",
+    "input": "parl",
+    "output": "cauz"
+  },
+  {
+    "type": "replace",
+    "input": "travaill",
+    "output": "taff"
+  },
+  {
+    "type": "replace",
+    "input": "oui",
+    "output": "wi"
+  },
+  {
+    "type": "replace",
+    "input": "ne",
+    "output": "n"
+  },
+  {
+    "type": "replace",
+    "input": "a1",
+    "output": "1"
+  },
+  {
+    "type": "replace",
+    "input": "se",
+    "output": "s"
+  },
+  {
+    "type": "replace",
+    "input": "h",
+    "output": ""
+  },
+  {
+    "type": "replace",
+    "input": "premi",
+    "output": "1"
+  },
+  {
+    "type": "replace",
+    "input": "illi",
+    "output": "ili"
+  },
+  {
+    "type": "replace",
+    "input": "lh",
+    "output": "l"
+  },
+  {
+    "type": "replace",
+    "input": "dh",
+    "output": "d"
+  },
+  {
+    "type": "replace",
+    "input": "nh",
+    "output": "d"
+  }
+]
