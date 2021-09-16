@@ -1,4 +1,5 @@
 const { startOfWord, anywhere, endOfWord, wholeWord } = require('./regex.js');
+const { disableModification, enableModification } = require('./modification.js');
 const { ACTION_TYPE } = require('./actions.js');
 
 const actionsToPerformAnywhere = require('./glossary/anywhere.json');
@@ -8,113 +9,53 @@ const actionsToPerformForWholeWords = require('./glossary/wholeWords.json');
 const actionsToPerformAtTheEndOfWordsFollowedByASpace = require('./glossary/endOfWordsFollowedByASpace.json');
 
 
-
-
-/* MODIFICATIONS PREVENTION SYSTEM */
-const disabledModifications = [];
-
-const disableModification = (input) => {
-  const hash = getHash();
-
-  disabledModifications.push({
-    input,
-    hash
-  });
-
-  return hash;
-};
-
-const enableModification = (input) => {
-  const disabledModificationIndex = disabledModifications.findIndex(modification => modification.input === input);
-  if (disabledModificationIndex > -1) {
-    const { hash } = disabledModifications[disabledModificationIndex];
-    disabledModifications.splice(disabledModificationIndex, 1);
-    return hash;
-  };
-
-  return undefined;
-};
-
-const getHash = () => {
-  const modificationNumber = disabledModifications.length + 1;
-  return `!!!!!!FRENCH!TO!SMS!REPLACEMENT!${modificationNumber}`;
-};
-
-
-
-
-/* REPLACEMENT FUNCTIONS */
 const performWholeWordReplacement = (text, action) => text.replace(wholeWord(action.input), ` ${action.output} `);
 
 const performAnywhereReplacement = (text, action) => {
-  let hash;
   switch (action.type) {
     default:
     case ACTION_TYPE.REPLACE:
       return text.replace(anywhere(action.input), action.output);
     case ACTION_TYPE.DISABLE_MODIFICATION:
-      hash = disableModification(action.input);
-      return text.replace(anywhere(action.input), hash);
+      return text.replace(anywhere(action.input), disableModification(action.input));
     case ACTION_TYPE.ENABLE_MODIFICATION:
-      hash = enableModification(action.input);
-      if (hash) {
-        return text.replace(anywhere(hash), action.input);
-      };
-      return text;
+      return text.replace(anywhere(enableModification(action.input)), action.input);
   }
 };
 
 const performStartOfWordsReplacement = (text, action) => {
-  let hash;
   switch (action.type) {
     default:
     case ACTION_TYPE.REPLACE:
       return text.replace(startOfWord(action.input), ` ${action.output}`);
     case ACTION_TYPE.DISABLE_MODIFICATION:
-      hash = disableModification(action.input);
-      return text.replace(startOfWord(action.input), ` ${hash}`);
+      return text.replace(startOfWord(action.input), ` ${disableModification(action.input)}`);
     case ACTION_TYPE.ENABLE_MODIFICATION:
-      hash = enableModification(action.input);
-      if (hash) {
-        return text.replace(startOfWord(hash), ` ${action.input}`);
-      };
-      return text;
+      return text.replace(startOfWord(enableModification(action.input)), ` ${action.input}`);
   }
 };
 
 const performEndOfWordsReplacement = (text, action) => {
-  let hash;
   switch (action.type) {
     default:
     case ACTION_TYPE.REPLACE:
       return text.replace(endOfWord(action.input), `${action.output} `);
     case ACTION_TYPE.DISABLE_MODIFICATION:
-      hash = disableModification(action.input);
-      return text.replace(endOfWord(action.input), `${hash} `);
+      return text.replace(endOfWord(action.input), `${disableModification(action.input)} `);
     case ACTION_TYPE.ENABLE_MODIFICATION:
-      hash = enableModification(action.input);
-      if (hash) {
-        return text.replace(anywhere(hash), `${action.input} `);
-      };
-      return text;
+      return text.replace(endOfWord(enableModification(action.input)), `${action.input} `);
   }
 };
 
 const performEndOfWordsFollowedByASpaceReplacement = (text, action) => {
-  let hash;
   switch (action.type) {
     default:
     case ACTION_TYPE.REPLACE:
       return text.replace(endOfWord(action.input), action.output);
     case ACTION_TYPE.DISABLE_MODIFICATION:
-      hash = disableModification(`${action.input} `);
-      return text.replace(endOfWord(action.input), `${hash} `);
+      return text.replace(endOfWord(action.input), `${disableModification(`${action.input} `)} `);
     case ACTION_TYPE.ENABLE_MODIFICATION:
-      hash = enableModification(`${action.input} `);
-      if (hash) {
-        return text.replace(endOfWord(hash), `${action.input} `);
-      };
-      return text;
+      return text.replace(endOfWord(enableModification(`${action.input} `)), `${action.input} `);
   }
 };
 
@@ -124,10 +65,6 @@ const replaceStartOfWords = (text) => actionsToPerformAtTheStartOfWords.reduce(p
 const replaceEndOfWords   = (text) => actionsToPerformAtTheEndOfWords.reduce(performEndOfWordsReplacement, text);
 const replaceEndOfWordsFollowedByASpace = (text) => actionsToPerformAtTheEndOfWordsFollowedByASpace.reduce(performEndOfWordsFollowedByASpaceReplacement, text);
 
-
-
-
-/* UTILS FUNCTIONS */
 const addSpacesLeftAndRight = (text) => {
   return `  ${text}  `;
 };

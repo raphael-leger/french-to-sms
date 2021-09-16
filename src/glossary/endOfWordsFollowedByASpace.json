@@ -88,24 +88,12 @@
   },
   {
     "type": "enable_modification",
-    "input": "pe"
-  },
-  {
-    "type": "enable_modification",
     "input": "tes"
   },
   {
     "type": "replace",
     "input": "es",
     "output": "e "
-  },
-  {
-    "type": "enable_modification",
-    "input": "une"
-  },
-  {
-    "type": "enable_modification",
-    "input": "ine"
   },
   {
     "type": "enable_modification",
