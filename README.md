@@ -70,8 +70,8 @@ By default, the whole text input is subject to replacements. Though, some charac
 For instance, we may want to replace every occurence of `si` by `6` as it is a good sms equivalent (`sinon` would become `6non`, `aussi` would become `au6`).
 
 But some sounds like `sin` often sound like `zin` so replacing `si` by `6` would be wrongly interpreted (`usine` would become `u6ne`).
-So we may want to disable replacements on `sin` while we perform a replacements on `si`, then later-on re-enable the replacements on `sin`.
+So we may want to disable replacements on `sin` while we replace all `si` occurrences by `6`, then re-enable further replacements on `sin`.
 
 ## Contributing
 
-If for some reason you would like to enhance the glossary, feel free to do a pull request containing updates within the glossary and tests covering the conversion changes you enabled.
+If for some reason you would like to enhance the glossary, feel free to do a pull request containing your modifications within the glossary as well as tests fixtures covering what you enhanced.
