@@ -36,21 +36,13 @@ You can test the algorithm out on this [demo page](https://raphael-leger.github.
 
 The algorithm behind this project is based upon a custom-made glossary.
 
-It performs successively several replacements of characters.
+It performs one by one the characters replacements defined in the glossary.
 
 
 ## Glossary
 
 The glossary in its current state should enable a good quantity of french words and sentences to be shortened rather correctly.
 It was built from scratch by kind of reverse engineering the SMS French language and how it can be constructed.
-
-
-### Actions
-
-The glossary contains actions and there are 3 types of actions:
-- `replace`: to replace some characters by some other characters
-- `disable_modification`: to prevent some characters from being replaced
-- `enable_modification`: to re-allow some characters to be replaced
 
 
 ### Replacements
@@ -62,6 +54,14 @@ The glossary is divided in five distinct replacement categories:
 - `startOfWords`: replacements contained in this category will be performed only at the start of words (Useful for general rules at the start of words, eg: the `h` is often silent; `haricot` => `aricot`)
 - `wholeWords`: replacements contained in this category will be performed only if they exactly match a whole word (Useful for words that need a specific conversion that does not follow general rules, eg: `monsieur` => `mr`.)
 - `endOfWordsFollowedByASpace`: replacements contained in this category will be performed only at the end of words that are followed by a space (Useful to get rid of the space as well, eg: `je suis` => `jsuis`)
+
+
+### Actions
+
+The glossary supports three types of actions:
+- `replace`: to replace some characters by some other characters
+- `disable_modification`: to prevent some characters from being replaced
+- `enable_modification`: to re-allow some characters to be replaced
 
 
 ### Disable/enable modification
