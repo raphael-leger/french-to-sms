@@ -50,10 +50,10 @@ It was built from scratch by kind of reverse engineering the SMS French language
 The glossary is divided in five distinct replacement categories:
 
 - `anywhere`: replacements contained in this category will be performed anywhere within the input text (Useful for general rules, eg: double consonants is often useless `apprends` => `aprends`)
-- `endOfWords`: replacements contained in this category will be performed only at the end of words (Useful for general rules at the end of words, eg: the `e` in words ending with `e` is often silent; `pomme ` => `pomm`)
-- `startOfWords`: replacements contained in this category will be performed only at the start of words (Useful for general rules at the start of words, eg: the `h` is often silent; `haricot` => `aricot`)
-- `wholeWords`: replacements contained in this category will be performed only if they exactly match a whole word (Useful for words that need a specific conversion that does not follow general rules, eg: `monsieur` => `mr`.)
-- `endOfWordsFollowedByASpace`: replacements contained in this category will be performed only at the end of words that are followed by a space (Useful to get rid of the space as well, eg: `je suis` => `jsuis`)
+- `endOfWords`: replacements contained in this category will be performed only at the end of words (Useful for general rules at the end of words, eg: the `e` in words ending with `e` is often silent so we can get rid of it; `pomme ` => `pomm`)
+- `startOfWords`: replacements contained in this category will be performed only at the start of words (Useful for general rules at the start of words, eg: the `h` is often silent so we can get rid of it; `haricot` => `aricot`)
+- `wholeWords`: replacements contained in this category will be performed only if they exactly match a whole word (Useful for words that need a specific conversion that does not follow general rules, eg: `monsieur` => `mr`)
+- `endOfWordsFollowedByASpace`: replacements contained in this category will be performed only at the end of words that are followed by a space (Useful to replace the space as well, eg: `je` can often be contracted with what follows it; `je suis` => `jsuis`)
 
 
 ### Actions
