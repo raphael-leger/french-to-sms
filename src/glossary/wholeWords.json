@@ -1593,5 +1593,20 @@
     "type": "replace",
     "input": "vas y",
     "output": "azy"
+  },
+  {
+    "type": "replace",
+    "input": "exemple",
+    "output": "ex"
+  },
+  {
+    "type": "replace",
+    "input": "aujourd'hui",
+    "output": "ojd"
+  },
+  {
+    "type": "replace",
+    "input": "énervé",
+    "output": "NRV"
   }
 ]

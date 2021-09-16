@@ -1,8 +1,8 @@
 [
   {
     "type": "replace",
-    "input": "le",
-    "output": "l"
+    "input": " le",
+    "output": " l"
   },
   {
     "type": "disable_modification",

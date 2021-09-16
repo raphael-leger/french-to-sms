@@ -494,5 +494,10 @@
     "type": "replace",
     "input": "ès",
     "output": "è"
+  },
+  {
+    "type": "replace",
+    "input": "èent",
+    "output": "è"
   }
 ]

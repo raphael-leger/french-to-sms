@@ -54,9 +54,17 @@
     "input": "ail"
   },
   {
+    "type": "disable_modification",
+    "input": "aine"
+  },
+  {
     "type": "replace",
     "input": "ain",
     "output": "1"
+  },
+  {
+    "type": "enable_modification",
+    "input": "aine"
   },
   {
     "type": "replace",
@@ -232,6 +240,11 @@
     "type": "replace",
     "input": "quun",
     "output": "k1"
+  },
+  {
+    "type": "replace",
+    "input": "qu",
+    "output": "k"
   },
   {
     "type": "replace",
